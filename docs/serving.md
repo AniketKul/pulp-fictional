@@ -9,7 +9,7 @@ uv pip install 'transformers==4.52.4' 'peft==0.15.2' 'accelerate==1.7.0' 'lm-for
 uv run --no-sync pulp-fictional --adapter experiments/market/adapter --port 8000
 ```
 
-Open [the local storefront](http://127.0.0.1:8000/). Both the UI and the JSON API use the same cache, student, catalog and guardrails. A server launched without an adapter can inspect teacher-cache hits. A tail query on that server reports that the resident model is unavailable.
+On the machine running the service, open `http://127.0.0.1:8000/`. To use a browser on a different machine, follow the SSH instructions below. Both the UI and the JSON API use the same cache, student, catalog and guardrails. A server launched without an adapter can inspect teacher-cache hits. A tail query on that server reports that the resident model is unavailable.
 
 The service validates the model's six output fields. If the first generation is malformed, the same model gets one retry with JSON-schema-constrained decoding. Retrieval still checks the original shopper query for dietary exclusions.
 
@@ -26,7 +26,7 @@ Start the server on the GPU host. From your own machine, forward a local port to
 ssh -N -o ExitOnForwardFailure=yes -L 127.0.0.1:8765:127.0.0.1:8000 YOUR-GPU-HOST
 ```
 
-Open [the forwarded storefront](http://127.0.0.1:8765/). The browser sends a query to `/api/search` and receives products and an intent trace. The optional `force=1` parameter runs the GPU student on a cached query. Stopping the SSH connection closes access through the local port.
+With the SSH connection running, open `http://127.0.0.1:8765/` on your own machine. The browser sends a query to `/api/search` and receives products and an intent trace. The optional `force=1` parameter runs the GPU student on a cached query. Stopping the SSH connection closes access through the local port.
 
 ## Check the shopper flow
 

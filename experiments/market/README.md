@@ -8,11 +8,11 @@ The split groups each original search text with its translated form. It drops tr
 
 The teacher accepted 183 of 185 original queries. Fine-tuning used 329 original and translated examples from 165 query families across five epochs. On the 32 reserved query forms the tuned student produced valid six-field JSON 32 times and matched all six teacher fields five times. Strict role micro-F1 was 0.373. The untuned base produced valid JSON zero times under the same prompt. Product names matched the teacher on nine of 16 English forms and three of 16 Chinese forms. These results describe this small catalog and evaluation set.
 
-With the GPU dependencies installed in the project's uv environment, reproduce the run from the repository root. Supply the teacher and market files produced by the matching teacher build. Choose a new output directory.
+With the GPU dependencies installed in the project's uv environment, run training from the repository root using the checked-in teacher labels and catalog. Choose a new output directory.
 
 ```sh
 uv run --no-sync python scripts/train_market_student.py \
-  --teacher path/to/teacher.json --market path/to/market.json \
+  --teacher experiments/market/teacher.json --market live/data/market.json \
   --prompt live/data/prompt.json --output /tmp/pulp-student-training
 ```
 
