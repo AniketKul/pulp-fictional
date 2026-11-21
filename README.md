@@ -4,13 +4,19 @@ A grocery search prototype served from a private GPU host. [Set up or connect to
 
 Search 144 real grocery listings in English or Chinese. Type into the search box to update the results. The **Intent trace** shows which model interpreted the query, the catalog categories it matched, and the purchase evidence available for that phrase.
 
-![The internal storefront showing the Dove chocolate gift box and the live model's interpretation](docs/storefront.png)
+## Demo
+
+This narrated walkthrough (1 min 54 sec) follows two searches. “Mooncakes” uses a cached interpretation. Typing “dark chocolate gift box for a friend” runs the model on the H100 and finds a matching gift box. The intent trace shows how each result was found.
+
+https://github.com/user-attachments/assets/3c9496ad-80c4-4db6-a9ae-0576a6d9d6a5
 
 ## Try it
 
 1. Open the storefront after starting the service locally or connecting over SSH. It starts with **Mooncakes**. Open **Purchase evidence** in the intent trace to see the original Chinese query and the recorded purchase behind the category match.
 2. Type **a sugar-free mooncake**. The server sends this new phrase to the resident language model, validates its proposed rewrites and ranks catalog listings. Each result includes its original source item ID.
 3. Refresh the page. The storefront restores the query from the URL and searches again. The model stays loaded on the server.
+
+![The internal storefront showing the Dove chocolate gift box and the live model's interpretation](docs/storefront.png)
 
 ## Architecture
 
