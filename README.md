@@ -23,7 +23,7 @@ uv run python evaluation/roles.py
 
 ## How a search gets understood
 
-The design follows Instacart Engineering’s account of grounding query understanding in a grocery catalog and shopping behavior. Pulp Fictional uses an original catalog of 27 products and eight synthetic purchase histories. The fixture for **vegan roast** deliberately gives beef 21 conversions and the plant roast 18. Both category paths look semantically plausible. Only one satisfies the shopper’s request. [Read the Instacart article](https://tech.instacart.com/building-the-intent-engine-how-instacart-is-revamping-query-understanding-with-llms-3ac8051ae7ac).
+Pulp Fictional uses a catalog of 27 products and eight synthetic purchase histories. For **vegan roast**, the history records 21 purchases of beef roast and 18 of plant roast. Both categories score highly for similarity to the query. The engine checks the vegan requirement against the catalog and returns the plant roast.
 
 ```mermaid
 flowchart TD
