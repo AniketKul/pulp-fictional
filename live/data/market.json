@@ -1155,6 +1155,27 @@
  ],
  "cache": [
   {
+   "query": "零食",
+   "english": "Snacks",
+   "sessions": 603,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Other ready-to-eat seafood snacks",
+    "Snacks, nuts and regional specialties > Snack and nut specialties",
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao",
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods",
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
+  },
+  {
    "query": "月饼",
    "english": "Mooncakes",
    "sessions": 504,
@@ -1166,26 +1187,31 @@
    "categories": [
     "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
    ],
-   "synonym": "Sugar-free buckwheat mooncakes",
-   "substitute": "Sugar-free buckwheat mooncakes",
-   "broader": "Sugar-free mooncakes"
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
   },
   {
-   "query": "面包",
-   "english": "Bread",
-   "sessions": 308,
+   "query": "零食小吃休闲食品",
+   "english": "Snacks and snack foods",
+   "sessions": 302,
    "roles": {
-    "product": "bread",
+    "product": "Snacks",
     "brand": "",
     "attributes": []
    },
    "categories": [
-    "Snacks, nuts and regional specialties > Snack and nut specialties",
-    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments",
+    "Snacks, nuts and regional specialties > Nuts and roasted snacks > Peanut snacks",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Duck products",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks"
    ],
-   "synonym": "Baked goods NONE",
+   "synonym": "",
    "substitute": "",
-   "broader": "Bread options for various diets and preferences"
+   "broader": ""
   },
   {
    "query": "月饼销量第一名",
@@ -1199,9 +1225,25 @@
    "categories": [
     "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
    ],
-   "synonym": "Top-selling mooncakes",
-   "substitute": "Sugar-free buckwheat mooncakes",
-   "broader": "Best-selling mooncakes for people with sugar restrictions"
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
+  },
+  {
+   "query": "牛奶",
+   "english": "Milk",
+   "sessions": 161,
+   "roles": {
+    "product": "milk",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
   },
   {
    "query": "无骨鸡爪",
@@ -1217,9 +1259,9 @@
    "categories": [
     "Fresh foods > Meat, poultry and prepared products > Meat products"
    ],
-   "synonym": "Boneless chicken toes",
+   "synonym": "",
    "substitute": "",
-   "broader": "Boneless chicken feet hot and sour NONE"
+   "broader": ""
   },
   {
    "query": "饮料",
@@ -1231,11 +1273,10 @@
     "attributes": []
    },
    "categories": [
-    "Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages",
-    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Ginger drink powders"
+    "Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages"
    ],
-   "synonym": "Fruit-flavored drinks",
-   "substitute": "Tea",
+   "synonym": "",
+   "substitute": "",
    "broader": ""
   },
   {
@@ -1243,7 +1284,7 @@
    "english": "Fruit",
    "sessions": 127,
    "roles": {
-    "product": "fruit",
+    "product": "Fruit",
     "brand": "",
     "attributes": []
    },
@@ -1252,7 +1293,7 @@
    ],
    "synonym": "",
    "substitute": "",
-   "broader": "Fruit and herbal infusions"
+   "broader": ""
   },
   {
    "query": "辣条",
@@ -1260,15 +1301,18 @@
    "sessions": 123,
    "roles": {
     "product": "spicy strips",
-    "brand": "Latiao",
-    "attributes": []
+    "brand": "",
+    "attributes": [
+     "spicy"
+    ]
    },
    "categories": [
-    "Snacks, nuts and regional specialties > Snack and nut specialties"
+    "Snacks, nuts and regional specialties > Snack and nut specialties",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes"
    ],
-   "synonym": "Latiao snack options",
-   "substitute": "Douyouwei Hunan-style spicy vegetarian beef-tendon-style starch snack",
-   "broader": "Latiao spicy snacks"
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
   },
   {
    "query": "泡面整箱批发",
@@ -1285,9 +1329,9 @@
     "Convenience and dried foods > Convenience foods > Instant noodles and noodle products",
     "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
    ],
-   "synonym": "Instant noodles bulk purchase",
+   "synonym": "",
    "substitute": "",
-   "broader": "Instant noodles wholesale dietary restrictions included"
+   "broader": ""
   },
   {
    "query": "大米",
@@ -1301,9 +1345,9 @@
    "categories": [
     "Grains, oils and seasonings > Rice, flour and grains > Rice"
    ],
-   "synonym": "Rice products",
+   "synonym": "",
    "substitute": "",
-   "broader": "Rice and related products"
+   "broader": ""
   },
   {
    "query": "茶叶",
@@ -1316,49 +1360,12 @@
    },
    "categories": [
     "Tea > Herbal and fruit infusions > Herbal teas and infusions",
-    "Tea > Wellness teas",
     "Tea > Other teas",
-    "Tea > Herbal and fruit infusions > Jasmine floral teas"
+    "Tea > Wellness teas"
    ],
-   "synonym": "Herbal tea ingredients",
-   "substitute": "Herbal tea bags",
-   "broader": "Herbal and fruit infusions"
-  },
-  {
-   "query": "吃的",
-   "english": "Something to eat",
-   "sessions": 66,
-   "roles": {
-    "product": "snack",
-    "brand": "",
-    "attributes": []
-   },
-   "categories": [
-    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried mango",
-    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried peaches",
-    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products",
-    "Fresh foods > Seafood and aquatic products > Dried seafood"
-   ],
-   "synonym": "Something edible",
-   "substitute": "Ready-to-eat crispy pork cracklings",
-   "broader": "Something to eat with dietary restrictions"
-  },
-  {
-   "query": "酸奶",
-   "english": "Yogurt",
-   "sessions": 63,
-   "roles": {
-    "product": "yogurt",
-    "brand": "",
-    "attributes": []
-   },
-   "categories": [
-    "Coffee, cereals and drink mixes > Milk and dairy products > Fermented dairy products",
-    "Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages"
-   ],
-   "synonym": "Fermented dairy product",
-   "substitute": "Milk",
-   "broader": "Yogurt and yogurt-flavored products"
+   "synonym": "",
+   "substitute": "",
+   "broader": ""
   }
  ]
 }

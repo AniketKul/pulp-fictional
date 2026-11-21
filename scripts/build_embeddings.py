@@ -40,16 +40,12 @@ def weighted(parts):
     return counts
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    for name in ("market", "source", "output"):
-        parser.add_argument("--" + name, required=True, type=Path)
-    parser.add_argument("--glossary", type=Path, help="Bilingual catalog glossary (defaults to glossary.json beside the market)")
-    args = parser.parse_args()
-    glossary = args.glossary or args.market.with_name("glossary.json")
-    market = json.loads(args.market.read_text())
-    products = market["products"]
-    source = json.loads(args.source.read_text())
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def fit_index(products, source, translations):
+    """Fit without teacher labels or a head cache; both the teacher and ranker use these vectors."""
     ids = [p["id"] for p in products]
     if not products or len(ids) != len(set(ids)) or set(ids) != {p["id"] for p in source["products"]}:
         raise ValueError("Catalog IDs must match the source snapshot")
@@ -59,7 +55,7 @@ def main():
         docs.append(weighted([(p["title"], 2), (p.get("english_title"), 2), (p["brand"], 2),
                               (p["category"], 1), (p.get("english_category"), 1)]))
     # Each observed query–item pair contributes one document. Purchase frequency is reserved for runtime evidence.
-    translated = json.loads(glossary.read_text())["queries"]
+    translated = translations
     if set(translated) != {q["query"] for q in source["queries"]}:
         raise ValueError("Every source query requires an English gloss")
     for q in source["queries"]:
@@ -97,15 +93,30 @@ def main():
         path = dense(weighted([(category, 1), (english, 1)])) @ basis
         centroid = vectors[indices].mean(axis=0) + path / max(np.linalg.norm(path), 1e-12)
         categories[category] = (centroid / max(np.linalg.norm(centroid), 1e-12)).round(5).tolist()
-    def digest(path):
-        return hashlib.sha256(path.read_bytes()).hexdigest()
-    output = {"method": "bilingual-tfidf-lsi", "rank": int(len(keep)), "documents": len(docs),
-              "numpy": np.__version__, "builder_sha256": digest(Path(__file__)),
-              "source_sha256": digest(args.source), "market_sha256": digest(args.market), "glossary_sha256": digest(glossary),
-              "vocabulary": vocab, "idf": idf.round(5).tolist(), "basis": basis.round(5).tolist(),
-              "items": dict(zip(ids, vectors.round(5).tolist())), "categories": categories}
-    args.output.write_text(json.dumps(output, separators=(",", ":"), ensure_ascii=False) + "\n")
-    print(f"{len(vocab)} terms, {len(keep)} dimensions, {len(ids)} items, {len(categories)} catalog paths")
+    return {"method": "bilingual-tfidf-lsi", "rank": int(len(keep)), "documents": len(docs),
+            "numpy": np.__version__, "builder_sha256": digest(Path(__file__)),
+            "vocabulary": vocab, "idf": idf.round(5).tolist(), "basis": basis.round(5).tolist(),
+            "items": dict(zip(ids, vectors.round(5).tolist())), "categories": categories}
+
+
+def write_index(index, source, glossary, market, output):
+    artifact = dict(index, source_sha256=digest(source), glossary_sha256=digest(glossary),
+                    market_sha256=digest(market))
+    output.write_text(json.dumps(artifact, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    for name in ("market", "source", "output"):
+        parser.add_argument("--" + name, required=True, type=Path)
+    parser.add_argument("--glossary", type=Path, help="Bilingual catalog glossary (defaults to glossary.json beside the market)")
+    args = parser.parse_args()
+    glossary = args.glossary or args.market.with_name("glossary.json")
+    market = json.loads(args.market.read_text())
+    products = market["products"]
+    source = json.loads(args.source.read_text())
+    translations = json.loads(glossary.read_text())["queries"]
+    write_index(fit_index(products, source, translations), args.source, glossary, args.market, args.output)
 
 
 if __name__ == "__main__":

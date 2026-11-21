@@ -1,19 +1,22 @@
-"""Serve the Pulp Fictional market locally, optionally with a resident CUDA student."""
+"""Serve the resident Pulp Fictional search engine on loopback."""
 
 import argparse
 import functools
 import json
-import shutil
-import subprocess
-import unicodedata
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from threading import Lock
-from urllib.parse import parse_qs, urlsplit
+from threading import BoundedSemaphore
+
+from .service import (
+    RequestError,
+    SearchService,
+    recovery_schema,
+    search_parameters,
+    validate_query,
+)
 
 MODEL = "Qwen/Qwen3-0.6B"
 REVISION = "c1899de289a04d12100db370d81485cdf75e47ca"
-PUBLIC = "https://aniketkul.github.io/pulp-fictional/"
 
 
 def site_root():
@@ -27,6 +30,11 @@ def site_root():
 
 def gpu_predictor(adapter, system):
     import torch
+    from lmformatenforcer import JsonSchemaParser
+    from lmformatenforcer.integrations.transformers import (
+        build_token_enforcer_tokenizer_data,
+        build_transformers_prefix_allowed_tokens_fn,
+    )
     from peft import PeftModel
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -37,11 +45,12 @@ def gpu_predictor(adapter, system):
         MODEL, revision=REVISION, torch_dtype=torch.bfloat16
     ).to("cuda")
     model = PeftModel.from_pretrained(base, str(adapter)).merge_and_unload().eval()
-    lock = Lock()
 
-    def predict(q):
+    tokenizer_data = build_token_enforcer_tokenizer_data(tok)
+
+    def generate(q, *, instructions=system, prefix_allowed_tokens_fn=None):
         messages = [
-            {"role": "system", "content": system},
+            {"role": "system", "content": instructions},
             {"role": "user", "content": q},
         ]
         ids = tok.apply_chat_template(
@@ -51,148 +60,103 @@ def gpu_predictor(adapter, system):
             enable_thinking=False,
             return_tensors="pt",
         ).to(model.device)
-        with lock, torch.inference_mode():
+        with torch.inference_mode():
             answer = model.generate(
                 input_ids=ids,
                 attention_mask=torch.ones_like(ids),
                 max_new_tokens=150,
                 do_sample=False,
                 pad_token_id=tok.eos_token_id,
+                prefix_allowed_tokens_fn=prefix_allowed_tokens_fn,
             )
         return tok.decode(answer[0, ids.shape[1] :], skip_special_tokens=True)
 
-    return predict
+    def retry_invalid_intent(query):
+        parser = JsonSchemaParser(recovery_schema(query))
+        allowed = build_transformers_prefix_allowed_tokens_fn(tokenizer_data, parser)
+        return generate(
+            query,
+            instructions=system
+            + " Copy brand and attributes directly from the shopper's original text, preserving exclusions.",
+            prefix_allowed_tokens_fn=allowed,
+        )
+
+    generate.retry_invalid_intent = retry_invalid_intent
+    return generate
 
 
-def make_server(port=8000, root=None, predict=None):
+class LocalServer(ThreadingHTTPServer):
+    """Cap active clients, including slow or incomplete HTTP requests."""
+
+    def __init__(self, address, handler, engine, *, connections=16):
+        self.slots = BoundedSemaphore(connections)
+        self.engine = engine
+        super().__init__(address, handler)
+
+    def process_request(self, request, client_address):
+        request.settimeout(10)
+        if self.slots.acquire(blocking=False):
+            try:
+                return super().process_request(request, client_address)
+            except BaseException:
+                self.slots.release()
+                raise
+        try:
+            request.settimeout(0.2)
+            request.sendall(
+                b"HTTP/1.0 503 Service Unavailable\r\nRetry-After: 2\r\nContent-Length: 0\r\n\r\n"
+            )
+        except OSError:
+            pass
+        finally:
+            self.shutdown_request(request)
+
+    def process_request_thread(self, request, client_address):
+        try:
+            super().process_request_thread(request, client_address)
+        finally:
+            self.slots.release()
+
+    def server_close(self):
+        super().server_close()
+        self.engine.close()
+
+
+def make_server(port=8000, root=None, predict=None, *, inference_capacity=3):
     root = (root or site_root()).resolve()
-
-    def key(query):
-        return " ".join(unicodedata.normalize("NFKC", query).lower().split())
-
-    market = json.loads((root / "data/market.json").read_text())
-    cache = {
-        key(term): r
-        for r in market["cache"]
-        for term in (r["query"], r["english"])
-        if term
-    }
+    engine = SearchService(root, predict, inference_capacity)
 
     class Handler(SimpleHTTPRequestHandler):
-        def generate(self, query):
-            try:
-                raw = predict(query)
-                payload = json.loads(
-                    raw.strip()
-                    .removeprefix("```json")
-                    .removeprefix("```")
-                    .removesuffix("```")
-                    .strip()
-                )
-                fields = ("product", "brand", "synonym", "substitute", "broader")
-                if (
-                    not isinstance(payload, dict)
-                    or not all(isinstance(payload.get(f), str) for f in fields)
-                    or not isinstance(payload.get("attributes"), list)
-                    or not all(isinstance(a, str) for a in payload["attributes"])
-                ):
-                    raise ValueError
-                return payload
-            except (ValueError, TypeError, AttributeError):
-                self.send_bytes(
-                    502,
-                    b'{"error":"The student returned an incomplete intent."}',
-                    "application/json",
-                )
-            except RuntimeError:
-                self.send_bytes(
-                    502, b'{"error":"GPU inference failed."}', "application/json"
-                )
-            return None
+        def log_message(self, fmt, *args):
+            if not getattr(self, "path", "").startswith("/api/"):
+                super().log_message(fmt, *args)
 
-        def search_api(self):
-            try:
-                q = parse_qs(urlsplit(self.path).query, max_num_fields=2).get("q", [])
-            except ValueError:
-                q = []
-            if len(q) != 1 or not q[0].strip() or len(q[0]) > 200 or "<|" in q[0]:
-                self.send_bytes(
-                    400,
-                    b'{"error":"Enter one query of 1 to 200 characters."}',
-                    "application/json",
-                )
-                return
-            query = q[0].strip()
-            head = cache.get(key(query))
-            if not head and predict is None:
-                self.send_bytes(
-                    503,
-                    b'{"error":"The browser runs this model locally. Use the storefront or start the server with --adapter for live API inference."}',
-                    "application/json",
-                )
-                return
-            if not shutil.which("node"):
-                self.send_bytes(
-                    503,
-                    b'{"error":"The local search API requires Node.js for catalog ranking."}',
-                    "application/json",
-                )
-                return
-            if head:
-                proposal = {
-                    **head["roles"],
-                    **{
-                        k: head[k]
-                        for k in ("synonym", "substitute", "broader", "categories")
-                    },
-                }
-            else:
-                proposal = self.generate(query)
-                if proposal is None:
-                    return
-            req = {
-                "query": query,
-                "source_query": head["query"] if head else query,
-                "proposal": proposal,
-                "route": "teacher-cache" if head else "live-student",
-                "backend": "Qwen2.5-7B-Instruct" if head else "Qwen3-0.6B LoRA CUDA",
-            }
-            result = subprocess.run(
-                ["node", str(Path(__file__).with_name("rank.cjs")), str(root)],
-                input=json.dumps(req).encode(),
-                capture_output=True,
-                timeout=15,
-            )
-            if result.returncode:
-                self.send_bytes(
-                    500, b'{"error":"Catalog ranking failed."}', "application/json"
-                )
-                return
-            self.send_bytes(200, result.stdout, "application/json")
-
-        def send_bytes(self, status, content, mime):
+        def send_json(self, status, data, *, retry=None):
+            content = json.dumps(
+                data, ensure_ascii=False, separators=(",", ":")
+            ).encode()
             self.send_response(status)
-            self.send_header("Content-Type", mime)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(content)))
+            self.send_header("Cache-Control", "no-store")
+            if retry:
+                self.send_header("Retry-After", str(retry))
             self.end_headers()
-            self.wfile.write(content)
+            try:
+                self.wfile.write(content)
+            except (BrokenPipeError, ConnectionResetError):
+                pass
 
         def do_GET(self):
-            path = urlsplit(self.path).path
+            path, _, params = self.path.partition("?")
             if path == "/api/search":
-                self.search_api()
-            elif path in ("/", "/index.html"):
-                html = (root / "index.html").read_text()
-                settings = f"window.PULP_GPU={json.dumps(bool(predict))};"
-                if not predict and not (root / "model.json").exists():
-                    settings += f"window.PULP_MODEL_ASSETS={json.dumps(PUBLIC)};"
-                self.send_bytes(
-                    200,
-                    html.replace(
-                        "<head>", f"<head><script>{settings}</script>"
-                    ).encode(),
-                    "text/html; charset=utf-8",
-                )
+                try:
+                    query, force = search_parameters(params)
+                    self.send_json(200, engine.search(query, force))
+                except RequestError as error:
+                    self.send_json(
+                        error.status, {"error": str(error)}, retry=error.retry
+                    )
             else:
                 super().do_GET()
 
@@ -200,7 +164,7 @@ def make_server(port=8000, root=None, predict=None):
             self.send_error(404)
 
         def do_POST(self):
-            if self.path != "/api/intent" or predict is None:
+            if self.path != "/api/intent" or engine.predict is None:
                 self.send_error(404)
                 return
             if self.headers.get_content_type() != "application/json":
@@ -211,29 +175,24 @@ def make_server(port=8000, root=None, predict=None):
                 if not 0 < n <= 2048:
                     raise ValueError
                 obj = json.loads(self.rfile.read(n))
-                query = obj.get("query", "") if isinstance(obj, dict) else ""
-                if (
-                    not isinstance(query, str)
-                    or not 0 < len(query.strip()) <= 200
-                    or "<|" in query
-                ):
-                    raise ValueError
+                query = validate_query(
+                    obj.get("query") if isinstance(obj, dict) else None
+                )
+                proposal = engine.generate(query)
+            except RequestError as error:
+                self.send_json(error.status, {"error": str(error)}, retry=error.retry)
+                return
             except (ValueError, UnicodeError):
-                self.send_error(400)
+                self.send_json(400, {"error": "Supply a JSON object with a query."})
                 return
-            proposal = self.generate(query.strip())
-            if proposal is None:
-                return
-            self.send_bytes(
-                200,
-                json.dumps(
-                    {"completion": json.dumps(proposal, ensure_ascii=False)}
-                ).encode(),
-                "application/json",
+            self.send_json(
+                200, {"completion": json.dumps(proposal, ensure_ascii=False)}
             )
 
-    return ThreadingHTTPServer(
-        ("127.0.0.1", port), functools.partial(Handler, directory=str(root))
+    return LocalServer(
+        ("127.0.0.1", port),
+        functools.partial(Handler, directory=str(root)),
+        engine,
     )
 
 
@@ -241,23 +200,27 @@ def main():
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("--port", type=int, default=8000)
     cli.add_argument(
-        "--adapter", type=Path, help="Serve this adapter on a local CUDA GPU"
+        "--adapter",
+        type=Path,
+        help="Merge and serve this LoRA adapter on a local CUDA GPU",
     )
     cli.add_argument(
         "--site",
         type=Path,
         default=site_root(),
-        help="Directory with the live storefront",
+        help="Directory with the catalog and storefront",
     )
     args = cli.parse_args()
-    system = json.loads((args.site / "data/prompt.json").read_text())["system"]
-    predictor = gpu_predictor(args.adapter, system) if args.adapter else None
-    with make_server(args.port, args.site, predictor) as http:
+    if not 0 <= args.port <= 65535:
+        cli.error("Port must be between 0 and 65535.")
+    system = json.loads((args.site / "data/prompt.json").read_bytes())["system"]
+    predict = gpu_predictor(args.adapter, system) if args.adapter else None
+    with make_server(args.port, args.site, predict) as server:
         print(
-            f"Storefront listening at http://127.0.0.1:{http.server_port}", flush=True
+            f"Storefront listening at http://127.0.0.1:{server.server_port}", flush=True
         )
         try:
-            http.serve_forever()
+            server.serve_forever()
         except KeyboardInterrupt:
             pass
 

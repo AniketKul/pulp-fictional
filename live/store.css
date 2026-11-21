@@ -42,15 +42,11 @@ form { display: flex; border: 1px solid #9ca99a; border-radius: 4px; overflow: h
 form:focus-within { outline: 2px solid var(--orange); outline-offset: 2px; }
 input { width: 0; flex: 1; border: 0; background: transparent; padding: .9em .95em; }
 input:focus { outline: 0; }
-form button, #approve { border: 0; background: var(--ink); color: white; padding: .75em 1.1em; font-weight: 650; }
+form button { border: 0; background: var(--ink); color: white; padding: .75em 1.1em; font-weight: 650; }
 form button span { margin-left: .3em; }
 .examples, .rewrite-options { display: flex; gap: .4em .85em; flex-wrap: wrap; align-items: baseline; }
 .examples { font-size: .78rem; color: var(--soft); margin-top: .65rem; }
-.examples button, #cancel { padding: .2em 0; border: 0; background: none; text-decoration: underline; text-underline-offset: 3px; }
-.notice { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; background: #fbefd7; border-left: 3px solid var(--orange); padding: 1rem 1.2rem; margin-top: 1.2rem; }
-.notice > div { flex: 1 1 370px; }
-.notice p { font-size: .88rem; }
-#approve { border-radius: 4px; }
+.examples button { padding: .2em 0; border: 0; background: none; text-decoration: underline; text-underline-offset: 3px; }
 .status { color: var(--orange); font-size: .9rem; margin-top: .65rem; }
 .workbench { display: grid; gap: clamp(20px, 4vw, 62px); grid-template-columns: minmax(0, 1.65fr) minmax(290px, 1fr); align-items: start; margin: clamp(1.6rem, 3vw, 2.8rem) 0 3.4rem; }
 #market, #trace { min-width: 0; scroll-margin-top: 1rem; }
@@ -98,6 +94,5 @@ footer .wrap { padding: 1.25rem 0 1.7rem; align-items: flex-start; }
   .hero-image { min-height: 0; height: 113px; object-position: 50% 45%; }
   .hero-copy { align-self: stretch; padding: 1.15rem; }
   .hero-copy p { font-size: .88rem; margin: .6rem 0 .8rem; }
-  .notice { gap: .6rem 1rem; }
   footer .wrap { display: grid; gap: .75rem; }
 }

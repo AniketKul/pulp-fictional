@@ -3,10 +3,11 @@
 (() => {
   const byId = id => document.getElementById(id);
   const input = byId("query");
-  let generation = 0;
-  let confirmation;
+  const form = byId("search");
+  let active;
+  let timer;
+  let composing = false;
   let currentQuery = "";
-  let firstExample = "";
 
   function node(tag, text, className) {
     const el = document.createElement(tag);
@@ -54,7 +55,9 @@
     byId("route").textContent = cached ? "Teacher cache" : "Live student";
     byId("route-detail").textContent = cached
       ? "This search reused an intent labeled by the offline teacher."
-      : "The student model ran on this query.";
+      : result.unverified_roles_omitted
+        ? "The student ran on this query. Only tags supported by the query or matching listings are shown."
+        : "The student model ran on this query.";
     facts("model", [["Model", result.backend], ["Source query", result.source_query]]);
     byId("rerun").hidden = !cached;
     const roles = result.roles || {};
@@ -99,95 +102,94 @@
     byId("empty").hidden = true;
   }
 
-  async function search(raw, { force = false, approved = false, updateUrl = true, focus = false } = {}) {
+  function updateUrl(q, replace) {
+    const url = new URL(location.href);
+    if (q) url.searchParams.set("q", q);
+    else url.searchParams.delete("q");
+    if (url.href !== location.href) history[replace ? "replaceState" : "pushState"](null, "", url);
+  }
+
+  async function search(raw, { force = false, navigation = "push", focus = false } = {}) {
+    clearTimeout(timer);
     const q = raw.trim();
-    if (!q || q.length > input.maxLength) {
-      input.setCustomValidity("Enter a search between 1 and 200 characters.");
-      input.reportValidity();
+    if (!q || q.length > input.maxLength) return;
+    input.value = q;
+    if (navigation !== "none") updateUrl(q, navigation === "replace");
+    if (!force && active?.query === q) return;
+    if (!force && !active && currentQuery === q) {
+      byId("status").textContent = "";
       return;
     }
-    input.setCustomValidity("");
-    const token = ++generation;
-    confirmation = undefined;
-    byId("notice").hidden = true;
-    input.value = q;
-    byId("status").textContent = "Checking the query…";
+    active?.controller.abort();
+    const controller = new AbortController();
+    active = { query: q, controller };
+    const url = new URL(form.action);
+    url.searchParams.set("q", q);
+    if (force) url.searchParams.set("force", "1");
+    byId("status").textContent = "Searching…";
+    byId("market").setAttribute("aria-busy", "true");
     try {
-      const needsModel = !approved && await window.pulpNeedsModel(q, force);
-      if (token !== generation) return;
-      if (needsModel) {
-        confirmation = () => search(q, { force, approved: true, updateUrl, focus });
-        byId("status").textContent = "Waiting for permission to load the browser model.";
-        byId("notice").hidden = false;
-        byId("approve").focus();
-        return;
+      const signal = AbortSignal.any([controller.signal, AbortSignal.timeout(25000)]);
+      const response = await fetch(url, { signal, credentials: "omit", cache: "no-store" });
+      if (!response.ok) {
+        if (response.status === 400) throw new Error("Try a product, brand or ingredient in 1 to 200 characters.");
+        if (response.status === 429) throw new Error("The market is busy. Try again in a moment.");
+        throw new Error("The search service is unavailable. Please try again.");
       }
-      clearResults();
-      byId("route").textContent = "Waiting for search";
-      byId("status").textContent = "Searching…";
-      const result = await window.searchGroceries(q, progress => {
-        if (token === generation && typeof progress === "string") byId("status").textContent = progress;
-      }, force);
-      if (token !== generation) return;
+      const result = await response.json();
+      if (controller.signal.aborted) return;
+      if (result.query !== q || !["teacher-cache", "live-student"].includes(result.route) ||
+          !Array.isArray(result.products)) throw new Error("The search service returned an incomplete result.");
       render(result);
-      const params = new URLSearchParams({ q });
-      if (updateUrl && location.search !== "?" + params) history.pushState(null, "", "?" + params);
       byId("status").replaceChildren(node("span", byId("count").textContent + " found for " + q, "sr"));
       if (focus) byId("market-title").focus();
     } catch (error) {
-      if (token !== generation) return;
+      if (controller.signal.aborted) return;
       clearResults();
       byId("route").textContent = "Search unavailable";
-      byId("status").textContent = error?.message
-        ? "Search failed. " + error.message
-        : "Search failed. Please try again.";
+      byId("status").textContent = error.name === "TimeoutError" ? "Search timed out. Please try again."
+        : error instanceof TypeError ? "Cannot reach the search service. Please try again." : error.message;
+    } finally {
+      if (active?.controller === controller) {
+        active = undefined;
+        byId("market").setAttribute("aria-busy", "false");
+      }
     }
   }
 
   function loadUrl() {
-    const q = new URLSearchParams(location.search).get("q")?.trim() || firstExample;
-    if (q) search(q, { updateUrl: false });
+    const q = new URLSearchParams(location.search).get("q")?.trim();
+    search(q || byId("examples").querySelector("button").dataset.query, { navigation: "none" });
   }
 
-  byId("search").addEventListener("submit", event => {
-    event.preventDefault();
-    search(input.value);
-  });
-  input.addEventListener("input", () => {
-    input.setCustomValidity("");
-    if (confirmation) {
-      confirmation = undefined;
-      byId("notice").hidden = true;
+  function queueSearch() {
+    clearTimeout(timer);
+    active?.controller.abort();
+    active = undefined;
+    byId("market").setAttribute("aria-busy", "false");
+    const q = input.value.trim();
+    if (!q) {
+      clearResults();
+      byId("route").textContent = "Waiting for search";
       byId("status").textContent = "";
+      updateUrl("", true);
+      return;
     }
+    if (!composing) timer = setTimeout(() => search(q, { navigation: "replace" }), 350);
+  }
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!composing) search(input.value);
   });
-  byId("approve").addEventListener("click", () => confirmation?.());
-  byId("cancel").addEventListener("click", () => {
-    confirmation = undefined;
-    byId("notice").hidden = true;
-    byId("status").textContent = "Model load canceled. Choose an example to try a cached query.";
-    input.focus();
-  });
+  input.addEventListener("input", queueSearch);
+  input.addEventListener("compositionstart", () => { composing = true; clearTimeout(timer); });
+  input.addEventListener("compositionend", () => { composing = false; queueSearch(); });
   byId("rerun").addEventListener("click", () => search(currentQuery, { force: true }));
   document.addEventListener("click", event => {
     const button = event.target.closest("button[data-query]");
     if (button) search(button.dataset.query, { focus: byId("rewrites").contains(button) });
   });
   window.addEventListener("popstate", loadUrl);
-
-  async function start() {
-    byId("status").textContent = "Loading the grocery catalog…";
-    try {
-      const examples = await window.pulpExamples();
-      const choices = examples.filter(e => typeof e.text === "string" && e.text.trim());
-      firstExample = choices[0]?.text || "";
-      byId("examples").append(...choices.map(e => queryButton(e.text, e.label)));
-      byId("examples").hidden = !choices.length;
-      if (!generation && !choices.length) byId("status").textContent = "Enter a query to search.";
-    } catch (error) {
-      if (!generation) byId("status").textContent = "Could not load example searches. Try entering a query.";
-    }
-    if (!generation && !input.value) loadUrl();
-  }
-  start();
+  loadUrl();
 })();

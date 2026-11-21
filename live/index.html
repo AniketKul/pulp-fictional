@@ -7,9 +7,6 @@
   <title>Pulp Fictional · Grocery search</title>
   <link rel="icon" href="./assets/citrus.jpg" type="image/jpeg">
   <link rel="stylesheet" href="./store.css">
-  <script defer src="./llm.js"></script>
-  <script defer src="./retrieval.js"></script>
-  <script defer src="./search.js"></script>
   <script defer src="./store.js"></script>
 </head>
 <body>
@@ -22,24 +19,22 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">What’s on <em>your list?</em></h1>
-        <p>Search real grocery listings in your own words. Follow the intent trace to see how your query was understood.</p>
-        <form id="search" role="search">
+        <p>Search groceries in English or Chinese. Results update as you type.</p>
+        <form id="search" role="search" action="./api/search">
           <label class="sr" for="query">Search groceries</label>
           <input required type="search" name="q" id="query" maxlength="200" placeholder="Search by product, brand or attribute">
           <button type="submit">Search <span aria-hidden="true">↗</span></button>
         </form>
-        <div class="examples" id="examples" hidden><strong>Try</strong></div>
+        <div class="examples" id="examples"><strong>Try</strong>
+          <button type="button" data-query="Mooncakes">Mooncakes</button>
+          <button type="button" data-query="a sugar-free mooncake">Sugar-free mooncakes</button>
+          <button type="button" data-query="dark chocolate gift box for a friend">Chocolate gift box</button>
+          <button type="button" data-query="茉莉花茶">茉莉花茶</button>
+        </div>
       </div>
       <img class="hero-image" src="./assets/market.jpg" alt="" width="1200" height="800">
     </section>
 
-    <div id="notice" class="notice" hidden>
-      <div><strong>Run the model in your browser</strong>
-        <p>The first live search downloads about 400 MB of model weights, plus the runtime. Later searches can reuse the downloaded files.</p>
-      </div>
-      <button type="button" id="approve">Load model &amp; search</button>
-      <button type="button" id="cancel">Cancel</button>
-    </div>
     <p id="status" class="status" role="status" aria-live="polite"></p>
 
     <div class="workbench">
