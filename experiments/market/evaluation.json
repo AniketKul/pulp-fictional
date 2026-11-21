@@ -1,0 +1,1500 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "gpu": "NVIDIA H100 PCIe",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.52.4",
+  "peft": "0.15.2",
+  "teacher": "Qwen/Qwen2.5-7B-Instruct",
+  "teacher_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "source_sha256": "7a23b827cf890df752ea74608efdacbe730eb6f436251da08c47c8d93c0ffd83",
+  "glossary_sha256": "06b726f87d5d6b3c3c674dbf89dedac30ddd59cb25cee344f876147585c1f2a2",
+  "teacher_sha256": "9c4b921d73cea90679009cd76da14b6b81dfea3f0e62790994a2f8f663f5ac73",
+  "market_sha256": "10c8ab647c6a5bf0cf10379492eedb406554207444d446c186aea36fe683333d",
+  "prompt_sha256": "63e882174cd878f7d0fb81cc35f85c7f220946bd80cd6b188905130efa352417",
+  "training_script_sha256": "f4bb7c1250ce7ea1796f094511a2974740041360b28c0a81b5b24f7d7d4644fc",
+  "merge_script_sha256": "d96693c923b61a1eb162011956a702d98e41cd2368722b774c38e01d111d2bb7",
+  "adapter_sha256": "367a147a28331e4ca160f2ced9c929463c562fed390db75b69118e3f311f8679",
+  "seed": 47,
+  "epochs": 5,
+  "steps": 275,
+  "training_examples": 325,
+  "training_source_queries": [
+    "2025沂蒙山板栗新鲜栗子山东老树油栗当季现摘毛栗即食带壳生板栗",
+    "mayf",
+    "mayf旗舰店螺蛳粉",
+    "mayf螺蛳粉",
+    "上行斋巧克力福团",
+    "上行斋福团巧克力",
+    "东北大酱农家酱第一名",
+    "东方树叶",
+    "乌梅桑葚山楂陈皮玫瑰花荷叶茶",
+    "乳酸菌小口袋面包",
+    "于清佤味鸡爪",
+    "亲嘴烧",
+    "亲嘴烧贵州胡辣椒",
+    "会理石榴",
+    "养生茶蒲公英夏枯草菊花茶",
+    "冲泡果茶",
+    "凉拌汁凉拌菜家用调料",
+    "凉拌菜酱料",
+    "凉皮开袋即食",
+    "博雅小店铺",
+    "卤味零食大礼包",
+    "双皮奶粉",
+    "吃的",
+    "咔滋脆鸡排",
+    "咖啡雀巢瓶装",
+    "士力架",
+    "大杂烩椒麻大杂烩",
+    "大桶酸辣粉",
+    "大米",
+    "奶片排行榜第一名",
+    "好吃的网红零食",
+    "好吃的零食又便宜",
+    "安慕希酸奶",
+    "小芳夫妇海鲜",
+    "小零食批发便宜",
+    "尖峰食客玉米",
+    "山药粉铁棍山药粉",
+    "巧克力砖",
+    "德芙巧克力",
+    "思密达火锅七盒",
+    "懒妞手抓饼",
+    "手工头层豆腐皮",
+    "新蒜头批发",
+    "无糖月饼糖尿病人专吃",
+    "无糖牛奶0蔗糖0脂肪",
+    "无糖独立包装面包早餐",
+    "无骨鸡爪",
+    "无骨鸡爪子",
+    "时,思密达自热火锅,,,,,,,,,,,,,,",
+    "月饼",
+    "月饼销量第一名",
+    "李鑫",
+    "板栗",
+    "板筋牛板筋",
+    "果冻",
+    "果汁100%原汁",
+    "椰子水",
+    "楚喜麻辣甲鱼官方旗舰店",
+    "橄榄",
+    "气泡供应链3号仓",
+    "水果",
+    "水果西梅",
+    "沙参麦冬汤的功效与禁忌",
+    "泡面整箱批发",
+    "泡面袋装",
+    "活珠子",
+    "海苔",
+    "海鲜",
+    "火鸡面料酱",
+    "火鸡面酱料",
+    "火鸡面酱瓶装",
+    "灰枣",
+    "牛板筋",
+    "牛板筋零食",
+    "特仑苏",
+    "特仑苏牛奶梦幻盖",
+    "猪肉直播卖货",
+    "玉米段",
+    "瓜子",
+    "甜菜根粉泡水",
+    "生巧福团上行斋",
+    "生巧福团菲菲同款",
+    "电解质粉一箱",
+    "畅清饮升级版",
+    "盐食用盐",
+    "石榴",
+    "福团",
+    "福团生巧",
+    "稻香金界沟糯玉米",
+    "稻麦香",
+    "穆清源清真肉类食品供应链",
+    "笨大豆油",
+    "米",
+    "米多奇雪饼先用后付",
+    "粉丝凉拌粉丝",
+    "粗粮",
+    "糖",
+    "糖尿病人专用食品店",
+    "糖果硬糖",
+    "素牛板筋",
+    "紫米面包",
+    "紫米面包紫米超多",
+    "红糖云南纯甘蔗手工红糖",
+    "红美露苹果",
+    "纯正葵花籽油5升",
+    "纯牛奶",
+    "纯豆油销量第一名",
+    "缴纳大杂烩椒麻大杂烩",
+    "美食",
+    "羽衣甘蓝粉官方旗舰店",
+    "老板娘的生活馆螺蛳粉",
+    "脆枣",
+    "脆柿",
+    "脆柿子",
+    "苏打水批发整箱",
+    "苹果",
+    "茄子",
+    "茶叶",
+    "茶叶批发",
+    "茶叶礼盒高档包装英德红茶英红九号",
+    "菜籽油清真",
+    "薄脆",
+    "虾干",
+    "蛋月烧月饼100克第一名官方旗舰店",
+    "螃蟹",
+    "螺狮粉",
+    "西梅果冻",
+    "豆干零食香辣豆干",
+    "豆角",
+    "豌豆零食",
+    "货巧克力面包",
+    "软籽石榴突尼斯",
+    "辣条",
+    "辣白菜味辣条",
+    "辣白菜辣条150包",
+    "酸奶",
+    "酸砂橡皮糖",
+    "酸砂软糖",
+    "铁观音",
+    "锅巴",
+    "陈皮村新会陈皮",
+    "零食",
+    "零食休闲食品小吃大全批发",
+    "零食大礼包。",
+    "零食小吃休闲食品1分钱",
+    "零食批发临期折扣",
+    "面包",
+    "面包整箱批发",
+    "韭花",
+    "韭菜花酱",
+    "食品零食批发",
+    "饭团开袋即食肉馅",
+    "饮料",
+    "饮料整箱批发",
+    "香菇干货",
+    "马美丽胡油",
+    "鸡排",
+    "鸡爪子无骨鸡爪",
+    "麻辣素板筋",
+    "黄瓜籽粉补钙接骨旗舰店正品",
+    "黄瓜籽粉补钙正品假一赔十",
+    "黄芪中药材正品",
+    "黑咖啡"
+  ],
+  "metric_reference": "Agreement with the grounded offline teacher on reserved bilingual query families.",
+  "base": {
+    "examples": 32,
+    "valid_schema": 0,
+    "exact_all_fields": 0,
+    "role_micro_precision": 0.0,
+    "role_micro_recall": 0.0,
+    "role_micro_f1": 0.0,
+    "predictions": [
+      {
+        "query": "上学吃的零食",
+        "source_query": "上学吃的零食",
+        "form": "original",
+        "target": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Snacks for school lunch",
+          "substitute": "",
+          "broader": "Snacks for school with dietary restrictions"
+        },
+        "raw": "```json\n{\n  \"product\": \"上学吃的零食\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Snacks to eat at school",
+        "source_query": "上学吃的零食",
+        "form": "translation",
+        "target": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Snacks for school lunch",
+          "substitute": "",
+          "broader": "Snacks for school with dietary restrictions"
+        },
+        "raw": "```json\n{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "东方树叶茉莉花茶",
+        "source_query": "东方树叶茉莉花茶",
+        "form": "original",
+        "target": {
+          "product": "jasmine tea",
+          "brand": "Oriental Leaf",
+          "attributes": [],
+          "synonym": "Oriental Leaf jasmine beverage",
+          "substitute": "",
+          "broader": "Oriental jasmine tea with dietary restrictions"
+        },
+        "raw": "```json\n{\n  \"product\": \"东方树叶茉莉花茶\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Oriental Leaf jasmine tea",
+        "source_query": "东方树叶茉莉花茶",
+        "form": "translation",
+        "target": {
+          "product": "jasmine tea",
+          "brand": "Oriental Leaf",
+          "attributes": [],
+          "synonym": "Oriental Leaf jasmine beverage",
+          "substitute": "",
+          "broader": "Oriental jasmine tea with dietary restrictions"
+        },
+        "raw": "```json\n{\n  \"product\": \"Oriental Leaf jasmine tea\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "乳酸菌面包口袋小面包",
+        "source_query": "乳酸菌面包口袋小面包",
+        "form": "original",
+        "target": {
+          "product": "pocket buns",
+          "brand": "",
+          "attributes": [
+            "with lactic acid bacteria"
+          ],
+          "synonym": "Cultured milk flavored mini pocket bread",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"乳酸菌面包口袋小面包\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Small pocket buns with lactic acid bacteria",
+        "source_query": "乳酸菌面包口袋小面包",
+        "form": "translation",
+        "target": {
+          "product": "pocket buns",
+          "brand": "",
+          "attributes": [
+            "with lactic acid bacteria"
+          ],
+          "synonym": "Cultured milk flavored mini pocket bread",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Small pocket buns with lactic acid bacteria\",\n  \"brand\": \"\",\n  \"attributes\": [\"lactic acid bacteria\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "俏食忆元敏官方旗舰店",
+        "source_query": "俏食忆元敏官方旗舰店",
+        "form": "original",
+        "target": {
+          "product": "pork strips",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qiaoshiyi Yuanmin official store",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"俏食忆元敏官方旗舰店\",\n  \"brand\": \"俏食忆元敏\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Qiaoshiyi Yuanmin official flagship store",
+        "source_query": "俏食忆元敏官方旗舰店",
+        "form": "translation",
+        "target": {
+          "product": "pork strips",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qiaoshiyi Yuanmin official store",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Qiaoshiyi Yuanmin official flagship store\",\n  \"brand\": \"Qiaoshiyi\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "博雅g好物精选",
+        "source_query": "博雅g好物精选",
+        "form": "original",
+        "target": {
+          "product": "sour fruit gummies",
+          "brand": "Boya",
+          "attributes": [],
+          "synonym": "Boya G candy options",
+          "substitute": "Assorted hard candy",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"博雅g好物精选\",\n  \"brand\": \"博雅\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Boya G selected goods",
+        "source_query": "博雅g好物精选",
+        "form": "translation",
+        "target": {
+          "product": "sour fruit gummies",
+          "brand": "Boya",
+          "attributes": [],
+          "synonym": "Boya G candy options",
+          "substitute": "Assorted hard candy",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Boya G\",\n  \"brand\": \"Boya G\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "奶糖软糖",
+        "source_query": "奶糖软糖",
+        "form": "original",
+        "target": {
+          "product": "milk candy",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Milk-flavored candy",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"奶糖\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Soft milk candy",
+        "source_query": "奶糖软糖",
+        "form": "translation",
+        "target": {
+          "product": "milk candy",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Milk-flavored candy",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"soft milk candy\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "小米新米",
+        "source_query": "小米新米",
+        "form": "original",
+        "target": {
+          "product": "millet",
+          "brand": "",
+          "attributes": [
+            "new-crop"
+          ],
+          "synonym": "New variety millet products",
+          "substitute": "",
+          "broader": "New-crop grains including millet"
+        },
+        "raw": "```json\n{\n  \"product\": \"小米新米\",\n  \"brand\": \"小米\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "New-crop millet",
+        "source_query": "小米新米",
+        "form": "translation",
+        "target": {
+          "product": "millet",
+          "brand": "",
+          "attributes": [
+            "new-crop"
+          ],
+          "synonym": "New variety millet products",
+          "substitute": "",
+          "broader": "New-crop grains including millet"
+        },
+        "raw": "```json\n{\n  \"product\": \"New-crop millet\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "岩烧芝士薄脆饼干",
+        "source_query": "岩烧芝士薄脆饼干",
+        "form": "original",
+        "target": {
+          "product": "crackers",
+          "brand": "",
+          "attributes": [
+            "baked",
+            "cheese",
+            "thin"
+          ],
+          "synonym": "Bibizan thin baked cheese crackers",
+          "substitute": "Thin scallion crackers in individual packs",
+          "broader": "Baked cheese crackers and thin crackers"
+        },
+        "raw": "```json\n{\n  \"product\": \"岩烧芝士薄脆饼干\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Baked cheese thin crackers",
+        "source_query": "岩烧芝士薄脆饼干",
+        "form": "translation",
+        "target": {
+          "product": "crackers",
+          "brand": "",
+          "attributes": [
+            "baked",
+            "cheese",
+            "thin"
+          ],
+          "synonym": "Bibizan thin baked cheese crackers",
+          "substitute": "Thin scallion crackers in individual packs",
+          "broader": "Baked cheese crackers and thin crackers"
+        },
+        "raw": "```json\n{\n  \"product\": \"Baked cheese thin crackers\",\n  \"brand\": \"\",\n  \"attributes\": [\"thin\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "手撕烤脖",
+        "source_query": "手撕烤脖",
+        "form": "original",
+        "target": {
+          "product": "roasted necks",
+          "brand": "",
+          "attributes": [
+            "roast"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"手撕烤脖\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Tear-apart roasted necks",
+        "source_query": "手撕烤脖",
+        "form": "translation",
+        "target": {
+          "product": "roasted necks",
+          "brand": "",
+          "attributes": [
+            "roast"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"roasted necks\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "海葡萄即食海藻",
+        "source_query": "海葡萄即食海藻",
+        "form": "original",
+        "target": {
+          "product": "sea grapes",
+          "brand": "",
+          "attributes": [
+            "ready-to-eat"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"海葡萄即食海藻\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Ready-to-eat sea grapes",
+        "source_query": "海葡萄即食海藻",
+        "form": "translation",
+        "target": {
+          "product": "sea grapes",
+          "brand": "",
+          "attributes": [
+            "ready-to-eat"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Ready-to-eat sea grapes\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "纯黑芝麻粉销量第一奇连",
+        "source_query": "纯黑芝麻粉销量第一奇连",
+        "form": "original",
+        "target": {
+          "product": "black sesame powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qilian top-selling pure black sesame powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"纯黑芝麻粉\",\n  \"brand\": \"\",\n  \"attributes\": [\"纯黑芝麻粉\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Qilian best-selling pure black sesame powder",
+        "source_query": "纯黑芝麻粉销量第一奇连",
+        "form": "translation",
+        "target": {
+          "product": "black sesame powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qilian top-selling pure black sesame powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Qilian best-selling pure black sesame powder\",\n  \"brand\": \"Qilian\",\n  \"attributes\": [\"pure black sesame powder\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "荞麦月饼糖尿病人一斤一个",
+        "source_query": "荞麦月饼糖尿病人一斤一个",
+        "form": "original",
+        "target": {
+          "product": "mooncakes",
+          "brand": "",
+          "attributes": [
+            "buckwheat"
+          ],
+          "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+          "substitute": "",
+          "broader": "Sugar-free buckwheat mooncakes for people with diabetes"
+        },
+        "raw": "```json\n{\n  \"product\": \"荞麦月饼\",\n  \"brand\": \"\",\n  \"attributes\": [\"糖尿病\", \"一斤\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Buckwheat mooncakes for people with diabetes, one jin each",
+        "source_query": "荞麦月饼糖尿病人一斤一个",
+        "form": "translation",
+        "target": {
+          "product": "mooncakes",
+          "brand": "",
+          "attributes": [
+            "buckwheat"
+          ],
+          "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+          "substitute": "",
+          "broader": "Sugar-free buckwheat mooncakes for people with diabetes"
+        },
+        "raw": "```json\n{\n  \"product\": \"Buckwheat mooncakes\",\n  \"brand\": \"\",\n  \"attributes\": [\"diabetes\", \"one jin\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "虾皮干货特级无盐补钙淡干",
+        "source_query": "虾皮干货特级无盐补钙淡干",
+        "form": "original",
+        "target": {
+          "product": "shrimp",
+          "brand": "",
+          "attributes": [
+            "premium",
+            "unsalted",
+            "lightly dried",
+            "tiny"
+          ],
+          "synonym": "Premium unsalted xiapi for calcium",
+          "substitute": "",
+          "broader": "Premium unsalted lightly dried tiny shrimp"
+        },
+        "raw": "```json\n{\n  \"product\": \"虾皮干货特级无盐补钙淡干\",\n  \"brand\": \"\",\n  \"attributes\": [\"补钙\", \"无盐\", \"淡干\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Premium unsalted lightly dried tiny shrimp for calcium",
+        "source_query": "虾皮干货特级无盐补钙淡干",
+        "form": "translation",
+        "target": {
+          "product": "shrimp",
+          "brand": "",
+          "attributes": [
+            "premium",
+            "unsalted",
+            "lightly dried",
+            "tiny"
+          ],
+          "synonym": "Premium unsalted xiapi for calcium",
+          "substitute": "",
+          "broader": "Premium unsalted lightly dried tiny shrimp"
+        },
+        "raw": "```json\n{\n  \"product\": \"Premium unsalted lightly dried tiny shrimp\",\n  \"brand\": \"\",\n  \"attributes\": [\"calcium\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "蛋月烧",
+        "source_query": "蛋月烧",
+        "form": "original",
+        "target": {
+          "product": "egg mooncakes",
+          "brand": "",
+          "attributes": [],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"eggplant\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Danyueshao",
+        "source_query": "蛋月烧",
+        "form": "translation",
+        "target": {
+          "product": "egg mooncakes",
+          "brand": "",
+          "attributes": [],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Danyueshao\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "鸡蛋",
+        "source_query": "鸡蛋",
+        "form": "original",
+        "target": {
+          "product": "eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Fresh farm eggs",
+          "substitute": "Avocado",
+          "broader": "Fresh eggs"
+        },
+        "raw": "```json\n{\n  \"product\": \"eggs\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Eggs",
+        "source_query": "鸡蛋",
+        "form": "translation",
+        "target": {
+          "product": "eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Fresh farm eggs",
+          "substitute": "Avocado",
+          "broader": "Fresh eggs"
+        },
+        "raw": "```json\n{\n  \"product\": \"Eggs\",\n  \"brand\": \"\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "黄瓜籽粉正品官方旗舰店",
+        "source_query": "黄瓜籽粉正品官方旗舰店",
+        "form": "original",
+        "target": {
+          "product": "cucumber seed powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Official store for cucumber seed powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"黄瓜籽粉\",\n  \"brand\": \"正品官方旗舰店\",\n  \"attributes\": [],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      },
+      {
+        "query": "Authentic cucumber seed powder official flagship store",
+        "source_query": "黄瓜籽粉正品官方旗舰店",
+        "form": "translation",
+        "target": {
+          "product": "cucumber seed powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Official store for cucumber seed powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "```json\n{\n  \"product\": \"Authentic cucumber seed powder\",\n  \"brand\": \"official flagship store\",\n  \"attributes\": [\"cucumber seed powder\"],\n  \"synonym\": \"\",\n  \"substitute\": \"\",\n  \"broader\": \"\"\n}\n```",
+        "prediction": null
+      }
+    ]
+  },
+  "merged_lora": {
+    "examples": 32,
+    "valid_schema": 32,
+    "exact_all_fields": 0,
+    "role_micro_precision": 0.2835820895522388,
+    "role_micro_recall": 0.31666666666666665,
+    "role_micro_f1": 0.2992125984251969,
+    "predictions": [
+      {
+        "query": "上学吃的零食",
+        "source_query": "上学吃的零食",
+        "form": "original",
+        "target": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Snacks for school lunch",
+          "substitute": "",
+          "broader": "Snacks for school with dietary restrictions"
+        },
+        "raw": "{\"product\":\"snacks\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"School snack options\",\"substitute\":\"Prebiotic milk tablet snacks\",\"broader\":\"School snack preferences\"}",
+        "prediction": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "School snack options",
+          "substitute": "Prebiotic milk tablet snacks",
+          "broader": "School snack preferences"
+        }
+      },
+      {
+        "query": "Snacks to eat at school",
+        "source_query": "上学吃的零食",
+        "form": "translation",
+        "target": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Snacks for school lunch",
+          "substitute": "",
+          "broader": "Snacks for school with dietary restrictions"
+        },
+        "raw": "{\"product\":\"snacks\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"School snack options\",\"substitute\":\"Ready-to-eat crispy pork cracklings\",\"broader\":\"School snack assortments\"}",
+        "prediction": {
+          "product": "snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "School snack options",
+          "substitute": "Ready-to-eat crispy pork cracklings",
+          "broader": "School snack assortments"
+        }
+      },
+      {
+        "query": "东方树叶茉莉花茶",
+        "source_query": "东方树叶茉莉花茶",
+        "form": "original",
+        "target": {
+          "product": "jasmine tea",
+          "brand": "Oriental Leaf",
+          "attributes": [],
+          "synonym": "Oriental Leaf jasmine beverage",
+          "substitute": "",
+          "broader": "Oriental jasmine tea with dietary restrictions"
+        },
+        "raw": "{\"product\":\"tea\",\"brand\":\"East-Leaf Jasmine Tea\",\"attributes\":[],\"synonym\":\"East-Leaf Jasmine Tea, hot and sour flavor\",\"substitute\":\"Herbal tea blend\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "tea",
+          "brand": "East-Leaf Jasmine Tea",
+          "attributes": [],
+          "synonym": "East-Leaf Jasmine Tea, hot and sour flavor",
+          "substitute": "Herbal tea blend",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Oriental Leaf jasmine tea",
+        "source_query": "东方树叶茉莉花茶",
+        "form": "translation",
+        "target": {
+          "product": "jasmine tea",
+          "brand": "Oriental Leaf",
+          "attributes": [],
+          "synonym": "Oriental Leaf jasmine beverage",
+          "substitute": "",
+          "broader": "Oriental jasmine tea with dietary restrictions"
+        },
+        "raw": "{\"product\":\"jasmine tea\",\"brand\":\"Oriental Leaf\",\"attributes\":[],\"synonym\":\"Oriental Leaf tea alternatives\",\"substitute\":\"Herbal tea bags\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "jasmine tea",
+          "brand": "Oriental Leaf",
+          "attributes": [],
+          "synonym": "Oriental Leaf tea alternatives",
+          "substitute": "Herbal tea bags",
+          "broader": ""
+        }
+      },
+      {
+        "query": "乳酸菌面包口袋小面包",
+        "source_query": "乳酸菌面包口袋小面包",
+        "form": "original",
+        "target": {
+          "product": "pocket buns",
+          "brand": "",
+          "attributes": [
+            "with lactic acid bacteria"
+          ],
+          "synonym": "Cultured milk flavored mini pocket bread",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"milk-flavored pocket bread\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Milk-flavored pocket bread recipe\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "milk-flavored pocket bread",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Milk-flavored pocket bread recipe",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Small pocket buns with lactic acid bacteria",
+        "source_query": "乳酸菌面包口袋小面包",
+        "form": "translation",
+        "target": {
+          "product": "pocket buns",
+          "brand": "",
+          "attributes": [
+            "with lactic acid bacteria"
+          ],
+          "synonym": "Cultured milk flavored mini pocket bread",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"pocket buns\",\"brand\":\"\",\"attributes\":[\"with lactic acid bacteria\"],\"synonym\":\"Lactobacillus bread options\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "pocket buns",
+          "brand": "",
+          "attributes": [
+            "with lactic acid bacteria"
+          ],
+          "synonym": "Lactobacillus bread options",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "俏食忆元敏官方旗舰店",
+        "source_query": "俏食忆元敏官方旗舰店",
+        "form": "original",
+        "target": {
+          "product": "pork strips",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qiaoshiyi Yuanmin official store",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"daifuku mochi\",\"brand\":\"YiMen敏\",\"attributes\":[],\"synonym\":\"YiMen敏官方旗舰店进口摩卡\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "daifuku mochi",
+          "brand": "YiMen敏",
+          "attributes": [],
+          "synonym": "YiMen敏官方旗舰店进口摩卡",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Qiaoshiyi Yuanmin official flagship store",
+        "source_query": "俏食忆元敏官方旗舰店",
+        "form": "translation",
+        "target": {
+          "product": "pork strips",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qiaoshiyi Yuanmin official store",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"Yuanmin\",\"brand\":\"Qiaoshiyi\",\"attributes\":[],\"synonym\":\"Qiaoshiyi store\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "Yuanmin",
+          "brand": "Qiaoshiyi",
+          "attributes": [],
+          "synonym": "Qiaoshiyi store",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "博雅g好物精选",
+        "source_query": "博雅g好物精选",
+        "form": "original",
+        "target": {
+          "product": "sour fruit gummies",
+          "brand": "Boya",
+          "attributes": [],
+          "synonym": "Boya G candy options",
+          "substitute": "Assorted hard candy",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"snack\",\"brand\":\"Boya\",\"attributes\":[],\"synonym\":\"Boya snack selection\",\"substitute\":\"Yaoshua Hunan-style spicy vegetarian beef-tendon-style chocolate daifuku mochi-flavored sugar-free almond snack\",\"broader\":\"Boya snack options\"}",
+        "prediction": {
+          "product": "snack",
+          "brand": "Boya",
+          "attributes": [],
+          "synonym": "Boya snack selection",
+          "substitute": "Yaoshua Hunan-style spicy vegetarian beef-tendon-style chocolate daifuku mochi-flavored sugar-free almond snack",
+          "broader": "Boya snack options"
+        }
+      },
+      {
+        "query": "Boya G selected goods",
+        "source_query": "博雅g好物精选",
+        "form": "translation",
+        "target": {
+          "product": "sour fruit gummies",
+          "brand": "Boya",
+          "attributes": [],
+          "synonym": "Boya G candy options",
+          "substitute": "Assorted hard candy",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"snack\",\"brand\":\"Boya G\",\"attributes\":[],\"synonym\":\"Boya G snack options\",\"substitute\":\"Yaubing Hunan-style beef-tendon-style starch snack\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "snack",
+          "brand": "Boya G",
+          "attributes": [],
+          "synonym": "Boya G snack options",
+          "substitute": "Yaubing Hunan-style beef-tendon-style starch snack",
+          "broader": ""
+        }
+      },
+      {
+        "query": "奶糖软糖",
+        "source_query": "奶糖软糖",
+        "form": "original",
+        "target": {
+          "product": "milk candy",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Milk-flavored candy",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"milk-flavored candy\",\"brand\":\"\",\"attributes\":[\"soft candy\"],\"synonym\":\"Milk-flavored candy soft candy\",\"substitute\":\"Zero-fat skim milk\",\"broader\":\"Milk-flavored candy soft candy\"}",
+        "prediction": {
+          "product": "milk-flavored candy",
+          "brand": "",
+          "attributes": [
+            "soft candy"
+          ],
+          "synonym": "Milk-flavored candy soft candy",
+          "substitute": "Zero-fat skim milk",
+          "broader": "Milk-flavored candy soft candy"
+        }
+      },
+      {
+        "query": "Soft milk candy",
+        "source_query": "奶糖软糖",
+        "form": "translation",
+        "target": {
+          "product": "milk candy",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Milk-flavored candy",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"milk candy\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Soft milk flavored candy\",\"substitute\":\"Zero-fat skim milk\",\"broader\":\"Soft milk flavored candy and related products\"}",
+        "prediction": {
+          "product": "milk candy",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Soft milk flavored candy",
+          "substitute": "Zero-fat skim milk",
+          "broader": "Soft milk flavored candy and related products"
+        }
+      },
+      {
+        "query": "小米新米",
+        "source_query": "小米新米",
+        "form": "original",
+        "target": {
+          "product": "millet",
+          "brand": "",
+          "attributes": [
+            "new-crop"
+          ],
+          "synonym": "New variety millet products",
+          "substitute": "",
+          "broader": "New-crop grains including millet"
+        },
+        "raw": "{\"product\":\"new rice cooker\",\"brand\":\"Xinyi\",\"attributes\":[],\"synonym\":\"Xinyi new rice cooker\",\"substitute\":\"Small bowl of rice\",\"broader\":\"Xinyi new rice cooker\"}",
+        "prediction": {
+          "product": "new rice cooker",
+          "brand": "Xinyi",
+          "attributes": [],
+          "synonym": "Xinyi new rice cooker",
+          "substitute": "Small bowl of rice",
+          "broader": "Xinyi new rice cooker"
+        }
+      },
+      {
+        "query": "New-crop millet",
+        "source_query": "小米新米",
+        "form": "translation",
+        "target": {
+          "product": "millet",
+          "brand": "",
+          "attributes": [
+            "new-crop"
+          ],
+          "synonym": "New variety millet products",
+          "substitute": "",
+          "broader": "New-crop grains including millet"
+        },
+        "raw": "{\"product\":\"millet\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"New-style millet\",\"substitute\":\"\",\"broader\":\"New-crop millet and related products\"}",
+        "prediction": {
+          "product": "millet",
+          "brand": "",
+          "attributes": [],
+          "synonym": "New-style millet",
+          "substitute": "",
+          "broader": "New-crop millet and related products"
+        }
+      },
+      {
+        "query": "岩烧芝士薄脆饼干",
+        "source_query": "岩烧芝士薄脆饼干",
+        "form": "original",
+        "target": {
+          "product": "crackers",
+          "brand": "",
+          "attributes": [
+            "baked",
+            "cheese",
+            "thin"
+          ],
+          "synonym": "Bibizan thin baked cheese crackers",
+          "substitute": "Thin scallion crackers in individual packs",
+          "broader": "Baked cheese crackers and thin crackers"
+        },
+        "raw": "{\"product\":\"crisps\",\"brand\":\"Shokosun\",\"attributes\":[\"fried\",\"milk-flavored\"],\"synonym\":\"Fried milk-flavored crisps\",\"substitute\":\"Cultured-milk-flavored mini pocket-sized chocolate or vanilla flavor\",\"broader\":\"Fried milk-flavored crisps\"}",
+        "prediction": {
+          "product": "crisps",
+          "brand": "Shokosun",
+          "attributes": [
+            "fried",
+            "milk-flavored"
+          ],
+          "synonym": "Fried milk-flavored crisps",
+          "substitute": "Cultured-milk-flavored mini pocket-sized chocolate or vanilla flavor",
+          "broader": "Fried milk-flavored crisps"
+        }
+      },
+      {
+        "query": "Baked cheese thin crackers",
+        "source_query": "岩烧芝士薄脆饼干",
+        "form": "translation",
+        "target": {
+          "product": "crackers",
+          "brand": "",
+          "attributes": [
+            "baked",
+            "cheese",
+            "thin"
+          ],
+          "synonym": "Bibizan thin baked cheese crackers",
+          "substitute": "Thin scallion crackers in individual packs",
+          "broader": "Baked cheese crackers and thin crackers"
+        },
+        "raw": "{\"product\":\"thin crackers\",\"brand\":\"\",\"attributes\":[\"baked cheese\"],\"synonym\":\"Thin crackers for dairy products\",\"substitute\":\"Thin crackers for thin crackers\",\"broader\":\"Thin crackers for dairy products\"}",
+        "prediction": {
+          "product": "thin crackers",
+          "brand": "",
+          "attributes": [
+            "baked cheese"
+          ],
+          "synonym": "Thin crackers for dairy products",
+          "substitute": "Thin crackers for thin crackers",
+          "broader": "Thin crackers for dairy products"
+        }
+      },
+      {
+        "query": "手撕烤脖",
+        "source_query": "手撕烤脖",
+        "form": "original",
+        "target": {
+          "product": "roasted necks",
+          "brand": "",
+          "attributes": [
+            "roast"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"braised meat snacks\",\"brand\":\"\",\"attributes\":[\"hand-break\",\"braised\"],\"synonym\":\"Hand-break Braised Meat Snacks\",\"substitute\":\"\",\"broader\":\"Hand-break braised meat snacks\"}",
+        "prediction": {
+          "product": "braised meat snacks",
+          "brand": "",
+          "attributes": [
+            "hand-break",
+            "braised"
+          ],
+          "synonym": "Hand-break Braised Meat Snacks",
+          "substitute": "",
+          "broader": "Hand-break braised meat snacks"
+        }
+      },
+      {
+        "query": "Tear-apart roasted necks",
+        "source_query": "手撕烤脖",
+        "form": "translation",
+        "target": {
+          "product": "roasted necks",
+          "brand": "",
+          "attributes": [
+            "roast"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"roasted necks\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Tear-apart roasted meats\",\"substitute\":\"Roasted chicken snacks\",\"broader\":\"Tear-apart roasted meats and related snacks\"}",
+        "prediction": {
+          "product": "roasted necks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Tear-apart roasted meats",
+          "substitute": "Roasted chicken snacks",
+          "broader": "Tear-apart roasted meats and related snacks"
+        }
+      },
+      {
+        "query": "海葡萄即食海藻",
+        "source_query": "海葡萄即食海藻",
+        "form": "original",
+        "target": {
+          "product": "sea grapes",
+          "brand": "",
+          "attributes": [
+            "ready-to-eat"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"algae snacks\",\"brand\":\"Sea Grape即食\",\"attributes\":[],\"synonym\":\"Sea Grape edible snacks\",\"substitute\":\"Seaweed snack\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "algae snacks",
+          "brand": "Sea Grape即食",
+          "attributes": [],
+          "synonym": "Sea Grape edible snacks",
+          "substitute": "Seaweed snack",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Ready-to-eat sea grapes",
+        "source_query": "海葡萄即食海藻",
+        "form": "translation",
+        "target": {
+          "product": "sea grapes",
+          "brand": "",
+          "attributes": [
+            "ready-to-eat"
+          ],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"sea grapes\",\"brand\":\"\",\"attributes\":[\"ready-to-eat\"],\"synonym\":\"Ready-to-eat sea grapes\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "sea grapes",
+          "brand": "",
+          "attributes": [
+            "ready-to-eat"
+          ],
+          "synonym": "Ready-to-eat sea grapes",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "纯黑芝麻粉销量第一奇连",
+        "source_query": "纯黑芝麻粉销量第一奇连",
+        "form": "original",
+        "target": {
+          "product": "black sesame powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qilian top-selling pure black sesame powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"black芝麻粉\",\"brand\":\"QichianSom\",\"attributes\":[\"first place\",\"smoky powder\"],\"synonym\":\"Best-selling smoky black芝麻粉\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "black芝麻粉",
+          "brand": "QichianSom",
+          "attributes": [
+            "first place",
+            "smoky powder"
+          ],
+          "synonym": "Best-selling smoky black芝麻粉",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Qilian best-selling pure black sesame powder",
+        "source_query": "纯黑芝麻粉销量第一奇连",
+        "form": "translation",
+        "target": {
+          "product": "black sesame powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Qilian top-selling pure black sesame powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"black sesame powder\",\"brand\":\"Qilian\",\"attributes\":[],\"synonym\":\"Best-selling black sesame powder snacks\",\"substitute\":\"Qingin black sesame powder\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "black sesame powder",
+          "brand": "Qilian",
+          "attributes": [],
+          "synonym": "Best-selling black sesame powder snacks",
+          "substitute": "Qingin black sesame powder",
+          "broader": ""
+        }
+      },
+      {
+        "query": "荞麦月饼糖尿病人一斤一个",
+        "source_query": "荞麦月饼糖尿病人一斤一个",
+        "form": "original",
+        "target": {
+          "product": "mooncakes",
+          "brand": "",
+          "attributes": [
+            "buckwheat"
+          ],
+          "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+          "substitute": "",
+          "broader": "Sugar-free buckwheat mooncakes for people with diabetes"
+        },
+        "raw": "{\"product\":\"mooncakes\",\"brand\":\"Rice Mooncakes\",\"attributes\":[\"one for a斤\",\"diabetes-friendly\"],\"synonym\":\"Diabetes-friendly mooncakes one for a斤\",\"substitute\":\"Sugar-free buckwheat mooncakes one for a斤\",\"broader\":\"Diabetes-friendly mooncakes one for a斤\"}",
+        "prediction": {
+          "product": "mooncakes",
+          "brand": "Rice Mooncakes",
+          "attributes": [
+            "one for a斤",
+            "diabetes-friendly"
+          ],
+          "synonym": "Diabetes-friendly mooncakes one for a斤",
+          "substitute": "Sugar-free buckwheat mooncakes one for a斤",
+          "broader": "Diabetes-friendly mooncakes one for a斤"
+        }
+      },
+      {
+        "query": "Buckwheat mooncakes for people with diabetes, one jin each",
+        "source_query": "荞麦月饼糖尿病人一斤一个",
+        "form": "translation",
+        "target": {
+          "product": "mooncakes",
+          "brand": "",
+          "attributes": [
+            "buckwheat"
+          ],
+          "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+          "substitute": "",
+          "broader": "Sugar-free buckwheat mooncakes for people with diabetes"
+        },
+        "raw": "{\"product\":\"mooncakes\",\"brand\":\"Buckwheat Mooncakes\",\"attributes\":[\"for diabetes\",\"one jin each\"],\"synonym\":\"Bukwheat mooncakes for diabetes, one jin each\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "mooncakes",
+          "brand": "Buckwheat Mooncakes",
+          "attributes": [
+            "for diabetes",
+            "one jin each"
+          ],
+          "synonym": "Bukwheat mooncakes for diabetes, one jin each",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "虾皮干货特级无盐补钙淡干",
+        "source_query": "虾皮干货特级无盐补钙淡干",
+        "form": "original",
+        "target": {
+          "product": "shrimp",
+          "brand": "",
+          "attributes": [
+            "premium",
+            "unsalted",
+            "lightly dried",
+            "tiny"
+          ],
+          "synonym": "Premium unsalted xiapi for calcium",
+          "substitute": "",
+          "broader": "Premium unsalted lightly dried tiny shrimp"
+        },
+        "raw": "{\"product\":\"虾皮干货\",\"brand\":\"\",\"attributes\":[\"特级\",\"无盐\",\"补钙\",\"淡干\"],\"synonym\":\"Special grade salt-free shrimp skin snacks\",\"substitute\":\"Dried shrimp skin snacks\",\"broader\":\"Dried shrimp skin snacks with salt\"}",
+        "prediction": {
+          "product": "虾皮干货",
+          "brand": "",
+          "attributes": [
+            "特级",
+            "无盐",
+            "补钙",
+            "淡干"
+          ],
+          "synonym": "Special grade salt-free shrimp skin snacks",
+          "substitute": "Dried shrimp skin snacks",
+          "broader": "Dried shrimp skin snacks with salt"
+        }
+      },
+      {
+        "query": "Premium unsalted lightly dried tiny shrimp for calcium",
+        "source_query": "虾皮干货特级无盐补钙淡干",
+        "form": "translation",
+        "target": {
+          "product": "shrimp",
+          "brand": "",
+          "attributes": [
+            "premium",
+            "unsalted",
+            "lightly dried",
+            "tiny"
+          ],
+          "synonym": "Premium unsalted xiapi for calcium",
+          "substitute": "",
+          "broader": "Premium unsalted lightly dried tiny shrimp"
+        },
+        "raw": "{\"product\":\"tiny shrimp\",\"brand\":\"\",\"attributes\":[\"unsalted\",\"dried\",\"for calcium\"],\"synonym\":\"Premier dried tiny shrimp snack\",\"substitute\":\"Dried shrimp snacks\",\"broader\":\"Dried shrimp snacks\"}",
+        "prediction": {
+          "product": "tiny shrimp",
+          "brand": "",
+          "attributes": [
+            "unsalted",
+            "dried",
+            "for calcium"
+          ],
+          "synonym": "Premier dried tiny shrimp snack",
+          "substitute": "Dried shrimp snacks",
+          "broader": "Dried shrimp snacks"
+        }
+      },
+      {
+        "query": "蛋月烧",
+        "source_query": "蛋月烧",
+        "form": "original",
+        "target": {
+          "product": "egg mooncakes",
+          "brand": "",
+          "attributes": [],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"Eggshell molten snacks\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Eggshell molten snacks\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "Eggshell molten snacks",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Eggshell molten snacks",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Danyueshao",
+        "source_query": "蛋月烧",
+        "form": "translation",
+        "target": {
+          "product": "egg mooncakes",
+          "brand": "",
+          "attributes": [],
+          "synonym": "",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"daanyueshao\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Shi Daanyueshao snack variant\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "daanyueshao",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Shi Daanyueshao snack variant",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "鸡蛋",
+        "source_query": "鸡蛋",
+        "form": "original",
+        "target": {
+          "product": "eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Fresh farm eggs",
+          "substitute": "Avocado",
+          "broader": "Fresh eggs"
+        },
+        "raw": "{\"product\":\"eggs\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Egg products\",\"substitute\":\"Melted peanut butter cookies\",\"broader\":\"Eggs and related product categories\"}",
+        "prediction": {
+          "product": "eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Egg products",
+          "substitute": "Melted peanut butter cookies",
+          "broader": "Eggs and related product categories"
+        }
+      },
+      {
+        "query": "Eggs",
+        "source_query": "鸡蛋",
+        "form": "translation",
+        "target": {
+          "product": "eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Fresh farm eggs",
+          "substitute": "Avocado",
+          "broader": "Fresh eggs"
+        },
+        "raw": "{\"product\":\"Eggs\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Egg products\",\"substitute\":\"Melted chocolate eggs\",\"broader\":\"Eggs and related snack products\"}",
+        "prediction": {
+          "product": "Eggs",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Egg products",
+          "substitute": "Melted chocolate eggs",
+          "broader": "Eggs and related snack products"
+        }
+      },
+      {
+        "query": "黄瓜籽粉正品官方旗舰店",
+        "source_query": "黄瓜籽粉正品官方旗舰店",
+        "form": "original",
+        "target": {
+          "product": "cucumber seed powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Official store for cucumber seed powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"cucumber seed powder\",\"brand\":\"\",\"attributes\":[],\"synonym\":\"Authentic northeast Chinese cucumber seed powder shop\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "cucumber seed powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Authentic northeast Chinese cucumber seed powder shop",
+          "substitute": "",
+          "broader": ""
+        }
+      },
+      {
+        "query": "Authentic cucumber seed powder official flagship store",
+        "source_query": "黄瓜籽粉正品官方旗舰店",
+        "form": "translation",
+        "target": {
+          "product": "cucumber seed powder",
+          "brand": "",
+          "attributes": [],
+          "synonym": "Official store for cucumber seed powder",
+          "substitute": "",
+          "broader": ""
+        },
+        "raw": "{\"product\":\"cucumber seed powder\",\"brand\":\"Authentic\",\"attributes\":[],\"synonym\":\"Authentic cucumber seed powder store\",\"substitute\":\"\",\"broader\":\"\"}",
+        "prediction": {
+          "product": "cucumber seed powder",
+          "brand": "Authentic",
+          "attributes": [],
+          "synonym": "Authentic cucumber seed powder store",
+          "substitute": "",
+          "broader": ""
+        }
+      }
+    ]
+  }
+}

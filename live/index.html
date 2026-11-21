@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183e33">
+  <title>Pulp Fictional · Grocery search</title>
+  <link rel="icon" href="./assets/citrus.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="./store.css">
+  <script defer src="./llm.js"></script>
+  <script defer src="./retrieval.js"></script>
+  <script defer src="./search.js"></script>
+  <script defer src="./store.js"></script>
+</head>
+<body>
+  <a class="skip" href="#query">Skip to search</a>
+  <header><div class="wrap bar">
+    <a href="./" class="wordmark" aria-label="Pulp Fictional home"><span class="citrus" aria-hidden="true"></span> Pulp Fictional</a>
+    <nav aria-label="Page navigation"><a href="#market">Market</a><a href="#trace">Intent trace</a></nav>
+  </div></header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">What’s on <em>your list?</em></h1>
+        <p>Search real grocery listings in your own words. Follow the intent trace to see how your query was understood.</p>
+        <form id="search" role="search">
+          <label class="sr" for="query">Search groceries</label>
+          <input required type="search" name="q" id="query" maxlength="200" placeholder="Search by product, brand or attribute">
+          <button type="submit">Search <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="examples" id="examples" hidden><strong>Try</strong></div>
+      </div>
+      <img class="hero-image" src="./assets/market.jpg" alt="" width="1200" height="800">
+    </section>
+
+    <div id="notice" class="notice" hidden>
+      <div><strong>Run the model in your browser</strong>
+        <p>The first live search downloads about 400 MB of model weights, plus the runtime. Later searches can reuse the downloaded files.</p>
+      </div>
+      <button type="button" id="approve">Load model &amp; search</button>
+      <button type="button" id="cancel">Cancel</button>
+    </div>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <div class="workbench">
+      <section id="market" aria-labelledby="market-title">
+        <div class="section-head"><h2 id="market-title" tabindex="-1">Market results</h2><span id="count"></span></div>
+        <p id="result-query" class="muted"></p>
+        <ul id="products" class="products"></ul>
+        <p id="empty" class="empty" hidden>No matching products in this catalog sample. Try a different product or brand.</p>
+      </section>
+
+      <aside id="trace" aria-labelledby="trace-title">
+        <h2 id="trace-title">Intent trace</h2>
+        <p id="route" class="route">Waiting for search</p>
+        <p id="route-detail"></p>
+        <div id="analysis" hidden>
+          <dl id="model" class="facts"></dl>
+          <button id="rerun" type="button" class="outline" hidden>Run live model on this query</button>
+          <div class="panel"><h3>Model interpretation</h3><dl id="roles" class="facts"></dl></div>
+          <div class="panel"><h3>Category paths</h3><ul id="categories"></ul></div>
+          <details><summary>Purchase evidence</summary><p id="evidence-info"></p><ul id="evidence"></ul></details>
+          <details open><summary>Query rewrites</summary><div id="rewrites"></div></details>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer><div class="wrap">
+    <div class="source"><strong>About this catalog</strong>
+      <p>Product listings and purchase evidence come from a historical sample of KuaiSearch. English titles and category names are editorial translations. Original listing titles appear alongside them.</p>
+    </div>
+    <div class="links"><a href="https://github.com/benchen4395/KuaiSearch">KuaiSearch dataset ↗</a>
+      <a href="https://github.com/AniketKul/pulp-fictional">Pulp Fictional on GitHub ↗</a></div>
+  </div></footer>
+</body>
+</html>

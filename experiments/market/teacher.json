@@ -1,0 +1,4665 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+ "source_sha256": "7a23b827cf890df752ea74608efdacbe730eb6f436251da08c47c8d93c0ffd83",
+ "glossary_sha256": "06b726f87d5d6b3c3c674dbf89dedac30ddd59cb25cee344f876147585c1f2a2",
+ "builder_sha256": "f5d3586b2c053377e7ae9ea004a8d6a443912337ce3b29c1e620a535cc1c887e",
+ "torch": "2.6.0+cu124",
+ "gpu": "NVIDIA H100 PCIe",
+ "rows": [
+  {
+   "query": "2025沂蒙山板栗新鲜栗子山东老树油栗当季现摘毛栗即食带壳生板栗",
+   "english": "Fresh 2025 Yimeng Mountain chestnuts from old trees in Shandong, freshly picked in season, ready to eat, raw and in shell",
+   "sessions": 1,
+   "roles": {
+    "product": "chestnuts",
+    "brand": "",
+    "attributes": [
+     "freshly picked in season",
+     "raw",
+     "in shell",
+     "from old trees in Shandong",
+     "Yimeng Mountain"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Chestnuts"
+   ],
+   "synonym": "Fresh 2025 Yimeng Mountain chestnuts from Shandong",
+   "substitute": "",
+   "broader": "Fresh Yimeng Mountain chestnuts from Shandong",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chestnuts\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"freshly picked in season\",\n    \"raw\",\n    \"in shell\",\n    \"from old trees in Shandong\",\n    \"Yimeng Mountain\"\n  ]\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Chestnuts\"]",
+    "synonym": "Fresh 2025 Yimeng Mountain chestnuts from Shandong",
+    "substitute": "NONE",
+    "broader": "Fresh Yimeng Mountain chestnuts from Shandong"
+   }
+  },
+  {
+   "query": "mayf",
+   "english": "mayf",
+   "sessions": 14,
+   "roles": {
+    "product": "rice noodles",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "Mayflower rice noodles",
+   "substitute": "",
+   "broader": "Mayo-free Liuzhou river snail rice noodles, 340 g",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice noodles\",\n  \"brand\": \"Liuzhou river\",\n  \"attributes\": [\"340 g\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "Mayflower rice noodles",
+    "substitute": "NONE",
+    "broader": "Mayo-free Liuzhou river snail rice noodles, 340 g"
+   }
+  },
+  {
+   "query": "mayf旗舰店螺蛳粉",
+   "english": "mayf flagship store luosifen river-snail noodles",
+   "sessions": 2,
+   "roles": {
+    "product": "river-snail noodles",
+    "brand": "maYF",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles",
+    "Convenience and dried foods > Convenience foods > Instant noodles and noodle products"
+   ],
+   "synonym": "mayf liuzhou river snail noodles",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"river-snail noodles\",\n  \"brand\": \"maYF\",\n  \"attributes\": [\"340 g\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\", \"Convenience and dried foods > Convenience foods > Instant noodles and noodle products\"]",
+    "synonym": "mayf liuzhou river snail noodles",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "mayf螺蛳粉",
+   "english": "mayf luosifen river-snail noodles",
+   "sessions": 3,
+   "roles": {
+    "product": "noodles",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "Liuzhou river snail rice noodles",
+   "substitute": "",
+   "broader": "mayf luosifen river-snail noodles convenience foods",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"noodles\",\n  \"brand\": \"maYF Liuzhou\",\n  \"attributes\": [\"340 g\", \"instant vermicelli and rice noodles\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "Liuzhou river snail rice noodles",
+    "substitute": "NONE",
+    "broader": "mayf luosifen river-snail noodles convenience foods"
+   }
+  },
+  {
+   "query": "上学吃的零食",
+   "english": "Snacks to eat at school",
+   "sessions": 1,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products",
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat squid snacks"
+   ],
+   "synonym": "Snacks for school lunch",
+   "substitute": "",
+   "broader": "Snacks for school with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"ready-to-eat\",\n    \"crispy pork cracklings\",\n    \"spicy canned seafood snacks with octopus and squid\",\n    \"lightly salted dried tiger prawns\",\n    \"cold noodles with sesame sauce and chili oil\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products\", \"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat squid snacks\"]",
+    "synonym": "Snacks for school lunch",
+    "substitute": "NONE",
+    "broader": "Snacks for school with dietary restrictions"
+   }
+  },
+  {
+   "query": "上行斋巧克力福团",
+   "english": "Shangxingzhai chocolate Futuan",
+   "sessions": 22,
+   "roles": {
+    "product": "chocolate",
+    "brand": "Shangxingzhai",
+    "attributes": [
+     "Futuan"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries"
+   ],
+   "synonym": "Futuan chocolate shop",
+   "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"Shangxingzhai\",\n  \"attributes\": [\"Futuan\", \"17 pieces\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries\"]",
+    "synonym": "Futuan chocolate shop",
+    "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "上行斋福团巧克力",
+   "english": "Shangxingzhai Futuan chocolate",
+   "sessions": 33,
+   "roles": {
+    "product": "chocolate",
+    "brand": "Shangxingzhai",
+    "attributes": [
+     "futuan"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Shangxingzhai chocolate products",
+   "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"Shangxingzhai\",\n  \"attributes\": [\"futuan\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Shangxingzhai chocolate products",
+    "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "东北大酱农家酱第一名",
+   "english": "Top-ranked Northeastern Chinese farmhouse soybean paste",
+   "sessions": 13,
+   "roles": {
+    "product": "soybean paste",
+    "brand": "",
+    "attributes": [
+     "Northeastern Chinese farmhouse"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes"
+   ],
+   "synonym": "Top-rated Northeastern Chinese farmhouse soybean paste",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"soybean paste\",\n  \"brand\": \"Xiyu Liangyuan\",\n  \"attributes\": [\"Northeastern Chinese farmhouse\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes\"]",
+    "synonym": "Top-rated Northeastern Chinese farmhouse soybean paste",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "东方树叶",
+   "english": "Oriental Leaf",
+   "sessions": 20,
+   "roles": {
+    "product": "jasmine tea",
+    "brand": "",
+    "attributes": [
+     "oriental leaf"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Tea beverages",
+    "Tea > Herbal and fruit infusions > Flower and fruit tea blends"
+   ],
+   "synonym": "Oriental Leaf Tea",
+   "substitute": "Herbal tea blend",
+   "broader": "Oriental leaf tea",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jasmine tea\",\n  \"brand\": \"Nongfu Spring\",\n  \"attributes\": [\"oriental leaf\", \"5 bottles\", \"500 mL\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Tea beverages\", \"Tea > Herbal and fruit infusions > Flower and fruit tea blends\"]",
+    "synonym": "Oriental Leaf Tea",
+    "substitute": "Herbal tea blend",
+    "broader": "Oriental leaf tea"
+   }
+  },
+  {
+   "query": "东方树叶茉莉花茶",
+   "english": "Oriental Leaf jasmine tea",
+   "sessions": 2,
+   "roles": {
+    "product": "jasmine tea",
+    "brand": "Oriental Leaf",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Tea beverages",
+    "Tea > Herbal and fruit infusions > Jasmine floral teas"
+   ],
+   "synonym": "Oriental Leaf jasmine beverage",
+   "substitute": "",
+   "broader": "Oriental jasmine tea with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jasmine tea\",\n  \"brand\": \"Oriental Leaf\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Tea beverages\", \"Tea > Herbal and fruit infusions > Jasmine floral teas\"]",
+    "synonym": "Oriental Leaf jasmine beverage",
+    "substitute": "NONE",
+    "broader": "Oriental jasmine tea with dietary restrictions"
+   }
+  },
+  {
+   "query": "乌梅桑葚山楂陈皮玫瑰花荷叶茶",
+   "english": "Smoked plum, mulberry, hawthorn, dried tangerine peel, rose and lotus leaf tea",
+   "sessions": 3,
+   "roles": {
+    "product": "tea",
+    "brand": "",
+    "attributes": [
+     "smoked plum",
+     "mulberry",
+     "hawthorn",
+     "dried tangerine peel",
+     "rose",
+     "lotus leaf"
+    ]
+   },
+   "categories": [
+    "Tea > Herbal and fruit infusions > Flower and fruit tea blends"
+   ],
+   "synonym": "Smoked plum, hawthorn, tangerine peel, rose and lotus leaf tea",
+   "substitute": "Mulberry, goji berry and red date herbal tea bags",
+   "broader": "Herbal and fruit infusions with mulberry and other fruits",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tea\",\n  \"brand\": \"\",\n  \"attributes\": [\"smoked plum\", \"mulberry\", \"hawthorn\", \"dried tangerine peel\", \"rose\", \"lotus leaf\"]\n}",
+    "categories": "[\"Tea > Herbal and fruit infusions > Flower and fruit tea blends\"]",
+    "synonym": "Smoked plum, hawthorn, tangerine peel, rose and lotus leaf tea",
+    "substitute": "Mulberry, goji berry and red date herbal tea bags",
+    "broader": "Herbal and fruit infusions with mulberry and other fruits"
+   }
+  },
+  {
+   "query": "乳酸菌小口袋面包",
+   "english": "Lactic acid bacteria pocket bread",
+   "sessions": 1,
+   "roles": {
+    "product": "pocket bread",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Lactobacillus bread options",
+   "substitute": "",
+   "broader": "Lactic acid bacteria flavored pocket bread",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pocket bread\",\n  \"brand\": \"\",\n  \"attributes\": [\"lactic acid bacteria flavored\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Lactobacillus bread options",
+    "substitute": "NONE",
+    "broader": "Lactic acid bacteria flavored pocket bread"
+   }
+  },
+  {
+   "query": "乳酸菌面包口袋小面包",
+   "english": "Small pocket buns with lactic acid bacteria",
+   "sessions": 3,
+   "roles": {
+    "product": "pocket buns",
+    "brand": "",
+    "attributes": [
+     "with lactic acid bacteria"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Cultured milk flavored mini pocket bread",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pocket buns\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"with lactic acid bacteria\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Cultured milk flavored mini pocket bread",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "于清佤味鸡爪",
+   "english": "Yuqing Wa-style chicken feet",
+   "sessions": 1,
+   "roles": {
+    "product": "Wa-style chicken feet",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Meat products"
+   ],
+   "synonym": "Wa-style hot and sour chicken feet",
+   "substitute": "Boneless chicken feet",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"Wa-style chicken feet\",\n  \"brand\": \"Bangxiaozhua\",\n  \"attributes\": [\"sweet\", \"sour and spicy\"]\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Meat products\"]",
+    "synonym": "Wa-style hot and sour chicken feet",
+    "substitute": "Boneless chicken feet",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "亲嘴烧",
+   "english": "Qinzuishao",
+   "sessions": 2,
+   "roles": {
+    "product": "latiao",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Qinzuishao snack variant",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"latiao\",\n  \"brand\": \"Weilong\",\n  \"attributes\": [\"assorted spicy\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Qinzuishao snack variant",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "亲嘴烧贵州胡辣椒",
+   "english": "Qinzuishao with Guizhou roasted chili",
+   "sessions": 1,
+   "roles": {
+    "product": "Qinzuishao",
+    "brand": "Qinzui",
+    "attributes": [
+     "Guizhou roasted chili"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Guizhou roasted chili wheat gluten snacks",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"Qinzuishao\",\n  \"brand\": \"Qinzui\",\n  \"attributes\": [\"Guizhou roasted chili\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Guizhou roasted chili wheat gluten snacks",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "会理石榴",
+   "english": "Huili pomegranates",
+   "sessions": 1,
+   "roles": {
+    "product": "pomegranates",
+    "brand": "Huili",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Pomegranates"
+   ],
+   "synonym": "Huili-sealed pomegranates",
+   "substitute": "Huili seedless grapes",
+   "broader": "Huili fresh pomegranates",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pomegranates\",\n  \"brand\": \"Huili\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Fruit > Pomegranates\"]",
+    "synonym": "Huili-sealed pomegranates",
+    "substitute": "Huili seedless grapes",
+    "broader": "Huili fresh pomegranates"
+   }
+  },
+  {
+   "query": "俏食忆元敏官方旗舰店",
+   "english": "Qiaoshiyi Yuanmin official flagship store",
+   "sessions": 2,
+   "roles": {
+    "product": "pork strips",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [],
+   "synonym": "Qiaoshiyi Yuanmin official store",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pork strips\",\n  \"brand\": \"Sichuan pepper\",\n  \"attributes\": [\"fresh foods\", \"refrigerated and frozen foods\", \"quick-frozen foods\"]\n}",
+    "categories": "[]",
+    "synonym": "Qiaoshiyi Yuanmin official store",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "养生茶蒲公英夏枯草菊花茶",
+   "english": "Wellness tea with dandelion, self-heal and chrysanthemum",
+   "sessions": 3,
+   "roles": {
+    "product": "tea",
+    "brand": "",
+    "attributes": [
+     "dandelion",
+     "self-heal",
+     "chrysanthemum"
+    ]
+   },
+   "categories": [
+    "Tea > Wellness teas"
+   ],
+   "synonym": "Wellness tea with dandelion and chrysanthemum",
+   "substitute": "Mulberry, goji berry and red date herbal tea bags",
+   "broader": "Wellness tea blend",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tea\",\n  \"brand\": \"\",\n  \"attributes\": [\"dandelion\", \"self-heal\", \"chrysanthemum\"]\n}",
+    "categories": "[\"Tea > Wellness teas\"]",
+    "synonym": "Wellness tea with dandelion and chrysanthemum",
+    "substitute": "Mulberry, goji berry and red date herbal tea bags",
+    "broader": "Wellness tea blend"
+   }
+  },
+  {
+   "query": "冲泡果茶",
+   "english": "Fruit tea for brewing",
+   "sessions": 1,
+   "roles": {
+    "product": "fruit tea",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Herbal and fruit infusions > Flavored and blended teas",
+    "Tea > Herbal and fruit infusions > Herbal teas and infusions"
+   ],
+   "synonym": "Fruit infusions for brewing",
+   "substitute": "",
+   "broader": "Fruit tea options for brewing",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"fruit tea\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Tea > Herbal and fruit infusions > Flavored and blended teas\", \"Tea > Herbal and fruit infusions > Herbal teas and infusions\"]",
+    "synonym": "Fruit infusions for brewing",
+    "substitute": "NONE",
+    "broader": "Fruit tea options for brewing"
+   }
+  },
+  {
+   "query": "凉拌汁凉拌菜家用调料",
+   "english": "Household seasoning sauce for cold dishes",
+   "sessions": 2,
+   "roles": {
+    "product": "seasoning sauce",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings"
+   ],
+   "synonym": "Cold dish sauce alternative",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"seasoning sauce\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings\"]",
+    "synonym": "Cold dish sauce alternative",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "凉拌菜酱料",
+   "english": "Sauce for cold dishes",
+   "sessions": 3,
+   "roles": {
+    "product": "dressing",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings"
+   ],
+   "synonym": "Cold dish dressing",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"dressing\",\n  \"brand\": \"\",\n  \"attributes\": [\"hot and sour\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings\"]",
+    "synonym": "Cold dish dressing",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "凉皮开袋即食",
+   "english": "Ready-to-eat liangpi cold noodles",
+   "sessions": 16,
+   "roles": {
+    "product": "cold noodles",
+    "brand": "",
+    "attributes": [
+     "ready-to-eat"
+    ]
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant noodles and noodle products"
+   ],
+   "synonym": "Ready-to-eat cold noodles",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"cold noodles\",\n  \"brand\": \"Miaoyatou\",\n  \"attributes\": [\"ready-to-eat\", \"with sesame sauce and chili oil\", \"10 bags\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant noodles and noodle products\"]",
+    "synonym": "Ready-to-eat cold noodles",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "博雅g好物精选",
+   "english": "Boya G selected goods",
+   "sessions": 45,
+   "roles": {
+    "product": "sour fruit gummies",
+    "brand": "Boya",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies"
+   ],
+   "synonym": "Boya G candy options",
+   "substitute": "Assorted hard candy",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sour fruit gummies\",\n  \"brand\": \"Boya\",\n  \"attributes\": [\"assorted\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\"]",
+    "synonym": "Boya G candy options",
+    "substitute": "Assorted hard candy",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "博雅小店铺",
+   "english": "Boya small shop",
+   "sessions": 4,
+   "roles": {
+    "product": "small shop",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies",
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Other ready-to-eat seafood snacks"
+   ],
+   "synonym": "Boya snack shop",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"small shop\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\", \"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Other ready-to-eat seafood snacks\"]",
+    "synonym": "Boya snack shop",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "卤味零食大礼包",
+   "english": "Large assorted braised snack gift pack",
+   "sessions": 1,
+   "roles": {
+    "product": "braised snack",
+    "brand": "",
+    "attributes": [
+     "assorted",
+     "gift pack"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments"
+   ],
+   "synonym": "Large mixed braised meat snack gift pack",
+   "substitute": "",
+   "broader": "Large assorted spicy braised meat snack gift pack",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"braised snack\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"assorted\",\n    \"gift pack\",\n    \"spicy\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\"]",
+    "synonym": "Large mixed braised meat snack gift pack",
+    "substitute": "NONE",
+    "broader": "Large assorted spicy braised meat snack gift pack"
+   }
+  },
+  {
+   "query": "双皮奶粉",
+   "english": "Double-skin milk pudding mix",
+   "sessions": 1,
+   "roles": {
+    "product": "milk pudding mix",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks"
+   ],
+   "synonym": "Double-layer milk pudding mix",
+   "substitute": "",
+   "broader": "Double-skin milk pudding mix alternatives",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk pudding mix\",\n  \"brand\": \"Cantonese\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks\"]",
+    "synonym": "Double-layer milk pudding mix",
+    "substitute": "NONE",
+    "broader": "Double-skin milk pudding mix alternatives"
+   }
+  },
+  {
+   "query": "吃的",
+   "english": "Something to eat",
+   "sessions": 66,
+   "roles": {
+    "product": "snack",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried mango",
+    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried peaches",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products",
+    "Fresh foods > Seafood and aquatic products > Dried seafood"
+   ],
+   "synonym": "Something edible",
+   "substitute": "Ready-to-eat crispy pork cracklings",
+   "broader": "Something to eat with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snack\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried mango\", \"Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried peaches\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products\", \"Fresh foods > Seafood and aquatic products > Dried seafood\"]",
+    "synonym": "Something edible",
+    "substitute": "Ready-to-eat crispy pork cracklings",
+    "broader": "Something to eat with dietary restrictions"
+   }
+  },
+  {
+   "query": "咔滋脆鸡排",
+   "english": "Crunchy chicken cutlets",
+   "sessions": 1,
+   "roles": {
+    "product": "chicken cutlets",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Prepared seafood"
+   ],
+   "synonym": "Crispy chicken cutlets",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chicken cutlets\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Prepared seafood\"]",
+    "synonym": "Crispy chicken cutlets",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "咖啡雀巢瓶装",
+   "english": "Bottled Nestlé coffee",
+   "sessions": 1,
+   "roles": {
+    "product": "coffee",
+    "brand": "Nestlé",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Instant coffee, beans and grounds > Instant coffee"
+   ],
+   "synonym": "Bottled instant coffee",
+   "substitute": "Xisidun instant black coffee",
+   "broader": "Bottled or instant coffee options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"coffee\",\n  \"brand\": \"Nestlé\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Instant coffee, beans and grounds > Instant coffee\"]",
+    "synonym": "Bottled instant coffee",
+    "substitute": "Xisidun instant black coffee",
+    "broader": "Bottled or instant coffee options"
+   }
+  },
+  {
+   "query": "士力架",
+   "english": "Snickers",
+   "sessions": 9,
+   "roles": {
+    "product": "chocolate bar",
+    "brand": "Snickers",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Filled chocolates"
+   ],
+   "synonym": "Snickers chocolate bar",
+   "substitute": "Reese's Peanut Butter Cups",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate bar\",\n  \"brand\": \"Snickers\",\n  \"attributes\": [\"peanut\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Filled chocolates\"]",
+    "synonym": "Snickers chocolate bar",
+    "substitute": "Reese's Peanut Butter Cups",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "大杂烩椒麻大杂烩",
+   "english": "Mixed assortment, numbing pepper assortment",
+   "sessions": 11,
+   "roles": {
+    "product": "assortment",
+    "brand": "",
+    "attributes": [
+     "numbing pepper"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Chicken products",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments"
+   ],
+   "synonym": "Numbing pepper snack assortment",
+   "substitute": "Sichuan pepper puffed snack",
+   "broader": "Numbing pepper snack assortment",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"assortment\",\n  \"brand\": \"\",\n  \"attributes\": [\"numbing pepper\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Chicken products\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\"]",
+    "synonym": "Numbing pepper snack assortment",
+    "substitute": "Sichuan pepper puffed snack",
+    "broader": "Numbing pepper snack assortment"
+   }
+  },
+  {
+   "query": "大桶酸辣粉",
+   "english": "Large tub of hot and sour noodles",
+   "sessions": 1,
+   "roles": {
+    "product": "hot and sour noodles",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "Large bowl of hot and sour noodles",
+   "substitute": "Zero-fat hot and sour dressing for cold dishes",
+   "broader": "Large tub of hot and sour noodle dish options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hot and sour noodles\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "Large bowl of hot and sour noodles",
+    "substitute": "Zero-fat hot and sour dressing for cold dishes",
+    "broader": "Large tub of hot and sour noodle dish options"
+   }
+  },
+  {
+   "query": "大米",
+   "english": "Rice",
+   "sessions": 82,
+   "roles": {
+    "product": "rice",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Rice"
+   ],
+   "synonym": "Rice products",
+   "substitute": "",
+   "broader": "Rice and related products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Rice\"]",
+    "synonym": "Rice products",
+    "substitute": "NONE",
+    "broader": "Rice and related products"
+   }
+  },
+  {
+   "query": "大豆皮五斤无盐",
+   "english": "Five jin of unsalted soybean sheets",
+   "sessions": 1,
+   "roles": {
+    "product": "",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Soy products"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": false,
+   "raw": {
+    "roles": "{\n  \"product\": \"soybean sheets\",\n  \"brand\": \"\",\n  \"attributes\": [\n    {\n      \"attribute\": \"unsalted\",\n      \"value\": \"\"\n    },\n    {\n      \"attribute\": \"weight\",\n      \"value\": \"five jin\"\n    }\n  ]\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Soy products\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "奶片排行榜第一名",
+   "english": "Top-ranked milk tablets",
+   "sessions": 1,
+   "roles": {
+    "product": "milk tablets",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks"
+   ],
+   "synonym": "Top-rated milk tablets",
+   "substitute": "Zero-fat skim milk",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk tablets\",\n  \"brand\": \"Three Squirrels\",\n  \"attributes\": [\"prebiotic\", \"2 packs of 200 g\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks\"]",
+    "synonym": "Top-rated milk tablets",
+    "substitute": "Zero-fat skim milk",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "奶糖软糖",
+   "english": "Soft milk candy",
+   "sessions": 1,
+   "roles": {
+    "product": "milk candy",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies"
+   ],
+   "synonym": "Milk-flavored candy",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk candy\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\"]",
+    "synonym": "Milk-flavored candy",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "好吃的网红零食",
+   "english": "Tasty trending snacks",
+   "sessions": 5,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies"
+   ],
+   "synonym": "Trending savory snacks",
+   "substitute": "Prebiotic milk tablet snacks",
+   "broader": "Trending snack options including candy, jerky, and dairy snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\"]",
+    "synonym": "Trending savory snacks",
+    "substitute": "Prebiotic milk tablet snacks",
+    "broader": "Trending snack options including candy, jerky, and dairy snacks"
+   }
+  },
+  {
+   "query": "好吃的零食又便宜",
+   "english": "Tasty inexpensive snacks",
+   "sessions": 54,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": [
+     "tasty",
+     "inexpensive"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products",
+    "Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks"
+   ],
+   "synonym": "Budget-friendly snack options",
+   "substitute": "Prebiotic fiber bars",
+   "broader": "Tasty inexpensive snack assortments",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"tasty\", \"inexpensive\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products\", \"Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks\"]",
+    "synonym": "Budget-friendly snack options",
+    "substitute": "Prebiotic fiber bars",
+    "broader": "Tasty inexpensive snack assortments"
+   }
+  },
+  {
+   "query": "安慕希酸奶",
+   "english": "Ambrosial yogurt",
+   "sessions": 15,
+   "roles": {
+    "product": "yogurt",
+    "brand": "",
+    "attributes": [
+     "Ambrosial"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Fermented dairy products",
+    "Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages"
+   ],
+   "synonym": "Ambrosial milk-based beverage",
+   "substitute": "Fermented yogurt drink",
+   "broader": "Fermented dairy products with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"yogurt\",\n  \"brand\": \"Yili\",\n  \"attributes\": [\"Ambrosial\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Fermented dairy products\", \"Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages\"]",
+    "synonym": "Ambrosial milk-based beverage",
+    "substitute": "Fermented yogurt drink",
+    "broader": "Fermented dairy products with dietary restrictions"
+   }
+  },
+  {
+   "query": "小米新米",
+   "english": "New-crop millet",
+   "sessions": 7,
+   "roles": {
+    "product": "millet",
+    "brand": "",
+    "attributes": [
+     "new-crop"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Other grains"
+   ],
+   "synonym": "New variety millet products",
+   "substitute": "",
+   "broader": "New-crop grains including millet",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"millet\",\n  \"brand\": \"Inner Mongolian Aohan Jinmiao\",\n  \"attributes\": [\"new-crop\", \"2.5 kg\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Other grains\"]",
+    "synonym": "New variety millet products",
+    "substitute": "NONE",
+    "broader": "New-crop grains including millet"
+   }
+  },
+  {
+   "query": "小芳夫妇海鲜",
+   "english": "Xiaofang Couple seafood",
+   "sessions": 3,
+   "roles": {
+    "product": "seafood",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Shellfish",
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat squid snacks"
+   ],
+   "synonym": "Xiaofang Couple seafood snacks",
+   "substitute": "Shelled clam meat",
+   "broader": "Seafood snacks including octopus and squid",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"seafood\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Shellfish\", \"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat squid snacks\"]",
+    "synonym": "Xiaofang Couple seafood snacks",
+    "substitute": "Shelled clam meat",
+    "broader": "Seafood snacks including octopus and squid"
+   }
+  },
+  {
+   "query": "小零食批发便宜",
+   "english": "Inexpensive small snacks wholesale",
+   "sessions": 26,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": [
+     "inexpensive",
+     "small"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Nuts and roasted snacks > Edible seed snacks"
+   ],
+   "synonym": "Inexpensive snack wholesale",
+   "substitute": "Hunan spicy dried small shrimp snacks",
+   "broader": "Inexpensive snack options wholesale",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"inexpensive\", \"small\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Nuts and roasted snacks > Edible seed snacks\"]",
+    "synonym": "Inexpensive snack wholesale",
+    "substitute": "Hunan spicy dried small shrimp snacks",
+    "broader": "Inexpensive snack options wholesale"
+   }
+  },
+  {
+   "query": "尖峰食客玉米",
+   "english": "Jianfeng Shike corn",
+   "sessions": 1,
+   "roles": {
+    "product": "corn",
+    "brand": "Jianfeng Shike",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Corn"
+   ],
+   "synonym": "Jianfeng Shike fresh corn",
+   "substitute": "",
+   "broader": "Jianfeng Shike fresh golden waxy corn",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"corn\",\n  \"brand\": \"Jianfeng Shike\",\n  \"attributes\": []\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Corn\"]",
+    "synonym": "Jianfeng Shike fresh corn",
+    "substitute": "NONE",
+    "broader": "Jianfeng Shike fresh golden waxy corn"
+   }
+  },
+  {
+   "query": "山药粉铁棍山药粉",
+   "english": "Chinese yam powder, iron-stick yam powder",
+   "sessions": 5,
+   "roles": {
+    "product": "Chinese yam powder",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders",
+    "Coffee, cereals and drink mixes > Nourishing food powders > Other food powders"
+   ],
+   "synonym": "Chinese yam vermicelli powder",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"Chinese yam powder\",\n  \"brand\": \"Tiegun\",\n  \"attributes\": [\"2.5 kg\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders\", \"Coffee, cereals and drink mixes > Nourishing food powders > Other food powders\"]",
+    "synonym": "Chinese yam vermicelli powder",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "岩烧芝士薄脆饼干",
+   "english": "Baked cheese thin crackers",
+   "sessions": 1,
+   "roles": {
+    "product": "crackers",
+    "brand": "",
+    "attributes": [
+     "baked",
+     "cheese",
+     "thin"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries"
+   ],
+   "synonym": "Bibizan thin baked cheese crackers",
+   "substitute": "Thin scallion crackers in individual packs",
+   "broader": "Baked cheese crackers and thin crackers",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"crackers\",\n  \"brand\": \"Bibizan\",\n  \"attributes\": [\"baked\", \"cheese\", \"thin\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries\"]",
+    "synonym": "Bibizan thin baked cheese crackers",
+    "substitute": "Thin scallion crackers in individual packs",
+    "broader": "Baked cheese crackers and thin crackers"
+   }
+  },
+  {
+   "query": "巧克力砖",
+   "english": "Chocolate bricks",
+   "sessions": 2,
+   "roles": {
+    "product": "chocolate",
+    "brand": "",
+    "attributes": [
+     "bricks"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Chocolate bars NONE",
+   "substitute": "",
+   "broader": "Chocolate products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"\",\n  \"attributes\": [\"bricks\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Chocolate bars NONE",
+    "substitute": "NONE",
+    "broader": "Chocolate products"
+   }
+  },
+  {
+   "query": "德芙巧克力",
+   "english": "Dove chocolate",
+   "sessions": 5,
+   "roles": {
+    "product": "chocolate",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Milk chocolate products"
+   ],
+   "synonym": "Dove chocolate products",
+   "substitute": "",
+   "broader": "Dove chocolate and related assortments",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Milk chocolate products\"]",
+    "synonym": "Dove chocolate products",
+    "substitute": "NONE",
+    "broader": "Dove chocolate and related assortments"
+   }
+  },
+  {
+   "query": "思密达火锅七盒",
+   "english": "Seven boxes of Simida hot pot",
+   "sessions": 1,
+   "roles": {
+    "product": "hot pot",
+    "brand": "Simida",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant hot pots"
+   ],
+   "synonym": "Seven boxes of Simida instant hot pot",
+   "substitute": "",
+   "broader": "Seven boxes of Simida hot pot NONE",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hot pot\",\n  \"brand\": \"Simida\",\n  \"attributes\": [\"self-heating\", \"Chongqing beef tallow\", \"7 boxes\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant hot pots\"]",
+    "synonym": "Seven boxes of Simida instant hot pot",
+    "substitute": "NONE",
+    "broader": "Seven boxes of Simida hot pot NONE"
+   }
+  },
+  {
+   "query": "懒妞手抓饼",
+   "english": "Lanniu hand-grab pancakes",
+   "sessions": 1,
+   "roles": {
+    "product": "hand-grab pancakes",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Refrigerated and frozen foods > Chinese dough-based foods"
+   ],
+   "synonym": "Hand-grabbed pancakes recipe",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hand-grab pancakes\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Refrigerated and frozen foods > Chinese dough-based foods\"]",
+    "synonym": "Hand-grabbed pancakes recipe",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "手工头层豆腐皮",
+   "english": "Handmade first-layer tofu skin",
+   "sessions": 1,
+   "roles": {
+    "product": "tofu skin",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Soy products"
+   ],
+   "synonym": "Handmade tofu skin sheets",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tofu skin\",\n  \"brand\": \"Xiaomeng\",\n  \"attributes\": [\"1.5 kg\"]\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Soy products\"]",
+    "synonym": "Handmade tofu skin sheets",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "手撕烤脖",
+   "english": "Tear-apart roasted necks",
+   "sessions": 1,
+   "roles": {
+    "product": "roasted necks",
+    "brand": "",
+    "attributes": [
+     "roast"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Duck products"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"roasted necks\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"roast\", \"duck and chicken neck options\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Duck products\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "新蒜头批发",
+   "english": "Fresh garlic bulbs wholesale",
+   "sessions": 2,
+   "roles": {
+    "product": "garlic",
+    "brand": "",
+    "attributes": [
+     "bulbs",
+     "fresh",
+     "wholesale"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Garlic"
+   ],
+   "synonym": "Fresh garlic bulbs for sale",
+   "substitute": "",
+   "broader": "Fresh produce wholesale",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"garlic\",\n  \"brand\": \"\",\n  \"attributes\": [\"bulbs\", \"fresh\", \"wholesale\"]\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Garlic\"]",
+    "synonym": "Fresh garlic bulbs for sale",
+    "substitute": "NONE",
+    "broader": "Fresh produce wholesale"
+   }
+  },
+  {
+   "query": "无糖月饼糖尿病人专吃",
+   "english": "Sugar-free mooncakes for people with diabetes",
+   "sessions": 9,
+   "roles": {
+    "product": "mooncakes",
+    "brand": "",
+    "attributes": [
+     "sugar-free"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "Sugar-free mooncakes for diabetics",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"mooncakes\",\n  \"brand\": \"Seller-labeled\",\n  \"attributes\": [\"sugar-free\", \"buckwheat\", \"five nuts\", \"perilla seeds\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "Sugar-free mooncakes for diabetics",
+    "substitute": "NONE",
+    "broader": "Sugar-free mooncakes for people with diabetes"
+   }
+  },
+  {
+   "query": "无糖牛奶0蔗糖0脂肪",
+   "english": "Sugar-free milk with zero sucrose and zero fat",
+   "sessions": 1,
+   "roles": {
+    "product": "milk",
+    "brand": "",
+    "attributes": [
+     "sugar-free",
+     "zero sucrose",
+     "zero fat"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "Sugar-free skim milk",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"sugar-free\",\n    \"zero sucrose\",\n    \"zero fat\"\n  ]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\"]",
+    "synonym": "Sugar-free skim milk",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "无糖独立包装面包早餐",
+   "english": "Individually wrapped sugar-free breakfast bread",
+   "sessions": 1,
+   "roles": {
+    "product": "breakfast bread",
+    "brand": "",
+    "attributes": [
+     "individually wrapped",
+     "sugar-free"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Sugar-free breakfast bread alternatives",
+   "substitute": "Cultured-milk-flavored mini pocket bread",
+   "broader": "Sugar-free breakfast bread options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"breakfast bread\",\n  \"brand\": \"\",\n  \"attributes\": [\"individually wrapped\", \"sugar-free\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Sugar-free breakfast bread alternatives",
+    "substitute": "Cultured-milk-flavored mini pocket bread",
+    "broader": "Sugar-free breakfast bread options"
+   }
+  },
+  {
+   "query": "无骨鸡爪",
+   "english": "Boneless chicken feet",
+   "sessions": 150,
+   "roles": {
+    "product": "chicken feet",
+    "brand": "",
+    "attributes": [
+     "boneless"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Meat products"
+   ],
+   "synonym": "Boneless chicken toes",
+   "substitute": "",
+   "broader": "Boneless chicken feet hot and sour NONE",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chicken feet\",\n  \"brand\": \"\",\n  \"attributes\": [\"boneless\"]\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Meat products\"]",
+    "synonym": "Boneless chicken toes",
+    "substitute": "NONE",
+    "broader": "Boneless chicken feet hot and sour NONE"
+   }
+  },
+  {
+   "query": "无骨鸡爪子",
+   "english": "Chicken feet without bones",
+   "sessions": 40,
+   "roles": {
+    "product": "chicken feet",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Meat products"
+   ],
+   "synonym": "Boneless chicken feet",
+   "substitute": "Boneless chicken wings",
+   "broader": "Boneless chicken feet",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chicken feet\",\n  \"brand\": \"Bangxiaozhua\",\n  \"attributes\": [\"sweet\", \"sour and spicy\"]\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Meat products\"]",
+    "synonym": "Boneless chicken feet",
+    "substitute": "Boneless chicken wings",
+    "broader": "Boneless chicken feet"
+   }
+  },
+  {
+   "query": "时,思密达自热火锅,,,,,,,,,,,,,,",
+   "english": "Shi, Simida self-heating hot pot",
+   "sessions": 1,
+   "roles": {
+    "product": "self-heating hot pot",
+    "brand": "Simida",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant hot pots"
+   ],
+   "synonym": "Simida self-heating hot pot alternatives",
+   "substitute": "Zero-fat hot and sour dressing for cold dishes",
+   "broader": "Shi Simida self-heating hot pot and related products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"self-heating hot pot\",\n  \"brand\": \"Simida\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant hot pots\"]",
+    "synonym": "Simida self-heating hot pot alternatives",
+    "substitute": "Zero-fat hot and sour dressing for cold dishes",
+    "broader": "Shi Simida self-heating hot pot and related products"
+   }
+  },
+  {
+   "query": "月饼",
+   "english": "Mooncakes",
+   "sessions": 504,
+   "roles": {
+    "product": "mooncakes",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "Sugar-free buckwheat mooncakes",
+   "substitute": "Sugar-free buckwheat mooncakes",
+   "broader": "Sugar-free mooncakes",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"mooncakes\",\n  \"brand\": \"\",\n  \"attributes\": [\"Shanxi-style\", \"sugar-free\", \"five nuts and perilla seeds\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "Sugar-free buckwheat mooncakes",
+    "substitute": "Sugar-free buckwheat mooncakes",
+    "broader": "Sugar-free mooncakes"
+   }
+  },
+  {
+   "query": "月饼销量第一名",
+   "english": "Best-selling mooncakes",
+   "sessions": 244,
+   "roles": {
+    "product": "mooncakes",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "Top-selling mooncakes",
+   "substitute": "Sugar-free buckwheat mooncakes",
+   "broader": "Best-selling mooncakes for people with sugar restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"mooncakes\",\n  \"brand\": \"\",\n  \"attributes\": [\"Shanxi-style\", \"sugar-free\", \"five nuts and perilla seeds\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "Top-selling mooncakes",
+    "substitute": "Sugar-free buckwheat mooncakes",
+    "broader": "Best-selling mooncakes for people with sugar restrictions"
+   }
+  },
+  {
+   "query": "李鑫",
+   "english": "Li Xin",
+   "sessions": 1,
+   "roles": {
+    "product": "hand-grabbed flaky pancakes",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Refrigerated and frozen foods > Chinese dough-based foods"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hand-grabbed flaky pancakes\",\n  \"brand\": \"Meiliangfang\",\n  \"attributes\": [\"30 pieces\", \"80 g\", \"refrigerated\"]\n}",
+    "categories": "[\"Fresh foods > Refrigerated and frozen foods > Chinese dough-based foods\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "板栗",
+   "english": "Chestnuts",
+   "sessions": 15,
+   "roles": {
+    "product": "chestnuts",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Nuts and roasted snacks > Ready-to-eat chestnuts",
+    "Fresh foods > Vegetables and prepared vegetables > Chestnuts"
+   ],
+   "synonym": "Sweet chestnuts for snacking",
+   "substitute": "",
+   "broader": "Chestnuts and ready-to-eat options for dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chestnuts\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Nuts and roasted snacks > Ready-to-eat chestnuts\", \"Fresh foods > Vegetables and prepared vegetables > Chestnuts\"]",
+    "synonym": "Sweet chestnuts for snacking",
+    "substitute": "NONE",
+    "broader": "Chestnuts and ready-to-eat options for dietary restrictions"
+   }
+  },
+  {
+   "query": "板筋牛板筋",
+   "english": "Tendon, beef tendon",
+   "sessions": 2,
+   "roles": {
+    "product": "beef tendon",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Vegetarian beef tendon snacks",
+   "substitute": "Vegetarian beef tendon",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"beef tendon\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Vegetarian beef tendon snacks",
+    "substitute": "Vegetarian beef tendon",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "果冻",
+   "english": "Jelly",
+   "sessions": 29,
+   "roles": {
+    "product": "jelly",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Jellies and puddings"
+   ],
+   "synonym": "Jellying snacks",
+   "substitute": "",
+   "broader": "Jelly products including konjac and prune options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jelly\",\n  \"brand\": \"\",\n  \"attributes\": [\"orange\", \"grape\", \"peach\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Jellies and puddings\"]",
+    "synonym": "Jellying snacks",
+    "substitute": "NONE",
+    "broader": "Jelly products including konjac and prune options"
+   }
+  },
+  {
+   "query": "果汁100%原汁",
+   "english": "100% pure fruit juice",
+   "sessions": 1,
+   "roles": {
+    "product": "fruit juice",
+    "brand": "",
+    "attributes": [
+     "100% pure"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages"
+   ],
+   "synonym": "100% fruit juice cartons",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"fruit juice\",\n  \"brand\": \"\",\n  \"attributes\": [\"100% pure\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages\"]",
+    "synonym": "100% fruit juice cartons",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "椰子水",
+   "english": "Coconut water",
+   "sessions": 23,
+   "roles": {
+    "product": "coconut water",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Fruit and vegetable beverages"
+   ],
+   "synonym": "Coconut beverage",
+   "substitute": "",
+   "broader": "Coconut water and related snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"coconut water\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Fruit and vegetable beverages\"]",
+    "synonym": "Coconut beverage",
+    "substitute": "NONE",
+    "broader": "Coconut water and related snacks"
+   }
+  },
+  {
+   "query": "楚喜麻辣甲鱼官方旗舰店",
+   "english": "Chuxi spicy softshell turtle official flagship store",
+   "sessions": 9,
+   "roles": {
+    "product": "softshell turtle",
+    "brand": "Chuxi",
+    "attributes": [
+     "spicy"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Prepared seafood"
+   ],
+   "synonym": "Chuxi spicy softshell turtle online store",
+   "substitute": "Spicy braised meat snacks and latiao gift assortment",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"softshell turtle\",\n  \"brand\": \"Chuxi\",\n  \"attributes\": [\"spicy\", \"braised\", \"whole\"]\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Prepared seafood\"]",
+    "synonym": "Chuxi spicy softshell turtle online store",
+    "substitute": "Spicy braised meat snacks and latiao gift assortment",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "橄榄",
+   "english": "Olives",
+   "sessions": 3,
+   "roles": {
+    "product": "olives",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried olives"
+   ],
+   "synonym": "Salted olives",
+   "substitute": "Preserved ginger slices",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"olives\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Dried olives\"]",
+    "synonym": "Salted olives",
+    "substitute": "Preserved ginger slices",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "气泡供应链3号仓",
+   "english": "Qipao Supply Chain Warehouse No. 3",
+   "sessions": 2,
+   "roles": {
+    "product": "supply chain warehouse",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"supply chain warehouse\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "水果",
+   "english": "Fruit",
+   "sessions": 127,
+   "roles": {
+    "product": "fruit",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Melons"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "Fruit and herbal infusions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"fruit\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Fruit > Melons\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "Fruit and herbal infusions"
+   }
+  },
+  {
+   "query": "水果西梅",
+   "english": "Fresh European plums",
+   "sessions": 1,
+   "roles": {
+    "product": "plums",
+    "brand": "",
+    "attributes": [
+     "Fresh",
+     "European"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Fruit > Prune plums"
+   ],
+   "synonym": "Fresh European prunes",
+   "substitute": "",
+   "broader": "Fresh European-style plums and prunes",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"plums\",\n  \"brand\": \"\",\n  \"attributes\": [\"Fresh\", \"European\"]\n}",
+    "categories": "[\"Fresh foods > Fruit > Prune plums\"]",
+    "synonym": "Fresh European prunes",
+    "substitute": "NONE",
+    "broader": "Fresh European-style plums and prunes"
+   }
+  },
+  {
+   "query": "沙参麦冬汤的功效与禁忌",
+   "english": "Benefits and contraindications of shashen and maidong root soup",
+   "sessions": 1,
+   "roles": {
+    "product": "shashen and maidong root soup",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Other teas"
+   ],
+   "synonym": "Benefits and contraindications of shenshen and maidong root soup",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"shashen and maidong root soup\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Tea > Other teas\"]",
+    "synonym": "Benefits and contraindications of shenshen and maidong root soup",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "泡面整箱批发",
+   "english": "Instant noodles wholesale by the case",
+   "sessions": 116,
+   "roles": {
+    "product": "instant noodles",
+    "brand": "",
+    "attributes": [
+     "by the case"
+    ]
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant noodles and noodle products",
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "Instant noodles bulk purchase",
+   "substitute": "",
+   "broader": "Instant noodles wholesale dietary restrictions included",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"instant noodles\",\n  \"brand\": \"\",\n  \"attributes\": [\"by the case\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant noodles and noodle products\", \"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "Instant noodles bulk purchase",
+    "substitute": "NONE",
+    "broader": "Instant noodles wholesale dietary restrictions included"
+   }
+  },
+  {
+   "query": "泡面袋装",
+   "english": "Bagged instant noodles",
+   "sessions": 38,
+   "roles": {
+    "product": "instant noodles",
+    "brand": "",
+    "attributes": [
+     "bagged"
+    ]
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant noodles and noodle products"
+   ],
+   "synonym": "Instant noodle packs",
+   "substitute": "",
+   "broader": "Instant noodles and noodle products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"instant noodles\",\n  \"brand\": \"\",\n  \"attributes\": [\"bagged\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant noodles and noodle products\"]",
+    "synonym": "Instant noodle packs",
+    "substitute": "NONE",
+    "broader": "Instant noodles and noodle products"
+   }
+  },
+  {
+   "query": "活珠子",
+   "english": "Huozhuzi developing chicken eggs",
+   "sessions": 47,
+   "roles": {
+    "product": "fertilized egg",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Eggs and egg products > Processed egg products"
+   ],
+   "synonym": "Huozhuzi raising chickens",
+   "substitute": "Fresh free-range farm eggs, 10 to 40 count",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"fertilized egg\",\n  \"brand\": \"Five-spice\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Eggs and egg products > Processed egg products\"]",
+    "synonym": "Huozhuzi raising chickens",
+    "substitute": "Fresh free-range farm eggs, 10 to 40 count",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "海苔",
+   "english": "Seaweed",
+   "sessions": 11,
+   "roles": {
+    "product": "seaweed",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Seaweed snacks"
+   ],
+   "synonym": "Seaweed snacks options",
+   "substitute": "Kelp noodles",
+   "broader": "Seaweed snacks and dishes",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"seaweed\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Seaweed snacks\"]",
+    "synonym": "Seaweed snacks options",
+    "substitute": "Kelp noodles",
+    "broader": "Seaweed snacks and dishes"
+   }
+  },
+  {
+   "query": "海葡萄即食海藻",
+   "english": "Ready-to-eat sea grapes",
+   "sessions": 1,
+   "roles": {
+    "product": "sea grapes",
+    "brand": "",
+    "attributes": [
+     "ready-to-eat"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Sea vegetables"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sea grapes\",\n  \"brand\": \"\",\n  \"attributes\": [\"ready-to-eat\", \"100 g\"]\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Sea vegetables\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "海鲜",
+   "english": "Seafood",
+   "sessions": 26,
+   "roles": {
+    "product": "seafood",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [],
+   "synonym": "Seafood snacks with octopus and squid",
+   "substitute": "Ready-to-eat canned chicken snacks",
+   "broader": "Seafood snacks with octopus and squid",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"seafood\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Ready-to-eat seafood snacks\"]",
+    "synonym": "Seafood snacks with octopus and squid",
+    "substitute": "Ready-to-eat canned chicken snacks",
+    "broader": "Seafood snacks with octopus and squid"
+   }
+  },
+  {
+   "query": "火锅自热",
+   "english": "Self-heating hot pot",
+   "sessions": 12,
+   "roles": {
+    "product": "hot pot",
+    "brand": "",
+    "attributes": [
+     "self-heating"
+    ]
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant hot pots"
+   ],
+   "synonym": "Self-heating instant hot pot",
+   "substitute": "Instant noodle soup",
+   "broader": "Self-heating hot pot meal",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hot pot\",\n  \"brand\": \"Simida\",\n  \"attributes\": [\"self-heating\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant hot pots\"]",
+    "synonym": "Self-heating instant hot pot",
+    "substitute": "Instant noodle soup",
+    "broader": "Self-heating hot pot meal"
+   }
+  },
+  {
+   "query": "火鸡面料酱",
+   "english": "Sauce for spicy buldak noodles",
+   "sessions": 18,
+   "roles": {
+    "product": "sauce",
+    "brand": "",
+    "attributes": [
+     "spicy"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes"
+   ],
+   "synonym": "Spicy sauce for buldak noodles",
+   "substitute": "",
+   "broader": "Spicy sauce for Korean noodles",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sauce\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes\"]",
+    "synonym": "Spicy sauce for buldak noodles",
+    "substitute": "NONE",
+    "broader": "Spicy sauce for Korean noodles"
+   }
+  },
+  {
+   "query": "火鸡面酱料",
+   "english": "Spicy buldak noodle sauce",
+   "sessions": 6,
+   "roles": {
+    "product": "noodle sauce",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes"
+   ],
+   "synonym": "Spicy buldak sauce",
+   "substitute": "Korean-style extra-hot chicken noodle sauce",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"noodle sauce\",\n  \"brand\": \"Korean-style\",\n  \"attributes\": [\"extra-hot\", \"chicken\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes\"]",
+    "synonym": "Spicy buldak sauce",
+    "substitute": "Korean-style extra-hot chicken noodle sauce",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "火鸡面酱瓶装",
+   "english": "Bottled spicy buldak noodle sauce",
+   "sessions": 5,
+   "roles": {
+    "product": "noodle sauce",
+    "brand": "",
+    "attributes": [
+     "spicy",
+     "bottled"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes"
+   ],
+   "synonym": "Buldak noodle sauce alternative",
+   "substitute": "Korean-style extra-hot chicken noodle sauce",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"noodle sauce\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"bottled\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Sauces and pastes\"]",
+    "synonym": "Buldak noodle sauce alternative",
+    "substitute": "Korean-style extra-hot chicken noodle sauce",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "灰枣",
+   "english": "Gray jujubes",
+   "sessions": 1,
+   "roles": {
+    "product": "jujubes",
+    "brand": "",
+    "attributes": [
+     "gray"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Jujube products"
+   ],
+   "synonym": "Crispy pitted Xinjiang dried jujubes",
+   "substitute": "",
+   "broader": "Crispy pitted dried jujubes",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jujubes\",\n  \"brand\": \"\",\n  \"attributes\": [\"gray\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Jujube products\"]",
+    "synonym": "Crispy pitted Xinjiang dried jujubes",
+    "substitute": "NONE",
+    "broader": "Crispy pitted dried jujubes"
+   }
+  },
+  {
+   "query": "牛奶",
+   "english": "Milk",
+   "sessions": 161,
+   "roles": {
+    "product": "",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "Milk Products",
+   "substitute": "",
+   "broader": "Milk, including zero-fat options",
+   "valid": false,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"\",\n  \"attributes\": [\n    {\n      \"attribute\": \"fat content\",\n      \"value\": \"skim\"\n    },\n    {\n      \"attribute\": \"pack size\",\n      \"value\": \"10 cartons of 200 mL\"\n    }\n  ]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\", \"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\"]",
+    "synonym": "Milk Products",
+    "substitute": "NONE",
+    "broader": "Milk, including zero-fat options"
+   }
+  },
+  {
+   "query": "牛板筋",
+   "english": "Beef tendon",
+   "sessions": 22,
+   "roles": {
+    "product": "beef tendon",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Vegetarian beef tendon snacks",
+   "substitute": "Vegetarian beef tendon snack",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"beef tendon\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Vegetarian beef tendon snacks",
+    "substitute": "Vegetarian beef tendon snack",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "牛板筋零食",
+   "english": "Beef tendon snacks",
+   "sessions": 3,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Vegetarian beef tendon snacks",
+   "substitute": "Vegetarian beef-tendon-style snack",
+   "broader": "Vegetarian beef-tendon style snack",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"beef tendon style\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Vegetarian beef tendon snacks",
+    "substitute": "Vegetarian beef-tendon-style snack",
+    "broader": "Vegetarian beef-tendon style snack"
+   }
+  },
+  {
+   "query": "特仑苏",
+   "english": "Milk Deluxe",
+   "sessions": 17,
+   "roles": {
+    "product": "milk",
+    "brand": "Milk Deluxe",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "Shelf-stable milk Deluxe",
+   "substitute": "Zero-fat skim milk",
+   "broader": "Milk products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"Milk Deluxe\",\n  \"attributes\": [\"DreamCap\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\"]",
+    "synonym": "Shelf-stable milk Deluxe",
+    "substitute": "Zero-fat skim milk",
+    "broader": "Milk products"
+   }
+  },
+  {
+   "query": "特仑苏牛奶梦幻盖",
+   "english": "Milk Deluxe milk with DreamCap",
+   "sessions": 4,
+   "roles": {
+    "product": "milk",
+    "brand": "Milk Deluxe",
+    "attributes": [
+     "with DreamCap"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "Milk Deluxe shelf-stable milk",
+   "substitute": "",
+   "broader": "Milk Deluxe shelf-stable milk",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"Milk Deluxe\",\n  \"attributes\": [\"with DreamCap\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\"]",
+    "synonym": "Milk Deluxe shelf-stable milk",
+    "substitute": "NONE",
+    "broader": "Milk Deluxe shelf-stable milk"
+   }
+  },
+  {
+   "query": "猪肉直播卖货",
+   "english": "Pork sold on livestream",
+   "sessions": 3,
+   "roles": {
+    "product": "pork",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Pork products",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products"
+   ],
+   "synonym": "Pork products sold live",
+   "substitute": "",
+   "broader": "Pork products sold on livestream",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pork\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Pork products\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products\"]",
+    "synonym": "Pork products sold live",
+    "substitute": "NONE",
+    "broader": "Pork products sold on livestream"
+   }
+  },
+  {
+   "query": "玉米段",
+   "english": "Corn cob segments",
+   "sessions": 5,
+   "roles": {
+    "product": "corn cob segments",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Corn"
+   ],
+   "synonym": "Corn kernels segments",
+   "substitute": "",
+   "broader": "Waxy corn segments",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"corn cob segments\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Corn\"]",
+    "synonym": "Corn kernels segments",
+    "substitute": "NONE",
+    "broader": "Waxy corn segments"
+   }
+  },
+  {
+   "query": "瓜子",
+   "english": "Snack seeds",
+   "sessions": 25,
+   "roles": {
+    "product": "seeds",
+    "brand": "",
+    "attributes": [
+     "snack"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Nuts and roasted snacks > Edible seed snacks"
+   ],
+   "synonym": "Edible seed snacks",
+   "substitute": "Vegetarian beef tendon snack",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"seeds\",\n  \"brand\": \"\",\n  \"attributes\": [\"snack\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Nuts and roasted snacks > Edible seed snacks\"]",
+    "synonym": "Edible seed snacks",
+    "substitute": "Vegetarian beef tendon snack",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "甜菜根粉泡水",
+   "english": "Beetroot powder to mix with water",
+   "sessions": 1,
+   "roles": {
+    "product": "beetroot powder",
+    "brand": "",
+    "attributes": [
+     "to mix with water"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Fruit and vegetable powders"
+   ],
+   "synonym": "Beet powder water mixture",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"beetroot powder\",\n  \"brand\": \"OnlyTree\",\n  \"attributes\": [\"to mix with water\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Fruit and vegetable powders\"]",
+    "synonym": "Beet powder water mixture",
+    "substitute": "NONE",
+    "broader": "Beetroot powder for water饮用 Beetroot粉"
+   }
+  },
+  {
+   "query": "生巧福团上行斋",
+   "english": "Shangxingzhai nama chocolate Futuan",
+   "sessions": 24,
+   "roles": {
+    "product": "chocolate",
+    "brand": "Shangxingzhai",
+    "attributes": [
+     "Futuan"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Shangxingzhai chocolate cookies",
+   "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"Shangxingzhai\",\n  \"attributes\": [\"Futuan\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Shangxingzhai chocolate cookies",
+    "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "生巧福团菲菲同款",
+   "english": "Nama chocolate Futuan, same style as Feifei",
+   "sessions": 1,
+   "roles": {
+    "product": "chocolate",
+    "brand": "Futuan",
+    "attributes": [
+     "same style as Feifei"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Nama chocolate Futaun, similar to Feifei style",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"Futuan\",\n  \"attributes\": [\"same style as Feifei\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Nama chocolate Futaun, similar to Feifei style",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "电解质粉一箱",
+   "english": "A case of electrolyte powder",
+   "sessions": 1,
+   "roles": {
+    "product": "electrolyte powder",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks"
+   ],
+   "synonym": "Electrolyte powder drink mix",
+   "substitute": "Electrolyte tablets",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"electrolyte powder\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks\"]",
+    "synonym": "Electrolyte powder drink mix",
+    "substitute": "Electrolyte tablets",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "畅清饮升级版",
+   "english": "Upgraded Changqing drink",
+   "sessions": 1,
+   "roles": {
+    "product": "drink",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks"
+   ],
+   "synonym": "Upgraded fruit and vegetable drink powder",
+   "substitute": "Electrolyte drink powder, three flavors",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"drink\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Other powdered drinks\"]",
+    "synonym": "Upgraded fruit and vegetable drink powder",
+    "substitute": "Electrolyte drink powder, three flavors",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "盐食用盐",
+   "english": "Salt, edible salt",
+   "sessions": 8,
+   "roles": {
+    "product": "salt",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Everyday seasonings"
+   ],
+   "synonym": "Edible salt options",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"salt\",\n  \"brand\": \"Qingzanghu\",\n  \"attributes\": [\"non-iodized\", \"fine\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Everyday seasonings\"]",
+    "synonym": "Edible salt options",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "石榴",
+   "english": "Pomegranates",
+   "sessions": 51,
+   "roles": {
+    "product": "pomegranates",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Pomegranates"
+   ],
+   "synonym": "Tunisian pomegranates",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pomegranates\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Fruit > Pomegranates\"]",
+    "synonym": "Tunisian pomegranates",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "福团",
+   "english": "Futuan",
+   "sessions": 26,
+   "roles": {
+    "product": "daifuku mochi",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"daifuku mochi\",\n  \"brand\": \"Shangxingzhai\",\n  \"attributes\": [\"chocolate\", \"17 pieces\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "福团生巧",
+   "english": "Futuan nama chocolate",
+   "sessions": 1,
+   "roles": {
+    "product": "chocolate",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries",
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Search for Chinese chocolate pastries",
+   "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+   "broader": "Chocolate products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chocolate\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Chinese pastries\", \"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Search for Chinese chocolate pastries",
+    "substitute": "Crisp thin biscuits in coconut milk and chocolate flavors",
+    "broader": "Chocolate products"
+   }
+  },
+  {
+   "query": "稻香金界沟糯玉米",
+   "english": "Daoxiang Jin Jiegou waxy corn",
+   "sessions": 1,
+   "roles": {
+    "product": "waxy corn",
+    "brand": "Daoxiang Jin Jiegou",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Corn"
+   ],
+   "synonym": "Yellow waxy corn",
+   "substitute": "yellow waxy corn",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"waxy corn\",\n  \"brand\": \"Daoxiang Jin Jiegou\",\n  \"attributes\": [\"2.5 kg box\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Corn\"]",
+    "synonym": "Yellow waxy corn",
+    "substitute": "yellow waxy corn",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "稻麦香",
+   "english": "Daomaixiang",
+   "sessions": 2,
+   "roles": {
+    "product": "sausages",
+    "brand": "Daomaixiang",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Dried foods and dried meats > Smoked and cured sausages and ham"
+   ],
+   "synonym": "Green Sichuan pepper sausages",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sausages\",\n  \"brand\": \"Daomaixiang\",\n  \"attributes\": [\"green Sichuan pepper\", \"5 links\", \"110 g\"]\n}",
+    "categories": "[\"Convenience and dried foods > Dried foods and dried meats > Smoked and cured sausages and ham\"]",
+    "synonym": "Green Sichuan pepper sausages",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "穆清源清真肉类食品供应链",
+   "english": "Muqingyuan halal meat supply chain",
+   "sessions": 3,
+   "roles": {
+    "product": "meat",
+    "brand": "Muqingyuan",
+    "attributes": [
+     "halal",
+     "supply chain"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Chicken"
+   ],
+   "synonym": "Muqingyuan halal meat supply chain alternatives",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"meat\",\n  \"brand\": \"Muqingyuan\",\n  \"attributes\": [\"halal\", \"supply chain\"]\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Chicken\"]",
+    "synonym": "Muqingyuan halal meat supply chain alternatives",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "笨大豆油",
+   "english": "Traditional soybean oil",
+   "sessions": 1,
+   "roles": {
+    "product": "soybean oil",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Cooking and seasoning oils > Soybean oils"
+   ],
+   "synonym": "Traditional pressed soybean oil",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"soybean oil\",\n  \"brand\": \"Beidouxiang, Dameiren\",\n  \"attributes\": [\"traditionally pressed\", \"non-GMO\", \"5 L\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Cooking and seasoning oils > Soybean oils\"]",
+    "synonym": "Traditional pressed soybean oil",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "米",
+   "english": "Rice grain",
+   "sessions": 17,
+   "roles": {
+    "product": "rice",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Rice"
+   ],
+   "synonym": "Short-grain rice",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice\",\n  \"brand\": \"Beidahuang\",\n  \"attributes\": [\"short-grain\", \"pearl\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Rice\"]",
+    "synonym": "Short-grain rice",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "米多奇雪饼先用后付",
+   "english": "Miduoqi snow rice crackers, use now and pay later",
+   "sessions": 1,
+   "roles": {
+    "product": "rice crackers",
+    "brand": "Miduoqi",
+    "attributes": [
+     "snow"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks"
+   ],
+   "synonym": "Miduoqi snow rice crackers purchase options",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice crackers\",\n  \"brand\": \"Miduoqi\",\n  \"attributes\": [\"snow\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks\"]",
+    "synonym": "Miduoqi snow rice crackers purchase options",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "粉丝凉拌粉丝",
+   "english": "Glass noodles for cold noodle salad",
+   "sessions": 1,
+   "roles": {
+    "product": "glass noodles",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Dried foods and dried meats > Dried regional specialties"
+   ],
+   "synonym": "Glass noodles for cold dish salad",
+   "substitute": "",
+   "broader": "Glass noodles and cold noodle salad dressing",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"glass noodles\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Dried foods and dried meats > Dried regional specialties\"]",
+    "synonym": "Glass noodles for cold dish salad",
+    "substitute": "NONE",
+    "broader": "Glass noodles and cold noodle salad dressing"
+   }
+  },
+  {
+   "query": "粗粮",
+   "english": "Coarse grains",
+   "sessions": 4,
+   "roles": {
+    "product": "grains",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Rice, flour and grains > Corn"
+   ],
+   "synonym": "Fine grains",
+   "substitute": "",
+   "broader": "Coarse grains including waxy corn",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"grains\",\n  \"brand\": \"Shiyue Daotian\",\n  \"attributes\": [\"yellow and white waxy corn\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Rice, flour and grains > Corn\"]",
+    "synonym": "Fine grains",
+    "substitute": "NONE",
+    "broader": "Coarse grains including waxy corn"
+   }
+  },
+  {
+   "query": "糖",
+   "english": "Sugar",
+   "sessions": 60,
+   "roles": {
+    "product": "sugar",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Brown sugar drink mixes",
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Hard candies"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "Sugar and sugar-free options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sugar\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Brown sugar drink mixes\", \"Snacks, nuts and regional specialties > Candy, jelly and pudding > Hard candies\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "Sugar and sugar-free options"
+   }
+  },
+  {
+   "query": "糖尿病人专用食品店",
+   "english": "Specialty food shop for people with diabetes",
+   "sessions": 6,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries",
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat shrimp snacks",
+    "Snacks, nuts and regional specialties > Chocolate > Assorted chocolates"
+   ],
+   "synonym": "Diabetes-friendly snack shop",
+   "substitute": "Sugar-free almond cookies",
+   "broader": "Specialty food shop for diabetes-friendly snacks and treats",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"sugar-free\", \"buckwheat\", \"five nuts\", \"perilla seeds\", \"colored cocoa-butter chocolate\", \"zero-fat hot and sour dressing\", \"lightly dried tiny shrimp\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\", \"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat shrimp snacks\", \"Snacks, nuts and regional specialties > Chocolate > Assorted chocolates\"]",
+    "synonym": "Diabetes-friendly snack shop",
+    "substitute": "Sugar-free almond cookies",
+    "broader": "Specialty food shop for diabetes-friendly snacks and treats"
+   }
+  },
+  {
+   "query": "糖果硬糖",
+   "english": "Candy, hard candy",
+   "sessions": 26,
+   "roles": {
+    "product": "hard candy",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Hard candies"
+   ],
+   "synonym": "Hard candy flavors",
+   "substitute": "Star-shaped fruit-flavored gummies",
+   "broader": "Hard candy",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hard candy\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Hard candies\"]",
+    "synonym": "Hard candy flavors",
+    "substitute": "Star-shaped fruit-flavored gummies",
+    "broader": "Hard candy"
+   }
+  },
+  {
+   "query": "素牛板筋",
+   "english": "Vegetarian beef-style tendon",
+   "sessions": 8,
+   "roles": {
+    "product": "tendon",
+    "brand": "",
+    "attributes": [
+     "vegetarian",
+     "beef-style"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Vegetarian substitute for beef tendon snack",
+   "substitute": "Xiangsidou spicy vegetarian beef-tendon-style latiao",
+   "broader": "Vegetarian beef-style tendon snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tendon\",\n  \"brand\": \"\",\n  \"attributes\": [\"vegetarian\", \"beef-style\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Vegetarian substitute for beef tendon snack",
+    "substitute": "Xiangsidou spicy vegetarian beef-tendon-style latiao",
+    "broader": "Vegetarian beef-style tendon snacks"
+   }
+  },
+  {
+   "query": "紫米面包",
+   "english": "Purple rice bread",
+   "sessions": 21,
+   "roles": {
+    "product": "rice bread",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Purple rice bread recipe",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice bread\",\n  \"brand\": \"Sun Daquan\",\n  \"attributes\": [\"5 packs\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\", \"Snacks, nuts and regional specialties > Snack and nut specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Purple rice bread recipe",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "紫米面包紫米超多",
+   "english": "Purple rice bread with lots of purple rice",
+   "sessions": 3,
+   "roles": {
+    "product": "rice bread",
+    "brand": "",
+    "attributes": [
+     "purple rice"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Purple rice bread recipe",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice bread\",\n  \"brand\": \"Sun Daquan\",\n  \"attributes\": [\"purple rice\", \"5 packs\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\"]",
+    "synonym": "Purple rice bread recipe",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "红糖云南纯甘蔗手工红糖",
+   "english": "Handmade Yunnan brown sugar from pure sugarcane",
+   "sessions": 2,
+   "roles": {
+    "product": "brown sugar",
+    "brand": "Handmade Yunnan",
+    "attributes": [
+     "from pure sugarcane"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Brown sugar drink mixes"
+   ],
+   "synonym": "Handcrafted Yunnan brown sugar from sugarcane",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"brown sugar\",\n  \"brand\": \"Handmade Yunnan\",\n  \"attributes\": [\"from pure sugarcane\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Brown sugar drink mixes\"]",
+    "synonym": "Handcrafted Yunnan brown sugar from sugarcane",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "红美露苹果",
+   "english": "Hongmeilu apples",
+   "sessions": 5,
+   "roles": {
+    "product": "apples",
+    "brand": "Hongmeilu",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Apples"
+   ],
+   "synonym": "Large Hongmeilu apples",
+   "substitute": "Granny Smith apples",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"apples\",\n  \"brand\": \"Hongmeilu\",\n  \"attributes\": [\"11 to 15 large apples\", \"2 kg\"]\n}",
+    "categories": "[\"Fresh foods > Fruit > Apples\"]",
+    "synonym": "Large Hongmeilu apples",
+    "substitute": "Granny Smith apples",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "纯正葵花籽油5升",
+   "english": "Five liters of pure sunflower seed oil",
+   "sessions": 1,
+   "roles": {
+    "product": "sunflower seed oil",
+    "brand": "",
+    "attributes": [
+     "five liters",
+     "pure"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Cooking and seasoning oils > Sunflower oils"
+   ],
+   "synonym": "Five liters of unadulterated sunflower seed oil",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sunflower seed oil\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"five liters\",\n    \"pure\"\n  ]\n}",
+    "categories": "[\"Grains, oils and seasonings > Cooking and seasoning oils > Sunflower oils\"]",
+    "synonym": "Five liters of unadulterated sunflower seed oil",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "纯牛奶",
+   "english": "Plain milk",
+   "sessions": 45,
+   "roles": {
+    "product": "milk",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk",
+    "Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "Plain milk options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\", \"Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "Plain milk options"
+   }
+  },
+  {
+   "query": "纯豆油销量第一名",
+   "english": "Best-selling pure soybean oil",
+   "sessions": 2,
+   "roles": {
+    "product": "soybean oil",
+    "brand": "",
+    "attributes": [
+     "pure"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Cooking and seasoning oils > Soybean oils"
+   ],
+   "synonym": "Best-selling traditional pressed soybean oil",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"soybean oil\",\n  \"brand\": \"Dameiren, Beidouxiang\",\n  \"attributes\": [\"traditionally pressed\", \"non-GMO\", \"5 L\", \"pure\", \"northeastern Chinese\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Cooking and seasoning oils > Soybean oils\"]",
+    "synonym": "Best-selling traditional pressed soybean oil",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "纯黑芝麻粉销量第一奇连",
+   "english": "Qilian best-selling pure black sesame powder",
+   "sessions": 1,
+   "roles": {
+    "product": "black sesame powder",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Sesame paste and powders"
+   ],
+   "synonym": "Qilian top-selling pure black sesame powder",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"black sesame powder\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Sesame paste and powders\"]",
+    "synonym": "Qilian top-selling pure black sesame powder",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "缴纳大杂烩椒麻大杂烩",
+   "english": "Jiaona assortment, numbing pepper assortment",
+   "sessions": 1,
+   "roles": {
+    "product": "assortment",
+    "brand": "",
+    "attributes": [
+     "numbing pepper"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Chicken products",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments"
+   ],
+   "synonym": "Sichuan pepper snack assortment",
+   "substitute": "Sichuan pepper mixed meat and vegetable snacks",
+   "broader": "Sichuan pepper snack assortment",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"assortment\",\n  \"brand\": \"\",\n  \"attributes\": [\"numbing pepper\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Chicken products\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\"]",
+    "synonym": "Sichuan pepper snack assortment",
+    "substitute": "Sichuan pepper mixed meat and vegetable snacks",
+    "broader": "Sichuan pepper snack assortment"
+   }
+  },
+  {
+   "query": "美食",
+   "english": "Good food",
+   "sessions": 53,
+   "roles": {
+    "product": "food",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Delicious snack options",
+   "substitute": "Sesame sticks",
+   "broader": "Good food with Sichuan pepper options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"food\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\"]",
+    "synonym": "Delicious snack options",
+    "substitute": "Sesame sticks",
+    "broader": "Good food with Sichuan pepper options"
+   }
+  },
+  {
+   "query": "羽衣甘蓝粉官方旗舰店",
+   "english": "Kale powder official flagship store",
+   "sessions": 2,
+   "roles": {
+    "product": "kale powder",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Fruit and vegetable powders"
+   ],
+   "synonym": "Official store for kale powder",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"kale powder\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Fruit and vegetable powders\"]",
+    "synonym": "Official store for kale powder",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "老板娘的生活馆螺蛳粉",
+   "english": "Laobanniang's Life Store luosifen river-snail noodles",
+   "sessions": 1,
+   "roles": {
+    "product": "river-snail noodles",
+    "brand": "Laobanniang",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"river-snail noodles\",\n  \"brand\": \"Laobanniang\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "脆枣",
+   "english": "Crispy jujubes",
+   "sessions": 10,
+   "roles": {
+    "product": "jujubes",
+    "brand": "",
+    "attributes": [
+     "crispy"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Jujube products",
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products"
+   ],
+   "synonym": "Crisp dried jujubes",
+   "substitute": "",
+   "broader": "Crispy jujube products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jujubes\",\n  \"brand\": \"\",\n  \"attributes\": [\"crispy\", \"dried\", \"Xinjiang\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Preserved fruit, dried fruit and fruit products > Jujube products\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products\"]",
+    "synonym": "Crisp dried jujubes",
+    "substitute": "NONE",
+    "broader": "Crispy jujube products"
+   }
+  },
+  {
+   "query": "脆柿",
+   "english": "Crunchy persimmon",
+   "sessions": 6,
+   "roles": {
+    "product": "persimmon",
+    "brand": "",
+    "attributes": [
+     "crunchy"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Fruit > Persimmons"
+   ],
+   "synonym": "Crisp persimmon",
+   "substitute": "",
+   "broader": "Crunchy fruit options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"persimmon\",\n  \"brand\": \"Yangfeng\",\n  \"attributes\": [\"crunchy\"]\n}",
+    "categories": "[\"Fresh foods > Fruit > Persimmons\"]",
+    "synonym": "Crisp persimmon",
+    "substitute": "NONE",
+    "broader": "Crunchy fruit options"
+   }
+  },
+  {
+   "query": "脆柿子",
+   "english": "Crisp persimmons",
+   "sessions": 29,
+   "roles": {
+    "product": "persimmons",
+    "brand": "",
+    "attributes": [
+     "crisp"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Fruit > Persimmons"
+   ],
+   "synonym": "Crisp fruit snacks",
+   "substitute": "",
+   "broader": "Crisp fruit options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"persimmons\",\n  \"brand\": \"Yangfeng\",\n  \"attributes\": [\"crisp\", \"2.25 kg net\"]\n}",
+    "categories": "[\"Fresh foods > Fruit > Persimmons\"]",
+    "synonym": "Crisp fruit snacks",
+    "substitute": "NONE",
+    "broader": "Crisp fruit options"
+   }
+  },
+  {
+   "query": "自热火锅",
+   "english": "Self-heating hot pot",
+   "sessions": 96,
+   "roles": {
+    "product": "hot pot",
+    "brand": "",
+    "attributes": [
+     "self-heating"
+    ]
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant hot pots"
+   ],
+   "synonym": "Self-heating instant hot pot",
+   "substitute": "Instant noodle soup",
+   "broader": "Self-heating hot pot meal",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"hot pot\",\n  \"brand\": \"Simida\",\n  \"attributes\": [\"self-heating\"]\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant hot pots\"]",
+    "synonym": "Self-heating instant hot pot",
+    "substitute": "Instant noodle soup",
+    "broader": "Self-heating hot pot meal"
+   }
+  },
+  {
+   "query": "苏打水批发整箱",
+   "english": "Soda water wholesale by the case",
+   "sessions": 5,
+   "roles": {
+    "product": "soda water",
+    "brand": "",
+    "attributes": [
+     "wholesale",
+     "by the case"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Drinking, mineral and purified water"
+   ],
+   "synonym": "Seltzer water bulk purchase",
+   "substitute": "Carbonated water",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"soda water\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"wholesale\",\n    \"by the case\"\n  ]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Drinking, mineral and purified water\"]",
+    "synonym": "Seltzer water bulk purchase",
+    "substitute": "Carbonated water",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "苹果",
+   "english": "Apples",
+   "sessions": 57,
+   "roles": {
+    "product": "apples",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Apples"
+   ],
+   "synonym": "Red apples",
+   "substitute": "",
+   "broader": "Apples with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"apples\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Fruit > Apples\"]",
+    "synonym": "Red apples",
+    "substitute": "NONE",
+    "broader": "Apples with dietary restrictions"
+   }
+  },
+  {
+   "query": "茄子",
+   "english": "Eggplant",
+   "sessions": 1,
+   "roles": {
+    "product": "Eggplant",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Eggplant"
+   ],
+   "synonym": "Purple Eggplant",
+   "substitute": "Zucchini",
+   "broader": "Eggplant and related vegetables",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"Eggplant\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Eggplant\"]",
+    "synonym": "Purple Eggplant",
+    "substitute": "Zucchini",
+    "broader": "Eggplant and related vegetables"
+   }
+  },
+  {
+   "query": "茶叶",
+   "english": "Tea leaves",
+   "sessions": 79,
+   "roles": {
+    "product": "tea leaves",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Herbal and fruit infusions > Herbal teas and infusions",
+    "Tea > Wellness teas",
+    "Tea > Other teas",
+    "Tea > Herbal and fruit infusions > Jasmine floral teas"
+   ],
+   "synonym": "Herbal tea ingredients",
+   "substitute": "Herbal tea bags",
+   "broader": "Herbal and fruit infusions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tea leaves\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Tea > Herbal and fruit infusions > Herbal teas and infusions\", \"Tea > Wellness teas\", \"Tea > Other teas\", \"Tea > Herbal and fruit infusions > Jasmine floral teas\"]",
+    "synonym": "Herbal tea ingredients",
+    "substitute": "Herbal tea bags",
+    "broader": "Herbal and fruit infusions"
+   }
+  },
+  {
+   "query": "茶叶批发",
+   "english": "Tea leaves wholesale",
+   "sessions": 2,
+   "roles": {
+    "product": "tea leaves",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Herbal and fruit infusions > Jasmine floral teas",
+    "Tea > Wellness teas"
+   ],
+   "synonym": "Wholesale jasmine tea",
+   "substitute": "Herbal tea bags",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tea leaves\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Tea > Herbal and fruit infusions > Jasmine floral teas\", \"Tea > Wellness teas\"]",
+    "synonym": "Wholesale jasmine tea",
+    "substitute": "Herbal tea bags",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "茶叶礼盒高档包装英德红茶英红九号",
+   "english": "Premium tea gift box of Yingde black tea, Yinghong No. 9",
+   "sessions": 1,
+   "roles": {
+    "product": "tea",
+    "brand": "Yingde",
+    "attributes": [
+     "gift box",
+     "black tea",
+     "Yinghong No. 9"
+    ]
+   },
+   "categories": [
+    "Tea > Black tea > Other black teas"
+   ],
+   "synonym": "Yingde black tea gift box",
+   "substitute": "Jasmine tea",
+   "broader": "Premium black tea gift box",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tea\",\n  \"brand\": \"Yingde\",\n  \"attributes\": [\"gift box\", \"black tea\", \"Yinghong No. 9\"]\n}",
+    "categories": "[\"Tea > Black tea > Other black teas\"]",
+    "synonym": "Yingde black tea gift box",
+    "substitute": "Jasmine tea",
+    "broader": "Premium black tea gift box"
+   }
+  },
+  {
+   "query": "荞麦月饼糖尿病人一斤一个",
+   "english": "Buckwheat mooncakes for people with diabetes, one jin each",
+   "sessions": 1,
+   "roles": {
+    "product": "mooncakes",
+    "brand": "",
+    "attributes": [
+     "buckwheat"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+   "substitute": "",
+   "broader": "Sugar-free buckwheat mooncakes for people with diabetes",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"mooncakes\",\n  \"brand\": \"Seller-labeled\",\n  \"attributes\": [\"sugar-free\", \"buckwheat\", \"five nuts\", \"perilla seeds\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "Sugar-free buckwheat mooncakes for diabetics",
+    "substitute": "NONE",
+    "broader": "Sugar-free buckwheat mooncakes for people with diabetes"
+   }
+  },
+  {
+   "query": "菜籽油清真",
+   "english": "Halal rapeseed oil",
+   "sessions": 1,
+   "roles": {
+    "product": "rapeseed oil",
+    "brand": "",
+    "attributes": [
+     "halal"
+    ]
+   },
+   "categories": [
+    "Grains, oils and seasonings > Cooking and seasoning oils > Rapeseed oils"
+   ],
+   "synonym": "Halal cooking oil",
+   "substitute": "Sunflower oil",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rapeseed oil\",\n  \"brand\": \"Linxia Guanghe\",\n  \"attributes\": [\"halal\", \"2.5 L or 5 L\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Cooking and seasoning oils > Rapeseed oils\"]",
+    "synonym": "Halal cooking oil",
+    "substitute": "Sunflower oil",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "薄脆",
+   "english": "Thin crisps",
+   "sessions": 1,
+   "roles": {
+    "product": "crisps",
+    "brand": "",
+    "attributes": [
+     "thin"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries"
+   ],
+   "synonym": "Thin crackers",
+   "substitute": "Thin scallion crackers",
+   "broader": "Thin crispy snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"crisps\",\n  \"brand\": \"\",\n  \"attributes\": [\"thin\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries\", \"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries\"]",
+    "synonym": "Thin crackers",
+    "substitute": "Thin scallion crackers",
+    "broader": "Thin crispy snacks"
+   }
+  },
+  {
+   "query": "虾干",
+   "english": "Dried shrimp",
+   "sessions": 13,
+   "roles": {
+    "product": "dried shrimp",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Dried seafood"
+   ],
+   "synonym": "Dried prawns NONE",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"dried shrimp\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Dried seafood\"]",
+    "synonym": "Dried prawns NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "虾皮干货特级无盐补钙淡干",
+   "english": "Premium unsalted lightly dried tiny shrimp for calcium",
+   "sessions": 4,
+   "roles": {
+    "product": "shrimp",
+    "brand": "",
+    "attributes": [
+     "premium",
+     "unsalted",
+     "lightly dried",
+     "tiny"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat shrimp snacks"
+   ],
+   "synonym": "Premium unsalted xiapi for calcium",
+   "substitute": "",
+   "broader": "Premium unsalted lightly dried tiny shrimp",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"shrimp\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"premium\",\n    \"unsalted\",\n    \"lightly dried\",\n    \"tiny\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat shrimp snacks\"]",
+    "synonym": "Premium unsalted xiapi for calcium",
+    "substitute": "NONE",
+    "broader": "Premium unsalted lightly dried tiny shrimp"
+   }
+  },
+  {
+   "query": "蛋月烧",
+   "english": "Danyueshao",
+   "sessions": 27,
+   "roles": {
+    "product": "egg mooncakes",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"egg mooncakes\",\n  \"brand\": \"Shengshi\",\n  \"attributes\": [\"Shanxi-style\", \"Traditional pastries\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "蛋月烧月饼100克第一名官方旗舰店",
+   "english": "Top-ranked 100 g Danyueshao mooncakes official flagship store",
+   "sessions": 1,
+   "roles": {
+    "product": "mooncakes",
+    "brand": "Danyueshao",
+    "attributes": [
+     "100 g"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries"
+   ],
+   "synonym": "Top-ranked 100g Danyueshao mooncakes official store",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"mooncakes\",\n  \"brand\": \"Danyueshao\",\n  \"attributes\": [\"100 g\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Traditional pastries\"]",
+    "synonym": "Top-ranked 100g Danyueshao mooncakes official store",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "螃蟹",
+   "english": "Crabs",
+   "sessions": 59,
+   "roles": {
+    "product": "crabs",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Seafood and aquatic products > Live crabs"
+   ],
+   "synonym": "Live crabs",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"crabs\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Seafood and aquatic products > Live crabs\"]",
+    "synonym": "Live crabs",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "螺狮粉",
+   "english": "Luosifen river-snail noodles",
+   "sessions": 32,
+   "roles": {
+    "product": "river-snail noodles",
+    "brand": "Luosifen",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles"
+   ],
+   "synonym": "",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"river-snail noodles\",\n  \"brand\": \"Luosifen\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Convenience foods > Instant vermicelli and rice noodles\"]",
+    "synonym": "NONE",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "西梅果冻",
+   "english": "Prune jelly",
+   "sessions": 17,
+   "roles": {
+    "product": "jelly",
+    "brand": "",
+    "attributes": [
+     "prune"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Jellies and puddings",
+    "Fresh foods > Fruit > Prune plums"
+   ],
+   "synonym": "Prune plum jelly",
+   "substitute": "Konjac jelly",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"jelly\",\n  \"brand\": \"Yangfu\",\n  \"attributes\": [\"prune\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Jellies and puddings\", \"Fresh foods > Fruit > Prune plums\"]",
+    "synonym": "Prune plum jelly",
+    "substitute": "Konjac jelly",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "豆干零食香辣豆干",
+   "english": "Spicy dried tofu snacks",
+   "sessions": 2,
+   "roles": {
+    "product": "dried tofu snacks",
+    "brand": "",
+    "attributes": [
+     "spicy"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products"
+   ],
+   "synonym": "Spicy dried bean curd snacks",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"dried tofu snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"spicy\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products\"]",
+    "synonym": "Spicy dried bean curd snacks",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "豆角",
+   "english": "Green beans",
+   "sessions": 10,
+   "roles": {
+    "product": "green beans",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Legumes"
+   ],
+   "synonym": "Green bean varieties",
+   "substitute": "",
+   "broader": "Green beans and related vegetable products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"green beans\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Legumes\"]",
+    "synonym": "Green bean varieties",
+    "substitute": "NONE",
+    "broader": "Green beans and related vegetable products"
+   }
+  },
+  {
+   "query": "豌豆零食",
+   "english": "Pea snacks",
+   "sessions": 3,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Nuts and roasted snacks > Roasted legumes"
+   ],
+   "synonym": "Pea-based snack options",
+   "substitute": "Dried tofu snacks",
+   "broader": "Pea and legume snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Nuts and roasted snacks > Roasted legumes\"]",
+    "synonym": "Pea-based snack options",
+    "substitute": "Dried tofu snacks",
+    "broader": "Pea and legume snacks"
+   }
+  },
+  {
+   "query": "货巧克力面包",
+   "english": "Huo, chocolate bread",
+   "sessions": 1,
+   "roles": {
+    "product": "bread",
+    "brand": "",
+    "attributes": [
+     "chocolate"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Huo, chocolate bread recipe",
+   "substitute": "Cultured-milk-flavored mini pocket bread",
+   "broader": "Chocolate bread with dietary restrictions",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"bread\",\n  \"brand\": \"\",\n  \"attributes\": [\"chocolate\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Huo, chocolate bread recipe",
+    "substitute": "Cultured-milk-flavored mini pocket bread",
+    "broader": "Chocolate bread with dietary restrictions"
+   }
+  },
+  {
+   "query": "软籽石榴突尼斯",
+   "english": "Tunisian soft-seed pomegranates",
+   "sessions": 2,
+   "roles": {
+    "product": "pomegranates",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Fruit > Pomegranates"
+   ],
+   "synonym": "Tunisian pomegranates with soft seeds",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"pomegranates\",\n  \"brand\": \"Huili, Sichuan\",\n  \"attributes\": [\"soft-seeded\", \"Tunisian-variety\"]\n}",
+    "categories": "[\"Fresh foods > Fruit > Pomegranates\"]",
+    "synonym": "Tunisian pomegranates with soft seeds",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "辣条",
+   "english": "Latiao spicy strips",
+   "sessions": 123,
+   "roles": {
+    "product": "spicy strips",
+    "brand": "Latiao",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Latiao snack options",
+   "substitute": "Douyouwei Hunan-style spicy vegetarian beef-tendon-style starch snack",
+   "broader": "Latiao spicy snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"spicy strips\",\n  \"brand\": \"Latiao\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\"]",
+    "synonym": "Latiao snack options",
+    "substitute": "Douyouwei Hunan-style spicy vegetarian beef-tendon-style starch snack",
+    "broader": "Latiao spicy snacks"
+   }
+  },
+  {
+   "query": "辣白菜味辣条",
+   "english": "Kimchi-flavored latiao spicy strips",
+   "sessions": 2,
+   "roles": {
+    "product": "latiao spicy strips",
+    "brand": "",
+    "attributes": [
+     "spicy",
+     "kimchi-flavored"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Kimchi-flavored wheat gluten snacks",
+   "substitute": "Spicy cabbage-flavored latiao",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"latiao spicy strips\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"kimchi-flavored\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Kimchi-flavored wheat gluten snacks",
+    "substitute": "Spicy cabbage-flavored latiao",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "辣白菜辣条150包",
+   "english": "150 packs of kimchi-flavored latiao",
+   "sessions": 1,
+   "roles": {
+    "product": "kimchi-flavored latiao",
+    "brand": "",
+    "attributes": [
+     "150 packs"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "150g packs of kimchi-flavored latiao",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"kimchi-flavored latiao\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"150 packs\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "150g packs of kimchi-flavored latiao",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "酸奶",
+   "english": "Yogurt",
+   "sessions": 63,
+   "roles": {
+    "product": "yogurt",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Fermented dairy products",
+    "Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages"
+   ],
+   "synonym": "Fermented dairy product",
+   "substitute": "Milk",
+   "broader": "Yogurt and yogurt-flavored products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"yogurt\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Fermented dairy products\", \"Coffee, cereals and drink mixes > Milk and dairy products > Milk-based beverages\"]",
+    "synonym": "Fermented dairy product",
+    "substitute": "Milk",
+    "broader": "Yogurt and yogurt-flavored products"
+   }
+  },
+  {
+   "query": "酸砂橡皮糖",
+   "english": "Sour sugar-coated gummy candy",
+   "sessions": 6,
+   "roles": {
+    "product": "gummy candy",
+    "brand": "",
+    "attributes": [
+     "sour",
+     "sugar-coated"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies"
+   ],
+   "synonym": "Sour flavored gummy candies",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"gummy candy\",\n  \"brand\": \"\",\n  \"attributes\": [\"sour\", \"sugar-coated\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\"]",
+    "synonym": "Sour flavored gummy candies",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "酸砂软糖",
+   "english": "Sour sugar-coated soft candy",
+   "sessions": 1,
+   "roles": {
+    "product": "sour sugar-coated soft candy",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies"
+   ],
+   "synonym": "Sour gummy candies",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sour sugar-coated soft candy\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Candy, jelly and pudding > Soft candies and gummies\"]",
+    "synonym": "Sour gummy candies",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "金典纯牛奶250ml12盒",
+   "english": "Twelve 250 ml cartons of Satine plain milk",
+   "sessions": 2,
+   "roles": {
+    "product": "",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk"
+   ],
+   "synonym": "Twelve 250 ml cartons of Yili Satine milk",
+   "substitute": "Milk Deluxe pure milk",
+   "broader": "Twelve 250 ml cartons of milk NONE",
+   "valid": false,
+   "raw": {
+    "roles": "{\n  \"product\": \"milk\",\n  \"brand\": \"Satine\",\n  \"attributes\": [\n    {\n      \"attribute\": \"plain\",\n      \"value\": \"\"\n    },\n    {\n      \"attribute\": \"250 ml\",\n      \"value\": \"cartons\"\n    }\n  ]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Milk and dairy products > Shelf-stable milk\"]",
+    "synonym": "Twelve 250 ml cartons of Yili Satine milk",
+    "substitute": "Milk Deluxe pure milk",
+    "broader": "Twelve 250 ml cartons of milk NONE"
+   }
+  },
+  {
+   "query": "铁观音",
+   "english": "Tieguanyin oolong tea",
+   "sessions": 1,
+   "roles": {
+    "product": "oolong tea",
+    "brand": "Tieguanyin",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Oolong tea > Tea leaves"
+   ],
+   "synonym": "Autumn Tieguanyin oolong tea",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"oolong tea\",\n  \"brand\": \"Tieguanyin\",\n  \"attributes\": [\"autumn harvest\"]\n}",
+    "categories": "[\"Tea > Oolong tea > Tea leaves\"]",
+    "synonym": "Autumn Tieguanyin oolong tea",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "锅巴",
+   "english": "Crispy rice crust",
+   "sessions": 16,
+   "roles": {
+    "product": "crispy rice snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks",
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Crispy rice snack options",
+   "substitute": "",
+   "broader": "Crispy rice snack options",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"crispy rice snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"Sichuan pepper\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks\", \"Snacks, nuts and regional specialties > Snack and nut specialties\"]",
+    "synonym": "Crispy rice snack options",
+    "substitute": "NONE",
+    "broader": "Crispy rice snack options"
+   }
+  },
+  {
+   "query": "陈皮村新会陈皮",
+   "english": "Chenpicun Xinhui dried tangerine peel",
+   "sessions": 1,
+   "roles": {
+    "product": "dried tangerine peel",
+    "brand": "Chenpicun Xinhui",
+    "attributes": []
+   },
+   "categories": [
+    "Tea > Herbal and fruit infusions > Flavored and blended teas"
+   ],
+   "synonym": "Xinhui dried tangerine peel tea",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"dried tangerine peel\",\n  \"brand\": \"Chenpicun Xinhui\",\n  \"attributes\": []\n}",
+    "categories": "[\"Tea > Herbal and fruit infusions > Flavored and blended teas\"]",
+    "synonym": "Xinhui dried tangerine peel tea",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "零食",
+   "english": "Snacks",
+   "sessions": 603,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [],
+   "synonym": "",
+   "substitute": "Japanese-style chocolate daifuku mochi",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\", \"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries\", \"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Other ready-to-eat seafood snacks\", \"Snacks, nuts and regional specialties > Snack and nut specialties\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\", \"Snacks",
+    "synonym": "NONE",
+    "substitute": "Japanese-style chocolate daifuku mochi",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "零食休闲食品小吃大全批发",
+   "english": "All kinds of snacks and snack foods wholesale",
+   "sessions": 1,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products",
+    "Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks"
+   ],
+   "synonym": "Wholesale variety of snack foods",
+   "substitute": "Dried fruit medley",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products\", \"Snacks, nuts and regional specialties > Cheese and dairy products > Dairy snacks\"]",
+    "synonym": "Wholesale variety of snack foods",
+    "substitute": "Dried fruit medley",
+    "broader": "All kinds of snacks and snack foods wholesale, including spicy braised meats and dairy snacks"
+   }
+  },
+  {
+   "query": "零食大礼包。",
+   "english": "Large snack gift pack",
+   "sessions": 1,
+   "roles": {
+    "product": "snack",
+    "brand": "",
+    "attributes": [
+     "gift pack"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments"
+   ],
+   "synonym": "Large flavored meat snack gift pack",
+   "substitute": "",
+   "broader": "Large snack gift pack including spicy braised meats",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snack\",\n  \"brand\": \"\",\n  \"attributes\": [\"gift pack\", \"spicy\", \"braised\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\"]",
+    "synonym": "Large flavored meat snack gift pack",
+    "substitute": "NONE",
+    "broader": "Large snack gift pack including spicy braised meats"
+   }
+  },
+  {
+   "query": "零食小吃休闲食品",
+   "english": "Snacks and snack foods",
+   "sessions": 302,
+   "roles": {
+    "product": "",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [],
+   "synonym": "Snack foods and treats",
+   "substitute": "Assorted sour fruit gummies",
+   "broader": "Snacks with dietary restrictions",
+   "valid": false,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"mini pocket bread\",\n    \"spicy braised meat snacks\",\n    \"gift assortment\",\n    \"rice crackers\",\n    \"frosted rice crackers\",\n    \"spicy vegetarian beef-tendon-style starch snack\",\n    \"crispy pork cracklings\",\n    \"sour fruit gummies",
+    "categories": "[\"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\", \"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Puffed snacks\", \"Snacks, nuts and regional specialties > Nuts and roasted snacks > Peanut snacks\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Meat gift assortments\", \"Snacks, nuts and regional specialties > Jerky, smoked and braised meats, and cooked foods > Pork products",
+    "synonym": "Snack foods and treats",
+    "substitute": "Assorted sour fruit gummies",
+    "broader": "Snacks with dietary restrictions"
+   }
+  },
+  {
+   "query": "零食小吃休闲食品1分钱",
+   "english": "Snacks and snack foods for one fen",
+   "sessions": 4,
+   "roles": {
+    "product": "snacks and snack foods",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products"
+   ],
+   "synonym": "Snacks under one fen",
+   "substitute": "Dried fruit snacks",
+   "broader": "Snacks and snack foods following one fen budget",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks and snack foods\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Dried tofu products\"]",
+    "synonym": "Snacks under one fen",
+    "substitute": "Dried fruit snacks",
+    "broader": "Snacks and snack foods following one fen budget"
+   }
+  },
+  {
+   "query": "零食批发临期折扣",
+   "english": "Discount wholesale snacks nearing expiration",
+   "sessions": 5,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": [
+     "wholesale"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties"
+   ],
+   "synonym": "Discount near-expiration snack options",
+   "substitute": "Discount wholesale dried fruit assortment",
+   "broader": "Discount wholesale nearing expiration snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\"wholesale\", \"near expiration\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\"]",
+    "synonym": "Discount near-expiration snack options",
+    "substitute": "Discount wholesale dried fruit assortment",
+    "broader": "Discount wholesale nearing expiration snacks"
+   }
+  },
+  {
+   "query": "面包",
+   "english": "Bread",
+   "sessions": 308,
+   "roles": {
+    "product": "bread",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Snack and nut specialties",
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Baked goods NONE",
+   "substitute": "",
+   "broader": "Bread options for various diets and preferences",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"bread\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Snack and nut specialties\", \"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Baked goods NONE",
+    "substitute": "NONE",
+    "broader": "Bread options for various diets and preferences"
+   }
+  },
+  {
+   "query": "面包整箱批发",
+   "english": "Bread wholesale by the case",
+   "sessions": 40,
+   "roles": {
+    "product": "bread",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat fish snacks",
+    "Snacks, nuts and regional specialties > Snack and nut specialties",
+    "Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods"
+   ],
+   "synonym": "Bread bulk purchase",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"bread\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Ready-to-eat seafood snacks > Ready-to-eat fish snacks\", \"Snacks, nuts and regional specialties > Snack and nut specialties\", \"Snacks, nuts and regional specialties > Pastries and small cakes > Western-style baked goods\"]",
+    "synonym": "Bread bulk purchase",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "韭花",
+   "english": "Garlic chive blossoms",
+   "sessions": 1,
+   "roles": {
+    "product": "garlic chive blossoms",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Vegetables and prepared vegetables > Garlic"
+   ],
+   "synonym": "Garlic chive flowers",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"garlic chive blossoms\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Vegetables and prepared vegetables > Garlic\"]",
+    "synonym": "Garlic chive flowers",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "韭菜花酱",
+   "english": "Garlic chive flower sauce",
+   "sessions": 3,
+   "roles": {
+    "product": "sauce",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings"
+   ],
+   "synonym": "Garlic chive blossom sauce",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"sauce\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Grains, oils and seasonings > Condiments, jams and salad dressings > Other seasonings\"]",
+    "synonym": "Garlic chive blossom sauce",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "食品零食批发",
+   "english": "Food and snacks wholesale",
+   "sessions": 20,
+   "roles": {
+    "product": "snacks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries"
+   ],
+   "synonym": "Wholesale snacks and treats",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"snacks\",\n  \"brand\": \"\",\n  \"attributes\": [\n    \"thin scallion crackers\",\n    \"spicy braised meat snacks\",\n    \"Chongqing shiitake and dried tofu snacks\",\n    \"Bibizan Sichuan pepper mixed meat and vegetable snacks\"\n  ]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Cookies, crackers and puffed snacks > Cookies, crackers and pastries\"]",
+    "synonym": "Wholesale snacks and treats",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "饭团开袋即食肉馅",
+   "english": "Ready-to-eat rice balls with meat filling",
+   "sessions": 1,
+   "roles": {
+    "product": "rice balls",
+    "brand": "",
+    "attributes": [
+     "ready-to-eat",
+     "meat filling"
+    ]
+   },
+   "categories": [
+    "Fresh foods > Refrigerated and frozen foods > Quick-frozen foods"
+   ],
+   "synonym": "Rice balls with meat filling options",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"rice balls\",\n  \"brand\": \"Qianwei Yangchu\",\n  \"attributes\": [\"ready-to-eat\", \"meat filling\", \"shiitake\", \"braised pork\", \"seaweed\", \"black rice\", \"pork floss\"]\n}",
+    "categories": "[\"Fresh foods > Refrigerated and frozen foods > Quick-frozen foods\"]",
+    "synonym": "Rice balls with meat filling options",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "饮料",
+   "english": "Drinks",
+   "sessions": 132,
+   "roles": {
+    "product": "drinks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages",
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Ginger drink powders"
+   ],
+   "synonym": "Fruit-flavored drinks",
+   "substitute": "Tea",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"drinks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages\", \"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Ginger drink powders\"]",
+    "synonym": "Fruit-flavored drinks",
+    "substitute": "Tea",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "饮料整箱批发",
+   "english": "Drinks wholesale by the case",
+   "sessions": 42,
+   "roles": {
+    "product": "drinks",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages",
+    "Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Ginger drink powders"
+   ],
+   "synonym": "Wholesale fruit drinks by the case",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"drinks\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Beverages > Fruit-flavored beverages\", \"Coffee, cereals and drink mixes > Lotus root starch, cereals and drink mixes > Ginger drink powders\"]",
+    "synonym": "Wholesale fruit drinks by the case",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "香菇干货",
+   "english": "Dried shiitake mushrooms",
+   "sessions": 2,
+   "roles": {
+    "product": "shiitake mushrooms",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Convenience and dried foods > Dried foods and dried meats > Dried regional specialties"
+   ],
+   "synonym": "Dried mushrooms",
+   "substitute": "",
+   "broader": "Dried mushrooms and snacks",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"shiitake mushrooms\",\n  \"brand\": \"Suizhou\",\n  \"attributes\": []\n}",
+    "categories": "[\"Convenience and dried foods > Dried foods and dried meats > Dried regional specialties\"]",
+    "synonym": "Dried mushrooms",
+    "substitute": "NONE",
+    "broader": "Dried mushrooms and snacks"
+   }
+  },
+  {
+   "query": "马美丽胡油",
+   "english": "Ma Meili flaxseed oil",
+   "sessions": 1,
+   "roles": {
+    "product": "flaxseed oil",
+    "brand": "Ma Meili",
+    "attributes": []
+   },
+   "categories": [
+    "Grains, oils and seasonings > Cooking and seasoning oils > Flaxseed oil and hempseed oil"
+   ],
+   "synonym": "Ma Li Yuan flaxseed oil",
+   "substitute": "Soybean oil",
+   "broader": "Ma Meili flaxseed oil and similar oils",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"flaxseed oil\",\n  \"brand\": \"Ma Meili\",\n  \"attributes\": [\"pressed\", \"roasted\", \"4 L\"]\n}",
+    "categories": "[\"Grains, oils and seasonings > Cooking and seasoning oils > Flaxseed oil and hempseed oil\"]",
+    "synonym": "Ma Li Yuan flaxseed oil",
+    "substitute": "Soybean oil",
+    "broader": "Ma Meili flaxseed oil and similar oils"
+   }
+  },
+  {
+   "query": "鸡排",
+   "english": "Chicken cutlets",
+   "sessions": 20,
+   "roles": {
+    "product": "chicken cutlets",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Refrigerated and frozen foods > Quick-frozen foods"
+   ],
+   "synonym": "Crispy chicken cutlets",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"chicken cutlets\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Refrigerated and frozen foods > Quick-frozen foods\"]",
+    "synonym": "Crispy chicken cutlets",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "鸡爪子无骨鸡爪",
+   "english": "Chicken feet, boneless chicken feet",
+   "sessions": 3,
+   "roles": {
+    "product": "boneless chicken feet",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Meat, poultry and prepared products > Meat products"
+   ],
+   "synonym": "Boneless chicken feet flavors",
+   "substitute": "Boneless chicken wings",
+   "broader": "Boneless chicken feet flavors",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"boneless chicken feet\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Meat, poultry and prepared products > Meat products\"]",
+    "synonym": "Boneless chicken feet flavors",
+    "substitute": "Boneless chicken wings",
+    "broader": "Boneless chicken feet flavors"
+   }
+  },
+  {
+   "query": "鸡蛋",
+   "english": "Eggs",
+   "sessions": 24,
+   "roles": {
+    "product": "eggs",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Eggs and egg products > Fresh eggs"
+   ],
+   "synonym": "Fresh farm eggs",
+   "substitute": "Avocado",
+   "broader": "Fresh eggs",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"eggs\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Eggs and egg products > Fresh eggs\"]",
+    "synonym": "Fresh farm eggs",
+    "substitute": "Avocado",
+    "broader": "Fresh eggs"
+   }
+  },
+  {
+   "query": "麻辣素板筋",
+   "english": "Spicy numbing pepper vegetarian-style tendon",
+   "sessions": 1,
+   "roles": {
+    "product": "tendon",
+    "brand": "",
+    "attributes": [
+     "spicy",
+     "numbing",
+     "vegetarian"
+    ]
+   },
+   "categories": [
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes",
+    "Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao"
+   ],
+   "synonym": "Spicy vegetarian beef-tendon snack",
+   "substitute": "Douyouwei Hunan-style spicy vegetarian beef-tendon-style starch snack",
+   "broader": "Spicy vegetarian beef-tendon-style snack",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"tendon\",\n  \"brand\": \"\",\n  \"attributes\": [\"spicy\", \"numbing\", \"vegetarian\"]\n}",
+    "categories": "[\"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Vegetarian meat substitutes\", \"Snacks, nuts and regional specialties > Dried tofu products and vegetable snacks > Wheat gluten snacks and latiao\"]",
+    "synonym": "Spicy vegetarian beef-tendon snack",
+    "substitute": "Douyouwei Hunan-style spicy vegetarian beef-tendon-style starch snack",
+    "broader": "Spicy vegetarian beef-tendon-style snack"
+   }
+  },
+  {
+   "query": "黄瓜籽粉正品官方旗舰店",
+   "english": "Authentic cucumber seed powder official flagship store",
+   "sessions": 1,
+   "roles": {
+    "product": "cucumber seed powder",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders"
+   ],
+   "synonym": "Official store for cucumber seed powder",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"cucumber seed powder\",\n  \"brand\": \"Baizi Zhiyuan\",\n  \"attributes\": [\"300 g bag\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders\"]",
+    "synonym": "Official store for cucumber seed powder",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "黄瓜籽粉补钙接骨旗舰店正品",
+   "english": "Genuine cucumber seed powder flagship store, for calcium and bone healing",
+   "sessions": 14,
+   "roles": {
+    "product": "cucumber seed powder",
+    "brand": "",
+    "attributes": [
+     "for calcium and bone healing"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders",
+    "Coffee, cereals and drink mixes > Nourishing food powders > Other food powders"
+   ],
+   "synonym": "Genuine northeast Chinese cucumber seed powder for calcium and bone health",
+   "substitute": "",
+   "broader": "Cucumber seed powder for calcium and bone health",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"cucumber seed powder\",\n  \"brand\": \"Northeastern Chinese\",\n  \"attributes\": [\"for calcium and bone healing\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Mixed grain powders\", \"Coffee, cereals and drink mixes > Nourishing food powders > Other food powders\"]",
+    "synonym": "Genuine northeast Chinese cucumber seed powder for calcium and bone health",
+    "substitute": "NONE",
+    "broader": "Cucumber seed powder for calcium and bone health"
+   }
+  },
+  {
+   "query": "黄瓜籽粉补钙正品假一赔十",
+   "english": "Authentic cucumber seed powder for calcium, tenfold compensation for counterfeits",
+   "sessions": 3,
+   "roles": {
+    "product": "cucumber seed powder",
+    "brand": "",
+    "attributes": [
+     "for calcium",
+     "tenfold compensation for counterfeits"
+    ]
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Nourishing food powders > Other food powders"
+   ],
+   "synonym": "Authentic cucumber seed powder for natural calcium",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"cucumber seed powder\",\n  \"brand\": \"Quxingke\",\n  \"attributes\": [\"for calcium\", \"tenfold compensation for counterfeits\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Nourishing food powders > Other food powders\"]",
+    "synonym": "Authentic cucumber seed powder for natural calcium",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "黄芪中药材正品",
+   "english": "Authentic astragalus root Chinese medicinal herb",
+   "sessions": 2,
+   "roles": {
+    "product": "astragalus root",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Fresh foods > Farm products > Other farm products"
+   ],
+   "synonym": "Authentic Chinese astragalus root herb",
+   "substitute": "",
+   "broader": "",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"astragalus root\",\n  \"brand\": \"\",\n  \"attributes\": []\n}",
+    "categories": "[\"Fresh foods > Farm products > Other farm products\"]",
+    "synonym": "Authentic Chinese astragalus root herb",
+    "substitute": "NONE",
+    "broader": "NONE"
+   }
+  },
+  {
+   "query": "黑咖啡",
+   "english": "Black coffee",
+   "sessions": 23,
+   "roles": {
+    "product": "coffee",
+    "brand": "",
+    "attributes": []
+   },
+   "categories": [
+    "Coffee, cereals and drink mixes > Instant coffee, beans and grounds > Instant coffee"
+   ],
+   "synonym": "Black coffee beans",
+   "substitute": "",
+   "broader": "Black coffee and related products",
+   "valid": true,
+   "raw": {
+    "roles": "{\n  \"product\": \"coffee\",\n  \"brand\": \"Xisidun, Nescafé\",\n  \"attributes\": [\"instant\"]\n}",
+    "categories": "[\"Coffee, cereals and drink mixes > Instant coffee, beans and grounds > Instant coffee\"]",
+    "synonym": "Black coffee beans",
+    "substitute": "NONE",
+    "broader": "Black coffee and related products"
+   }
+  }
+ ]
+}

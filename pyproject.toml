@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pulp-fictional"
-version = "0.1.0"
+version = "0.2.0"
 description = "A grocery search engine with a grounded teacher and a distilled student."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -15,3 +15,6 @@ pulp-fictional = "pulp_fictional.server:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pulp_fictional"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"live" = "pulp_fictional/live"
