@@ -1,0 +1,17 @@
+name: Test storefront
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen --python ${{ matrix.python-version }}
+      - run: uv run --frozen python -m unittest discover -s tests
+      - run: uv run --frozen python evaluation/search.py
+      - run: uv run --frozen python evaluation/roles.py

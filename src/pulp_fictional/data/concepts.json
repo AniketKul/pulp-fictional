@@ -1,0 +1,104 @@
+{
+  "bread": {
+    "category": "Bakery > Bread > Sliced Bread",
+    "aliases": ["sliced bread", "sandwich loaf", "sandwich bread", "loaf"],
+    "broader": "bakery",
+    "substitutes": ["bagels"]
+  },
+  "bagels": {
+    "category": "Bakery > Bread > Bagels",
+    "aliases": ["bagel", "breakfast bagels"],
+    "broader": "bakery",
+    "substitutes": ["bread"]
+  },
+  "oat milk": {
+    "category": "Dairy & Alternatives > Plant Milk > Oat Milk",
+    "aliases": ["oat drink", "oat beverage", "oatmilk"],
+    "broader": "plant milk",
+    "substitutes": ["almond milk", "soy milk"]
+  },
+  "almond milk": {
+    "category": "Dairy & Alternatives > Plant Milk > Almond Milk",
+    "aliases": ["almond drink", "almondmilk"],
+    "broader": "plant milk",
+    "substitutes": ["oat milk", "soy milk"]
+  },
+  "soy milk": {
+    "category": "Dairy & Alternatives > Plant Milk > Soy Milk",
+    "aliases": ["soy drink", "soya milk", "soymilk"],
+    "broader": "plant milk",
+    "substitutes": ["oat milk", "almond milk"]
+  },
+  "dairy milk": {
+    "category": "Dairy & Alternatives > Dairy Milk > Cow's Milk",
+    "aliases": ["cow's milk", "cows milk"],
+    "broader": "milk",
+    "substitutes": ["oat milk"]
+  },
+  "flat leaf parsley": {
+    "category": "Produce > Fresh Herbs > Parsley",
+    "aliases": ["italian parsley", "flat parsley"],
+    "broader": "parsley",
+    "substitutes": ["curly parsley"]
+  },
+  "curly parsley": {
+    "category": "Produce > Fresh Herbs > Parsley",
+    "aliases": ["curled parsley", "curly leaf parsley"],
+    "broader": "parsley",
+    "substitutes": ["flat leaf parsley"]
+  },
+  "cilantro": {
+    "category": "Produce > Fresh Herbs > Cilantro",
+    "aliases": ["coriander leaves", "fresh coriander"],
+    "broader": "fresh herbs",
+    "substitutes": ["flat leaf parsley"]
+  },
+  "smoothie": {
+    "category": "Drinks > Juice & Smoothies > Smoothies",
+    "aliases": ["blended fruit drink", "fruit smoothie"],
+    "broader": "drinks",
+    "substitutes": ["juice"]
+  },
+  "juice": {
+    "category": "Drinks > Juice & Smoothies > Juice",
+    "aliases": ["fruit juice"],
+    "broader": "drinks",
+    "substitutes": ["smoothie"]
+  },
+  "freezer bags": {
+    "category": "Household > Food Storage > Freezer Bags",
+    "aliases": ["freezer bag", "freezer safe bags", "zip freezer bags"],
+    "broader": "food storage",
+    "substitutes": ["storage bags"]
+  },
+  "storage bags": {
+    "category": "Household > Food Storage > Storage Bags",
+    "aliases": ["resealable bags", "zip lock bags", "ziplock bags"],
+    "broader": "food storage",
+    "substitutes": ["freezer bags"]
+  },
+  "roast": {
+    "category": "Meat & Alternatives > Meat Alternatives > Plant Roasts",
+    "aliases": ["plant roast", "holiday roast"],
+    "broader": "meat alternatives",
+    "substitutes": ["tofu"]
+  },
+  "beef roast": {
+    "category": "Meat & Alternatives > Beef > Beef Roasts",
+    "aliases": ["chuck roast", "pot roast"],
+    "broader": "beef",
+    "substitutes": []
+  },
+  "tofu": {
+    "category": "Meat & Alternatives > Meat Alternatives > Tofu",
+    "aliases": ["bean curd"],
+    "broader": "meat alternatives",
+    "substitutes": ["roast"]
+  },
+  "bananas": {
+    "category": "Produce > Fruit > Bananas",
+    "aliases": ["banana"],
+    "broader": "fruit",
+    "substitutes": []
+  }
+}

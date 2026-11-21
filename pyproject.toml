@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pulp-fictional"
+version = "0.1.0"
+description = "A grocery search engine with a grounded teacher and a distilled student."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pulp-fictional = "pulp_fictional.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pulp_fictional"]

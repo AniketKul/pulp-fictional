@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173c31">
+  <title>Pulp Fictional · Grocery search</title>
+  <link rel="icon" type="image/jpeg" href="/static/citrus.jpg">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#query">Skip to search</a>
+  <header><div class="wrap topbar">
+    <a class="wordmark" href="/" aria-label="Pulp Fictional home"><span class="mark" aria-hidden="true"></span> Pulp Fictional</a>
+    <nav aria-label="Page navigation"><a href="#market">Market</a><a href="#intent">Intent trace</a></nav>
+  </div></header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">What’s on <em>your list?</em></h1>
+        <p>Search groceries in your own words.</p>
+        <form role="search" id="search">
+          <label class="visually-hidden" for="query">Search groceries</label>
+          <input id="query" name="q" type="search" maxlength="200" required placeholder="Try a product, brand, or dietary preference" value="bread no gluten">
+          <button type="submit">Search <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="examples" aria-label="Example searches"><span>Try</span>
+          <button type="button" data-query="bread no gluten">bread no gluten</button>
+          <button type="button" data-query="unsweetened oat milk">unsweetened oat milk</button>
+          <button type="button" data-query="vegan roast">vegan roast</button>
+        </div>
+      </div>
+      <div class="hero-image"><img src="/static/market.jpg" alt="A market bag with freshly baked bread, kale, tomatoes and lemon" width="1200" height="800"></div>
+    </section>
+    <p class="status" id="status" role="status"></p>
+    <div class="workbench">
+      <section id="market" aria-labelledby="market-title">
+        <div class="section-head"><h2 id="market-title" tabindex="-1">Market results</h2><span id="count"></span></div>
+        <p class="result-query" id="result-query"></p>
+        <ul class="products" id="products"></ul>
+        <p class="empty" id="empty" hidden>No matching groceries. Try a different brand, product, or attribute.</p>
+      </section>
+      <aside id="intent" aria-labelledby="intent-title">
+        <div class="section-head"><h2 id="intent-title">Intent trace</h2><span aria-hidden="true" class="trace-icon">⤷</span></div>
+        <p class="route" id="route">Waiting for search</p>
+        <p class="route-detail" id="route-detail"></p>
+        <div id="analysis" hidden>
+          <h3>Parsed intent</h3>
+          <dl id="roles"></dl>
+          <details id="provenance" hidden><summary>Model &amp; retrieval</summary>
+            <dl id="model-facts"></dl><h4 id="proposal-label">Roles submitted to validation</h4><dl id="proposal"></dl>
+          </details>
+          <h3>Category paths</h3>
+          <ul id="categories"></ul>
+          <details id="candidate-details" hidden><summary>Category checks</summary><ul id="candidates"></ul></details>
+          <details open><summary>Query rewrites</summary><div id="rewrites"></div></details>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer><div class="wrap"><span>Pulp Fictional</span><small>Demo catalog · Prices in USD</small></div></footer>
+</body>
+</html>

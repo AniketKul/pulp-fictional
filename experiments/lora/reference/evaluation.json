@@ -1,0 +1,389 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "gpu": "NVIDIA H100 PCIe",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.52.4",
+  "peft": "0.15.2",
+  "seed": 31,
+  "dtype": "bfloat16",
+  "train_rows": 136,
+  "eval_rows": 16,
+  "steps": 272,
+  "curriculum_sha256": "736e2ee8c8041073aad0c98bb119723c310ad95af76a1d30bc890266cfb29505",
+  "gold_sha256": "c80215451d894e632b3f3bdb6c9ac4f31b7adc5ea40695a997a2d5289d9203d9",
+  "adapter_sha256": "5331162c304a05d11c71c66187c21cf66e71bb5c017b6cfe96940783348d56e4",
+  "base": {
+    "micro_precision": 0.12280701754385964,
+    "micro_recall": 0.21212121212121213,
+    "micro_f1": 0.15555555555555556,
+    "exact_match": 0.0,
+    "valid_outputs": 15,
+    "warm_single_request_p50_ms": 897.67,
+    "predictions": [
+      {
+        "query": "sandwich loaf without gluten please",
+        "prediction": {
+          "product": "sandwich loaf",
+          "brand": "sandwich",
+          "attributes": [
+            "without gluten"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Brook & Barley oat drink without added sugar",
+        "prediction": {
+          "product": "brook & barley oat drink",
+          "brand": "brook & barley",
+          "attributes": [
+            "no added sugar"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "looking for organic Italian parsley",
+        "prediction": {
+          "product": "organic Italian parsley",
+          "brand": "Italian parsley",
+          "attributes": [
+            "organic",
+            "Italian parsley"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "extra large freezer safe bags",
+        "prediction": {
+          "product": "extra large freezer safe bags",
+          "brand": "freezer safe bags",
+          "attributes": [
+            "freezer safe",
+            "extra large"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Sunday Vale milk no lactose",
+        "prediction": {
+          "product": "sunday vale milk no lactose",
+          "brand": "sunday vale",
+          "attributes": [
+            "no lactose",
+            "milk"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "firm organic bean curd",
+        "prediction": {
+          "product": "firm organic bean curd",
+          "brand": "organic",
+          "attributes": [
+            "firm",
+            "organic",
+            "bean",
+            "curd"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "please find me animal free holiday roast",
+        "prediction": {
+          "product": "animal-free holiday roast",
+          "brand": "animal-free holiday roast",
+          "attributes": [
+            "animal-free",
+            "holiday roast"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Meadow Arc vanilla oat beverage",
+        "prediction": {
+          "product": "meadow arc vanilla oat beverage",
+          "brand": "meadow",
+          "attributes": [
+            "vanilla",
+            "oat"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "coriander leaves organic please",
+        "prediction": {
+          "product": "coriander leaves",
+          "brand": "coriander",
+          "attributes": [
+            "organic"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "looking for cinnamon breakfast bagels",
+        "prediction": {
+          "product": "cinnamon breakfast bagels",
+          "brand": "cinnamon",
+          "attributes": [
+            "cinnamon",
+            "breakfast",
+            "bagels"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "quart freezer bag please",
+        "prediction": {
+          "product": "quart freezer bag",
+          "brand": "quart",
+          "attributes": [
+            "freezer bag",
+            "quart"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "curled parsley bunch",
+        "prediction": {
+          "product": "curled parsley",
+          "brand": "curled parsley",
+          "attributes": [
+            "curled parsley",
+            "parsley",
+            "bunch"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "find me two percent chocolate milk",
+        "prediction": {},
+        "valid_json_schema": false
+      },
+      {
+        "query": "Fern & Flax loaf without gluten",
+        "prediction": {
+          "product": "fern & flax loaf",
+          "brand": "fern & flax",
+          "attributes": [
+            "no gluten"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "ripe dragonfruit",
+        "prediction": {
+          "product": "dragonfruit",
+          "brand": "dragonfruit",
+          "attributes": [
+            "ripe"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "wireless charging pad",
+        "prediction": {
+          "product": "wireless charging pad",
+          "brand": "unknown",
+          "attributes": []
+        },
+        "valid_json_schema": true
+      }
+    ]
+  },
+  "merged_lora": {
+    "micro_precision": 0.7142857142857143,
+    "micro_recall": 0.7575757575757576,
+    "micro_f1": 0.7352941176470589,
+    "exact_match": 0.5,
+    "valid_outputs": 16,
+    "warm_single_request_p50_ms": 572.01,
+    "predictions": [
+      {
+        "query": "sandwich loaf without gluten please",
+        "prediction": {
+          "product": "bread",
+          "brand": "",
+          "attributes": [
+            "gluten-free"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Brook & Barley oat drink without added sugar",
+        "prediction": {
+          "product": "oat milk",
+          "brand": "Brook & Barley",
+          "attributes": [
+            "without added sugar"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "looking for organic Italian parsley",
+        "prediction": {
+          "product": "parsley",
+          "brand": "",
+          "attributes": [
+            "organic",
+            "Italian"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "extra large freezer safe bags",
+        "prediction": {
+          "product": "freezer bags",
+          "brand": "",
+          "attributes": [
+            "extra large"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Sunday Vale milk no lactose",
+        "prediction": {
+          "product": "milk",
+          "brand": "Sunday Vale",
+          "attributes": [
+            "no lactose"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "firm organic bean curd",
+        "prediction": {
+          "product": "tofu",
+          "brand": "",
+          "attributes": [
+            "firm",
+            "organic"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "please find me animal free holiday roast",
+        "prediction": {
+          "product": "roast",
+          "brand": "",
+          "attributes": [
+            "vegan"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Meadow Arc vanilla oat beverage",
+        "prediction": {
+          "product": "oat milk",
+          "brand": "Meadow Arc",
+          "attributes": [
+            "vanilla"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "coriander leaves organic please",
+        "prediction": {
+          "product": "cilantro",
+          "brand": "",
+          "attributes": [
+            "organic"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "looking for cinnamon breakfast bagels",
+        "prediction": {
+          "product": "bagels",
+          "brand": "",
+          "attributes": [
+            "cinnamon"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "quart freezer bag please",
+        "prediction": {
+          "product": "freezer bags",
+          "brand": "",
+          "attributes": [
+            "quart"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "curled parsley bunch",
+        "prediction": {
+          "product": "curled parsley",
+          "brand": "",
+          "attributes": []
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "find me two percent chocolate milk",
+        "prediction": {
+          "product": "chocolate milk",
+          "brand": "",
+          "attributes": [
+            "2%"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "Fern & Flax loaf without gluten",
+        "prediction": {
+          "product": "bread",
+          "brand": "Fern & Flax",
+          "attributes": [
+            "gluten-free"
+          ]
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "ripe dragonfruit",
+        "prediction": {
+          "product": "dragonfruit",
+          "brand": "",
+          "attributes": []
+        },
+        "valid_json_schema": true
+      },
+      {
+        "query": "wireless charging pad",
+        "prediction": {
+          "product": "wireless charging pad",
+          "brand": "",
+          "attributes": []
+        },
+        "valid_json_schema": true
+      }
+    ]
+  }
+}
