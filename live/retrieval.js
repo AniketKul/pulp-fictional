@@ -64,7 +64,10 @@
       required.push(label);
       rest = rest.replace(pattern, " ");
     }
-    const unsupported = /\b(?:except|without|exclude|excluding|free of|not|no|allerg\w*|\w+[- ]free)\b|(?:^|\s)[−–-]\w|不含|无添加/.test(rest);
+    // Match unresolved exclusions in each storefront language before applying semantic retrieval.
+    // Unknown allergen status must not admit a partially matching product containing that allergen.
+    const unsupported = /\b(?:except|without|exclude|excluding|free of|not|no|allerg\w*|\w+[- ]free)\b|(?:^|\s)[−–-]\w/.test(rest)
+      || /[无無]|不(?:要|能|可|吃|喝|加|含|带|帶|放|用|想|喜欢|喜歡)|没(?:有|加)|沒(?:有|加)|避(?:免|开|開)|[过過]敏|忌口|禁忌|去(?:掉|除)|排除|剔除|不耐受|零(?:糖|脂|蔗糖|乳糖)|0(?:糖|脂|蔗糖|乳糖)/.test(rest);
     // A gift recipient describes the occasion, while modifiers beside it can still constrain an item.
     rest = rest.replace(/\bfor (?:a |an |the |my |our |your |his |her |their )?(?:friends?|partners?|colleagues?|coworkers?|parents?|siblings?|mothers?|fathers?|sisters?|brothers?|wives|wife|husbands?)\b/g, " ");
     return {required, unsupported, rest};

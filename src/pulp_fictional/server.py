@@ -79,6 +79,37 @@ def make_server(port=8000, root=None, predict=None):
     }
 
     class Handler(SimpleHTTPRequestHandler):
+        def generate(self, query):
+            try:
+                raw = predict(query)
+                payload = json.loads(
+                    raw.strip()
+                    .removeprefix("```json")
+                    .removeprefix("```")
+                    .removesuffix("```")
+                    .strip()
+                )
+                fields = ("product", "brand", "synonym", "substitute", "broader")
+                if (
+                    not isinstance(payload, dict)
+                    or not all(isinstance(payload.get(f), str) for f in fields)
+                    or not isinstance(payload.get("attributes"), list)
+                    or not all(isinstance(a, str) for a in payload["attributes"])
+                ):
+                    raise ValueError
+                return payload
+            except (ValueError, TypeError, AttributeError):
+                self.send_bytes(
+                    502,
+                    b'{"error":"The student returned an incomplete intent."}',
+                    "application/json",
+                )
+            except RuntimeError:
+                self.send_bytes(
+                    502, b'{"error":"GPU inference failed."}', "application/json"
+                )
+            return None
+
         def search_api(self):
             try:
                 q = parse_qs(urlsplit(self.path).query, max_num_fields=2).get("q", [])
@@ -116,18 +147,8 @@ def make_server(port=8000, root=None, predict=None):
                     },
                 }
             else:
-                try:
-                    proposal = json.loads(predict(query))
-                    if not isinstance(proposal, dict) or not isinstance(
-                        proposal.get("attributes"), list
-                    ):
-                        raise ValueError
-                except ValueError:
-                    self.send_bytes(
-                        502,
-                        b'{"error":"The student returned an incomplete intent."}',
-                        "application/json",
-                    )
+                proposal = self.generate(query)
+                if proposal is None:
                     return
             req = {
                 "query": query,
@@ -200,9 +221,14 @@ def make_server(port=8000, root=None, predict=None):
             except (ValueError, UnicodeError):
                 self.send_error(400)
                 return
+            proposal = self.generate(query.strip())
+            if proposal is None:
+                return
             self.send_bytes(
                 200,
-                json.dumps({"completion": predict(query.strip())}).encode(),
+                json.dumps(
+                    {"completion": json.dumps(proposal, ensure_ascii=False)}
+                ).encode(),
                 "application/json",
             )
 

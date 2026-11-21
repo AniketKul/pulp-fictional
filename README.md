@@ -4,6 +4,8 @@
 
 Search 144 real grocery listings in English or Chinese. Each product card shows its original title, English translation, category and source item ID. The intent trace shows which model handled your query, what it understood, and which catalog evidence supports the results.
 
+![Live grocery search returning a Dove chocolate gift box and its model interpretation](docs/storefront.png)
+
 ## Try it
 
 1. Choose a suggested search. Open **Intent trace** to see the cached teacher interpretation and the original shopper query behind the recorded purchases.

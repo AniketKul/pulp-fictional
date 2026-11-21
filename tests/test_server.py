@@ -58,5 +58,26 @@ class StorefrontTests(unittest.TestCase):
         self.assertIn("64021", [p["id"] for p in result["products"]])
         self.assertEqual(self.get("/api/search?q=an+unseen+query+without+gpu")[0], 503)
 
+    def test_invalid_model_outputs_and_gpu_errors_fail_the_request(self):
+        def broken(query):
+            if query == "incomplete":
+                return '{"attributes":[]}'
+            raise RuntimeError("device unavailable")
+
+        with make_server(0, predict=broken) as http:
+            thread = threading.Thread(target=http.serve_forever)
+            thread.start()
+            try:
+                for query in ("incomplete", "fail"):
+                    conn = HTTPConnection("127.0.0.1", http.server_port, timeout=4)
+                    try:
+                        conn.request("GET", "/api/search?q=" + query)
+                        self.assertEqual(conn.getresponse().status, 502)
+                    finally:
+                        conn.close()
+            finally:
+                http.shutdown()
+                thread.join()
+
     def test_no_directory_index(self):
         self.assertEqual(self.get("/data/")[0], 404)

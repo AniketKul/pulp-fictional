@@ -38,6 +38,9 @@ assert.deepEqual(absent.evidence, []);
 assert.deepEqual(search("apple charger", {product:"apples"}).products, []);
 assert.deepEqual(search("dark chocolate gift box for a friend", {product:"chocolate",attributes:["dark"]}).products.map(p => p.id), ["4188"]);
 assert.deepEqual(search("dark chocolate for my friend with a peanut allergy", {product:"chocolate"}).products, []);
+for (const q of ["不要花生的巧克力", "牛奶过敏巧克力", "不能吃花生的巧克力", "無花生的巧克力"]) {
+  assert.deepEqual(search(q, {product:"chocolate"}).products, [], q);
+}
 for (const query of ["mooncakes without peanuts","gluten-free mooncakes","月饼不含花生"]) {
   const hits = search(query, {product:"moon cake"}).products;
   for (const p of hits) assert.match(p.title + p.category, /不含花生|无花生|无麸质|不含麸质/i);
