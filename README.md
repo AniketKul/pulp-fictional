@@ -56,5 +56,5 @@ The local JSON search API is available at `/api/search?q=Mooncakes` with Node.js
 
 ```sh
 uv run --frozen python -m unittest discover -s tests
-node --test tests/live_retrieval.cjs
+node --test tests/*.cjs
 ```

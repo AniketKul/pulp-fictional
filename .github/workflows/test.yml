@@ -13,4 +13,4 @@ jobs:
       - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d
       - run: uv sync --frozen --python ${{ matrix.python-version }}
       - run: uv run --frozen python -m unittest discover -s tests
-      - run: node --test tests/live_retrieval.cjs
+      - run: node --test tests/*.cjs

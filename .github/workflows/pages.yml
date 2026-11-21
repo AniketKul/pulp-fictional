@@ -16,7 +16,7 @@ jobs:
       - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d
       - run: uv sync --frozen --python 3.10
       - run: uv run --frozen python -m unittest discover -s tests
-      - run: node --test tests/live_retrieval.cjs
+      - run: node --test tests/*.cjs
       - uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25
         id: weights
         with:

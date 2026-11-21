@@ -117,7 +117,7 @@
       if (token !== generation) return;
       if (needsModel) {
         confirmation = () => search(q, { force, approved: true, updateUrl, focus });
-        byId("status").textContent = "Model download awaiting confirmation.";
+        byId("status").textContent = "Waiting for permission to load the browser model.";
         byId("notice").hidden = false;
         byId("approve").focus();
         return;
@@ -165,7 +165,7 @@
   byId("cancel").addEventListener("click", () => {
     confirmation = undefined;
     byId("notice").hidden = true;
-    byId("status").textContent = "Download canceled. Choose an example to try a cached query.";
+    byId("status").textContent = "Model load canceled. Choose an example to try a cached query.";
     input.focus();
   });
   byId("rerun").addEventListener("click", () => search(currentQuery, { force: true }));

@@ -12,14 +12,37 @@
       fetch(asset("model.json"), { cache: "no-cache" }),
     ]);
     if (!response.ok) throw new Error("The language model manifest could not be loaded.");
-    const { file } = await response.json();
+    const { file, bytes, sha256 } = await response.json();
+    if (!/^[0-9a-f]{64}$/.test(sha256) || file !== `student-${sha256.slice(0, 16)}.gguf` ||
+        !Number.isSafeInteger(bytes) || bytes <= 0) throw new Error("Invalid language model manifest.");
     const llm = new Wllama({ default: asset("wllama.wasm") }, { suppressNativeLog: true });
-    await llm.loadModelFromUrl(asset(file), {
+    const url = asset(file);
+    const cache = llm.cacheManager;
+    async function openWeights() {
+      const key = await cache.getNameFromURL(url);
+      let blob = await cache.open(key);
+      // The CDN can gzip the weights. The manifest records the decoded size stored by the browser.
+      if (blob?.size === bytes) return blob;
+      if (blob) await cache.delete(key);
+      await cache.download(url, {
+        metadataAdditional: { originalSize: bytes },
+        progressCallback: ({ loaded }) => onProgress?.({ loaded, total: bytes }),
+      });
+      blob = await cache.open(key);
+      if (blob?.size !== bytes) {
+        await cache.delete(key);
+        throw new Error("The downloaded language model is incomplete.");
+      }
+      return blob;
+    }
+    const blob = navigator.locks
+      ? await navigator.locks.request(url, openWeights)
+      : await openWeights();
+    await llm.loadModel([blob], {
       n_ctx: 2048,
       n_parallel: 1,
       n_threads: 1,
       n_gpu_layers: 0,
-      progressCallback: onProgress,
     });
     window.runPulpModel.ready = true;
     return llm;
